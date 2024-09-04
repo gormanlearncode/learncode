@@ -75,7 +75,9 @@ var count=0;
 
 //the main function
 function runloop(){
-  square.style.left=""+(20+count*20)+"px";
+  var newPosition=20+count*20;
+  console.log("DEBUG: I am moving the square to "+newPosition+"px");
+  square.style.left=""+newPosition+"px";
   count=count+1;
   if(count>10){
     count=0;
@@ -97,3 +99,7 @@ setInterval(runloop,1000)
 14) refresh the site with your browers button several times, until you see at the top “**Your site is live at** https://your page.com”
 15) Click visit site.
 16) You have deployed a web page with code that moves a square!
+17) Go to setting Pages to open your web page.
+18) When you make changes cached copies of your old page will be in your browswer, oen a new "Incognito" tab each time to force it to refresh your page.
+19) In the top right of your browser, click on the tripple dots, select more tools, select developer tools.
+20) Select the **Console** tab to see the debug comments from you code. (or errors if you have errors) 
