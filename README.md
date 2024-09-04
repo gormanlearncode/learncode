@@ -40,10 +40,10 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
 #mainarea{
  /* this sets an image as the background of main area */
  background-image: url("https://tinyurl.com/255hccs5");
- background-size: cover
- background-color: #white;
- width:600px;
- height:400px;
+ background-size: cover;
+ background-color: white;
+ width:1000px;
+ height:852px;
 }
 /* this sets circle object to round, with an orange background */
 #circle{
@@ -52,8 +52,8 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
   /* radius needs to be 35 because total width is 70px, when you addd the 5px boarder */
   background-color: orange;
   margin: 0px;
-  padding: 0px
-  top:20px;
+  padding: 0px;
+  top:120px;
   left:20px;
   width:60px;
   height:60px;
