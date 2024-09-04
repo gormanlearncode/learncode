@@ -1,5 +1,5 @@
 # learncode
-Simple html css and javascript tutorial
+Simple html css and javascript tutorial, that you can do 100% in the browser with no extra tools.
 
 You can see this example running here: https://gormanlearncode.github.io/learncode/
 
