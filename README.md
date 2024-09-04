@@ -107,7 +107,7 @@ function runloop(){
 setInterval(runloop,250);
 
 //this is a more complicated example. It calls the animate function, passing a function that moves the circle 
-//down for 1000ms 'then' when that is done moves it up for 1000ms, then calls the function again and again and again.
+//down for 1000ms 'then' when that is done moves it up for 1000ms, 'then' calls the function again and again and again.
 function bounceball()
 {
   animate(function(progress){
