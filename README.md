@@ -10,17 +10,21 @@ Simple html css and javascript tutorial
 7) Add this to the main text area:
 ```html
 <html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
   <body>
     <div id="mainarea">
       <div id="circle"></div>
       <div id="square"></div>
       <div id="sometext1">Some Text</div>
     </div>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
 ```
 8) Click “Commit changes” then click commit chnages on the popup.
-9) Do the same again to adding “main.css”
+9) Do the same again to adding “styles.css”
 ```css
 #mainarea{
  background-image: url("paper.gif");
