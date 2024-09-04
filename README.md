@@ -96,7 +96,7 @@ function runloop(){
     setTimeout(function(){
       //hide the text again after three seconds
       sometext1.style.display="none";
-    },3000)
+    },3000);
   }
 }
 //run the loop every 250ms, this will count to 20 and start again by setting count equal to zero.
