@@ -26,21 +26,27 @@ Simple html css and javascript tutorial
 8) Click “Commit changes” then click commit chnages on the popup.
 9) Do the same again to adding “styles.css”
 ```css
+/* this sets the initial formatting of the main area with an image and a grey backgound */
 #mainarea{
  background-image: url("paper.gif");
  background-color: #cccccc;
  width:600px;
  height:400px;
 }
+/* this sets circle object to round, with an orange background */
 #circle{
   border: 5px solid black;
   border-radius:30px;
+  background-color: orange;
+  margin: 0px;
+  padding: 0px
   top:20px;
   left:20px;
   width:60px;
   height:60px;
   position: relative;
 }
+/* this sets square object to a position 120 pixels down from the top and 20 pixels in from the left */
 #square{
   border: 5px solid black;
   top:120px;
@@ -56,22 +62,30 @@ Simple html css and javascript tutorial
   position: relative;
 }
 ```
-9) Do the same again to adding “main.js”
+10) Do the same again to adding “main.js”
 ```javascript
+//these give us access to the objects in the html
 const mainarea = document.querySelector("#mainarea");
 const circle = document.querySelector("#circle");
 const square = document.querySelector("#square");
 const sometext1 = document.querySelector("#sometext1");
 var count=0;
+
+//the main function
 function runloop(){
-  square.style.left=""+(count*10)+"px";
+  square.style.left=""+(20+count*20)+"px";
   count=count+1;
   if(count>10){
     count=0;
   }
 }
-
 //run the loop every second
 setInterval(runloop,1000)
 
 ```
+11) Click **Settings**, at the top of the page with the sproket icon.
+12) Select **Pages** in the left side tabs
+13) Under build and deploy, under **Branch** where it says **None** select main, and press Save.
+14) refresh the site with your browers button several times, until you see at the top “**Your site is live at** https://your page.com”
+15) Click visit site.
+16) You have deployed a web page with code that moves a square!
