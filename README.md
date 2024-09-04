@@ -21,6 +21,7 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
   <body>
+    <!-- these are the building blocks of your site. You will format them in css and move them in javascript -->
     <div id="mainarea">
       <div id="circle"></div>
       <div id="square"></div>
@@ -35,10 +36,12 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
 8) Click “Commit changes” then click commit chnages on the popup.
 9) Do the same again to adding “styles.css”
 ```css
-/* this sets the initial formatting of the main area with a grey backgound */
+/* these format the color and shap of each of your html building blocks */
 #mainarea{
- /*background-image: url("paper.gif");  you could also upload an image for the object */
- background-color: #cccccc;
+ /* this sets an image as the background of main area */
+ background-image: url("https://tinyurl.com/255hccs5");
+ background-size: cover
+ background-color: #white;
  width:600px;
  height:400px;
 }
