@@ -85,11 +85,11 @@ var count=0;
 
 //the main function
 function runloop(){
-  var newPosition=20+count*20;
+  var newPosition=20+count*10;
   console.log("DEBUG: I am moving the square to "+newPosition+"px");
   square.style.left=""+newPosition+"px";
   count=count+1;
-  if(count>20){
+  if(count>40){
     count=0;
     //show the text after ten seconds
     sometext1.style.display="block";
@@ -99,8 +99,8 @@ function runloop(){
     },3000)
   }
 }
-//run the loop every half second, this will count to 20 and start again by setting count equal to zero.
-setInterval(runloop,500)
+//run the loop every 250ms, this will count to 20 and start again by setting count equal to zero.
+setInterval(runloop,250)
 
 ```
 11) Click **Settings**, at the top of the page with the sproket icon.
