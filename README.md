@@ -36,7 +36,8 @@ Simple html css and javascript tutorial
 /* this sets circle object to round, with an orange background */
 #circle{
   border: 5px solid black;
-  border-radius:40px;
+  border-radius:35px;
+  /* radius needs to be 35 because total width is 70px, when you addd the 5px boarder
   background-color: orange;
   margin: 0px;
   padding: 0px
