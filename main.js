@@ -11,7 +11,7 @@ function runloop(){
   console.log("DEBUG: I am moving the square to "+newPosition+"px");
   square.style.left=""+newPosition+"px";
   count=count+1;
-  if(count>10){
+  if(count>20){
     count=0;
     //show the text after ten seconds
     sometext1.style.display="block";
@@ -21,5 +21,5 @@ function runloop(){
     },3000)
   }
 }
-//run the loop every second, this will count to 10 and start again by setting count equal to zero.
-setInterval(runloop,1000)
+//run the loop every half second, this will count to 20 and start again by setting count equal to zero.
+setInterval(runloop,500)
