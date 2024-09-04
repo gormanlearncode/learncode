@@ -11,7 +11,13 @@ function runloop(){
   count=count+1;
   if(count>10){
     count=0;
+    //show the text after ten seconds
+    sometext1.style.display="block";
+    setTimeout(function(){
+      //hide the text again after three seconds
+      sometext1.style.display="none";
+    },3000)
   }
 }
-//run the loop every second
+//run the loop every second, this will count to 10 and start again by setting count equal to zero.
 setInterval(runloop,1000)
