@@ -1,4 +1,4 @@
-function animate({timing, draw, duration}) {
+function animate(draw, duration,timing) {
 
   let start = performance.now();
   if(!timing) timing=function(timeFraction){return timeFraction;}
