@@ -100,7 +100,7 @@ function runloop(){
   }
 }
 //run the loop every 250ms, this will count to 20 and start again by setting count equal to zero.
-setInterval(runloop,250)
+setInterval(runloop,250);
 
 ```
 11) Click **Settings**, at the top of the page with the sproket icon.
