@@ -1,18 +1,24 @@
+/* this sets the initial formatting of the main area with an image and a grey backgound */
 #mainarea{
  background-image: url("paper.gif");
  background-color: #cccccc;
  width:600px;
  height:400px;
 }
+/* this sets circle object to round, with an orange background */
 #circle{
   border: 5px solid black;
   border-radius:30px;
+  background-color: orange;
+  margin: 0px;
+  padding: 0px
   top:20px;
   left:20px;
   width:60px;
   height:60px;
   position: relative;
 }
+/* this sets square object to a position 120 pixels down from the top and 20 pixels in from the left */
 #square{
   border: 5px solid black;
   top:120px;
