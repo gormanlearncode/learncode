@@ -19,7 +19,7 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
     <div id="mainarea">
       <div id="circle"></div>
       <div id="square"></div>
-      <div id="sometext1">Some Text</div>
+      <div id="sometext1">Learn Code!</div>
     </div>
     <script type="text/javascript" src="main.js"></script>
   </body>
