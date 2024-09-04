@@ -37,7 +37,7 @@ Simple html css and javascript tutorial
 #circle{
   border: 5px solid black;
   border-radius:35px;
-  /* radius needs to be 35 because total width is 70px, when you addd the 5px boarder
+  /* radius needs to be 35 because total width is 70px, when you addd the 5px boarder */
   background-color: orange;
   margin: 0px;
   padding: 0px
