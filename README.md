@@ -13,6 +13,11 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
 ```html
 <html>
 <head>
+  <!-- this should reduce how long it takes your page to refresh after a change -->
+  <meta http-equiv='cache-control' content='no-cache'> 
+  <meta http-equiv='expires' content='0'> 
+  <meta http-equiv='pragma' content='no-cache'>
+  <!-- this imports all your formatting from the css file -->
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
   <body>
@@ -21,9 +26,11 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
       <div id="square"></div>
       <div id="sometext1"><b>Learn Code!</b></div>
     </div>
+    <!-- this will run your code -->
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
+
 ```
 8) Click “Commit changes” then click commit chnages on the popup.
 9) Do the same again to adding “styles.css”
