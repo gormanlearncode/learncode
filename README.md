@@ -68,7 +68,7 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
 /* this sets the text initially to hidden, code will display it after 10 seconds */
 #sometext1{
   top:120px;
-  left:20px;
+  left:220px;
   border: none;
   position: relative;
   display: none;
@@ -89,7 +89,7 @@ function runloop(){
   console.log("DEBUG: I am moving the square to "+newPosition+"px");
   square.style.left=""+newPosition+"px";
   count=count+1;
-  if(count>10){
+  if(count>20){
     count=0;
     //show the text after ten seconds
     sometext1.style.display="block";
@@ -99,8 +99,8 @@ function runloop(){
     },3000)
   }
 }
-//run the loop every second, this will count to 10 and start again by setting count equal to zero.
-setInterval(runloop,1000)
+//run the loop every half second, this will count to 20 and start again by setting count equal to zero.
+setInterval(runloop,500)
 
 ```
 11) Click **Settings**, at the top of the page with the sproket icon.
