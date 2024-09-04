@@ -1,7 +1,9 @@
-/* this sets the initial formatting of the main area with an image and a grey backgound */
+/* these format the color and shap of each of your html building blocks */
 #mainarea{
- background-image: url("paper.gif");
- background-color: #cccccc;
+ /* this sets an image as the background of main area */
+ background-image: url("https://tinyurl.com/255hccs5");
+ background-size: cover
+ background-color: #white;
  width:600px;
  height:400px;
 }
@@ -31,7 +33,7 @@
 /* this sets the text initially to hidden, code will display it after 10 seconds */
 #sometext1{
   top:120px;
-  left:20px;
+  left:220px;
   border: none;
   position: relative;
   display: none;
