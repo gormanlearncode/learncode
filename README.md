@@ -55,11 +55,13 @@ Simple html css and javascript tutorial
   height:60px;
   position: relative;
 }
+/* this sets the text initially to hidden, code will display it after 10 seconds */
 #sometext1{
   top:120px;
   left:20px;
   border: none;
   position: relative;
+  display: none;
 }
 ```
 10) Do the same again to adding “main.js”
@@ -77,9 +79,15 @@ function runloop(){
   count=count+1;
   if(count>10){
     count=0;
+    //show the text after ten seconds
+    sometext1.style.display="block";
+    setTimeout(function(){
+      //hide the text again after three seconds
+      sometext1.style.display="none";
+    },3000)
   }
 }
-//run the loop every second
+//run the loop every second, this will count to 10 and start again by setting count equal to zero.
 setInterval(runloop,1000)
 
 ```
