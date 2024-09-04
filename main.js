@@ -24,6 +24,6 @@ function runloop(){
 //run the loop every 250ms, this will count to 20 and start again by setting count equal to zero.
 setInterval(runloop,250);
 
-animate({duration:1000,draw(progress) {
-    circle.style.top = progress * 200 + 'px';
-}});
+animate((progress) {
+    circle.style.top = progress * 600 + 'px';
+},1000);
