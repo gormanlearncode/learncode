@@ -113,8 +113,10 @@ function bounceball()
   animate(function(progress){
       circle.style.top = 120 + progress * 600 + 'px';
   },1000).then(function(){
-      circle.style.top = 720 - progress * 600 + 'px';
-  }).then(bounceball);
+      animate(function(progress){
+        circle.style.top = 720 - progress * 600 + 'px';
+      }).then(bounceball);
+  });
 }
 //this is the first call of bounce ball, that will then call itself, forever.
 bounceball();
