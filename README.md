@@ -35,9 +35,9 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
 8) Click “Commit changes” then click commit chnages on the popup.
 9) Do the same again to adding “styles.css”
 ```css
-/* this sets the initial formatting of the main area with an image and a grey backgound */
+/* this sets the initial formatting of the main area with a grey backgound */
 #mainarea{
- background-image: url("paper.gif");
+ /*background-image: url("paper.gif");  you could also upload an image for the object */
  background-color: #cccccc;
  width:600px;
  height:400px;
