@@ -13,7 +13,7 @@ jobs:
         uses: andstor/jsdoc-action@v1
         with:
           source_dir: ./src
-          output_dir: ./out
+          output_dir: ./out/docs
           template: minami
       - name: Output folders with base path
         run: find ./out | grep html
