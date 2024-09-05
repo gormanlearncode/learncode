@@ -5,7 +5,7 @@
  * 
  * bounceball(){ 
  *     animate(function(progress){
- *       circle.style.top = 20 + progress * 300 + 'px';
+ *       circle.style.top = 20 + progress * 300 + 'px'; 
  *     },1000).then(bounceball);
  * } 
  * 
