@@ -20,7 +20,7 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
   <!-- this imports all your formatting from the css file -->
   <link rel="stylesheet" type="text/css" href="styles.css">
   <!-- this imports some helper functions you can use in your code -->
-  <script type="text/javascript" src="https://tinyurl.com/zmarysam"></script>
+  <script type="text/javascript" src="https://tinyurl.com/462k3dx7"></script>
 </head>
   <body>
     <h1>Learncode Example App</h1>
