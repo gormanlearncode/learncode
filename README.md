@@ -143,5 +143,5 @@ startbutton.onclick=function(){
 17) Go to setting Pages to open your web page.
 18) When you make changes, old copiues of your page will be cached in your browswer. "Open Link in new Incognito Widow" will force it to refresh your page.
 19) In the top right of your browser, click on the tripple dots, select more tools, select developer tools.
-20) Select the **Console** ([e.g.])[https://gormanlearncode.github.io/learncode/images/example%20console.png] tab to see the debug comments from you code. (or errors if you have errors)
+20) Select the **Console** (e.g.)[https://gormanlearncode.github.io/learncode/images/example%20console.png] tab to see the debug comments from you code. (or errors if you have errors)
 21) Learn all you need to know here https://www.w3schools.com/js/ and by asking google for examples.
