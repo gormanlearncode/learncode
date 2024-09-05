@@ -13,7 +13,7 @@ jobs:
         uses: andstor/jsdoc-action@v1
         with:
           source_dir: ./src
-          output_dir: ./out/docs
+          output_dir: ./out
           template: minami
       - name: Output folders with base path
         run: find ./out | grep html
@@ -24,3 +24,4 @@ jobs:
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./out
+          destination_dir: docs
