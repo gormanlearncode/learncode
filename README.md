@@ -126,15 +126,11 @@ function bounceball()
   });
 }
 
-
 startbutton.onclick=function(){
-
   //run 'runloop' every 250ms, this will count to 20 and start again by setting count equal to zero.
   setInterval(runloop,250);
-
   //this starts a recursive loop calling 'bounceball'.
   bounceball();
-  
 }
 
 ```
