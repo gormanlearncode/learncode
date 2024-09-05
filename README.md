@@ -53,7 +53,7 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
   background-color: orange;
   margin: 0px;
   padding: 0px;
-  top:120px;
+  top:320px;
   left:20px;
   width:60px;
   height:60px;
@@ -111,10 +111,10 @@ function runloop(){
 function bounceball()
 {
   animate(function(progress){
-      circle.style.top = 120 + progress * 600 + 'px';
+      circle.style.top = 320 + progress * 300 + 'px';
   },1000).then(function(){
       animate(function(progress){
-        circle.style.top = 720 - progress * 600 + 'px';
+        circle.style.top = 620 - progress * 300 + 'px';
       },1000).then(bounceball);
   });
 }
