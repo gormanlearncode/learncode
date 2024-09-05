@@ -141,7 +141,7 @@ startbutton.onclick=function(){
 15) Click visit site.
 16) You have deployed a web page with code that moves a square!
 17) Go to setting Pages to open your web page.
-18) When you make changes, old copiues of your page will be cached in your browswer. "Open Link in new Incognito Widow" will force it to refresh your page.
+18) When you make changes, old copiues of your page will be cached in your browswer. "Open Link in new Incognito Widow" [e.g.](https://gormanlearncode.github.io/learncode/images/open%20incognito.png) will force it to refresh your page.
 19) In the top right of your browser, click on the tripple dots, select more tools, select developer tools.
 20) Select the **Console** [e.g.](https://gormanlearncode.github.io/learncode/images/example%20console.png) tab to see the debug [e.g.](https://gormanlearncode.github.io/learncode/images/debug%20menu.png) comments from you code. (or errors if you have errors)
 21) Learn all you need to know here https://www.w3schools.com/js/ and by asking google for examples.
