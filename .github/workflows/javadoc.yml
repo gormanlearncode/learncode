@@ -12,7 +12,7 @@ jobs:
       - name: Build
         uses: andstor/jsdoc-action@v1
         with:
-          source_dir: .
+          source_dir: ./src
           output_dir: ./out
           recurse: true
       - name: Deploy
