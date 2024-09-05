@@ -30,22 +30,18 @@ function runloop(){
 function bounceball()
 {
   animate(function(progress){
-      circle.style.top = 120 + progress * 600 + 'px';
+      circle.style.top = 320 + progress * 300 + 'px';
   },1000).then(function(){
       animate(function(progress){
-        circle.style.top = 720 - progress * 600 + 'px';
+        circle.style.top = 620 - progress * 300 + 'px';
       },1000).then(bounceball);
   });
 }
 
 
 startbutton.onclick=function(){
-
   //run 'runloop' every 250ms, this will count to 20 and start again by setting count equal to zero.
   setInterval(runloop,250);
-
   //this starts a recursive loop calling 'bounceball'.
   bounceball();
-  
 }
-
