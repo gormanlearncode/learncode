@@ -4,7 +4,7 @@ A simple html, css and javascript tutorial, that you can do 100% in the browser 
 You can see this example running here: https://gormanlearncode.github.io/learncode/
 
 1) ”Sign up for GitHub” —> here https://github.com/
-2) Create a user name
+2) Create a user name, this will be in your website URL, so make it nice.
 3) Select “Continue for free”
 4) “Create a repository”, make it public and add a README file
 5) Click “Add file” —> Create new file
