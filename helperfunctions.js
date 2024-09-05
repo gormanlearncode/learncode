@@ -7,7 +7,7 @@
  *     animate(function(progress){
  *       circle.style.top = 20 + progress * 300 + 'px';
  *     },1000).then(bounceball);
- * }
+ * } 
  * 
  * @param   {function} draw  A function that is called to animate your object, it contains a float, between 0-1, 
  *                     used in your code to set how far your animation should move as a ration of the total move
