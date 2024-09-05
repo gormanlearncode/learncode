@@ -19,6 +19,8 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
   <meta http-equiv='pragma' content='no-cache'>
   <!-- this imports all your formatting from the css file -->
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- this imports some helper functions you can use in your code -->
+  <script type="text/javascript" src="https://tinyurl.com/zmarysam"></script>
 </head>
   <body>
     <h1>Learcode Example App</h1>
