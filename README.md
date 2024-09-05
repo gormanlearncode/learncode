@@ -76,6 +76,7 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
 #sometext1{
   top:120px;
   left:220px;
+  width:120px;
   border: 5px solid black;
   background-color: white;
   font-size: 40px;
@@ -105,9 +106,9 @@ function runloop(){
     //show the text after ten seconds
     sometext1.style.display="block";
     setTimeout(function(){
-      //hide the text again after three seconds
+      //hide the text again after two seconds
       sometext1.style.display="none";
-    },3000);
+    },2000);
   }
 }
 
