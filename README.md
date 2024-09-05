@@ -21,6 +21,7 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
   <body>
+    <h1>Learcode Example App</h1>
     <!-- these are the building blocks of your site. You will format them in css and move them in javascript -->
     <div id="mainarea">
       <div id="circle"></div>
@@ -72,7 +73,9 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
 #sometext1{
   top:120px;
   left:220px;
-  border: none;
+  border: 5px solid black;
+  background-color: white;
+  font-size: 40px;
   position: relative;
   display: none;
 }
