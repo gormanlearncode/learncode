@@ -3,7 +3,7 @@
  * Does something nifty.
  * for example, the below will move circle from 20px to 300px over and over.
  * 
- * bounceball(){
+ * bounceball(){ 
  *     animate(function(progress){
  *       circle.style.top = 20 + progress * 300 + 'px';
  *     },1000).then(bounceball);
