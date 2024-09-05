@@ -23,7 +23,7 @@ jobs:
             ./src
             ./out
       - name: Output folders with base path
-        run: echo "Folders with base path: ${{ steps.list-subfolders.outputs.folders }}"
+        run: echo ${{steps.list-subfolders.outputs.folders}}
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
