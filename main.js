@@ -18,9 +18,9 @@ function runloop(){
     //show the text after ten seconds
     sometext1.style.display="block";
     setTimeout(function(){
-      //hide the text again after three seconds
+      //hide the text again after two seconds
       sometext1.style.display="none";
-    },3000);
+    },2000);
   }
 }
 
