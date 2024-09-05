@@ -23,7 +23,7 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
   <script type="text/javascript" src="https://tinyurl.com/zmarysam"></script>
 </head>
   <body>
-    <h1>Learcode Example App</h1>
+    <h1>Learncode Example App</h1>
     <!-- these are the building blocks of your site. You will format them in css and move them in javascript -->
     <div id="mainarea">
       <div id="circle"></div>
@@ -76,7 +76,7 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
 #sometext1{
   top:120px;
   left:220px;
-  width:120px;
+  width:220px;
   border: 5px solid black;
   background-color: white;
   font-size: 40px;
