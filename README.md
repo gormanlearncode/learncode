@@ -28,6 +28,7 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
       <div id="square"></div>
       <div id="sometext1"><b>Learn Code!</b></div>
     </div>
+    <button id="startbutton">START!</button>
     <!-- this will run your code -->
     <script type="text/javascript" src="main.js"></script>
   </body>
