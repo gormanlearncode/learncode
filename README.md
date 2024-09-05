@@ -76,7 +76,7 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
 #sometext1{
   top:120px;
   left:220px;
-  width:220px;
+  width:320px;
   border: 5px solid black;
   background-color: white;
   font-size: 40px;
