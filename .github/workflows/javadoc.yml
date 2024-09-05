@@ -15,7 +15,13 @@ jobs:
           source_dir: ./src
           output_dir: ./out
           template: minami
-          front_page: docs/README.md
+      - name: List subfolders
+        id: list-subfolders
+        uses: Drafteame/list-folders-action@main
+        with:
+          paths: |
+            ./src
+            ./out
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
