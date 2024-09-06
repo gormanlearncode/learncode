@@ -49,9 +49,9 @@ function animate(draw, duration,timing) {
  * person.turnClockWise(90);
  *
  */
-class Motion {
+class Sprite {
   /**
-   * Create a Motion object.
+   * Create a Sprite object.
    * @param {object} htmldiv - The htmldiv object to move.
    */
   constructor(htmldiv) {
