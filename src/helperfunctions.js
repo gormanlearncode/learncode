@@ -40,9 +40,11 @@ function animate(draw, duration,timing) {
 }
 
 /**
- * Motion helps move a div object on the page.\n
- * e.g. const person = new Motion("#personDiv");<br>
- *      person.turnClockWise(90);
+ * Motion helps move a div object on the page. For example:<br>
+ * ```
+ * const person = new Motion("#personDiv");<br>
+ * person.turnClockWise(90);
+ * ```
  */
 class Motion {
   /**
