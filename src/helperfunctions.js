@@ -41,7 +41,7 @@ function animate(draw, duration,timing) {
 
 /**
  * Motion helps move a div object on the page.
- * e.g. const person = Motion("#personDiv");
+ * e.g. const person = new Motion("#personDiv");
  *      person.turnClockWise(90);
  */
 class Motion {
@@ -56,13 +56,17 @@ class Motion {
     }
   }
 /**
- * turnClockWise
+ * turnClockWise degrees  
+ * @param   {number}
+ * @returns {Promise} a promise you can use "then" to know when it is complete.
  */
   turnClockWise(degrees)
   {
   }
 /**
  * turnAnticlockwise
+ * @param   {number} degrees  
+ * @returns {Promise} a promise you can use "then" to know when it is complete.
  */
   turnAnticlockwise(degrees)
   {
