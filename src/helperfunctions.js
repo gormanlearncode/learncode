@@ -1,7 +1,11 @@
 /**
  * Animates an object over a named period of time. For example, the below will move the circle from 20->320px over 100ms.
- * 
- * animate(function(progress){ circle.style.top = 20 + progress * 300 + 'px'; },1000).then(  function(){console.log("done")}  );
+ * @example
+ * animate(function(progress){ 
+ *    circle.style.top = 20 + progress * 300 + 'px';
+ * },1000).then( function(){
+ *    console.log("done");
+ * });
  * 
  * 
  * @param   {function} draw  A function that is called to animate your object, it contains a float, between 0-1, 
@@ -40,11 +44,10 @@ function animate(draw, duration,timing) {
 }
 
 /**
- * Motion helps move a div object on the page. For example:<br>
- * ```
- * const person = new Motion("#personDiv");<br>
+ * Motion helps move a div object on the page. For example:
+ * @example
+ * const person = new Motion("#personDiv");
  * person.turnClockWise(90);
- * ```
  */
 class Motion {
   /**
