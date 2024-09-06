@@ -66,7 +66,7 @@ class Motion {
  */
   turnClockWise(degrees)
   {
-    return animate((progress)=>{this.htmldiv.style.transform = 'rotate('+(progress*degrees)+'deg)';},200)
+    return animate((progress)=>{this.htmldiv.style.transform = 'rotate('+(progress*degrees)+'deg)';},200);
   }
 /**
  * turnAnticlockwise
@@ -75,8 +75,71 @@ class Motion {
  */
   turnAnticlockwise(degrees)
   {
-    return animate((progress)=>{this.htmldiv.style.transform = 'rotate('+(-progress*degrees)+'deg)';},200)
+    return animate((progress)=>{this.htmldiv.style.transform = 'rotate('+(-progress*degrees)+'deg)';},200);
   }
+  /**
+   * move
+   * @param   {number} pixels  
+   * @returns {Promise} a promise you can use "then" to know when it is complete.
+   */
+  move(pixelX,pixelY)
+  {
+      const _left=this.htmldiv.style.left;
+      const _top=this.htmldiv.style.top;
+      return animate((progress)=>{this.htmldiv.style.left = ''+(_left+progress*pixelX)+'px';this.htmldiv.style.top = ''+(_top+progress*pixelY)+'px';},200);
+  }
+  
+  /**
+   * moveTo a specific position
+   * @param   {number} pixelX  
+   * @param   {number} pixelY  
+   * @returns {Promise} a promise you can use "then" to know when it is complete.
+   */
+  moveTo(pixelX,pixelY)
+  {
+      const _left=this.htmldiv.style.left;
+      const _top=this.htmldiv.style.top;
+      return animate((progress)=>{this.htmldiv.style.left = ''+(_left+progress*pixelX)+'px';this.htmldiv.style.top = ''+(_top+progress*pixelY)+'px';},200);
+  }
+  
+  /**
+   * glideTo a specific position over time.
+   * @param   {number} pixelX  
+   * @param   {number} pixelY  
+   * @param   {number} milliseconds  
+   * @returns {Promise} a promise you can use "then" to know when it is complete.
+   */
+  glideTo(pixelX,pixelY,milliseconds)
+  {
+      const _left=this.htmldiv.style.left;
+      const _top=this.htmldiv.style.top;
+      return animate((progress)=>{this.htmldiv.style.left = ''+(_left+progress*pixelX)+'px';this.htmldiv.style.top = ''+(_top+progress*pixelY)+'px';},milliseconds);
+  }
+  
+  /**
+   * setyTo
+   * @param   {number} pixelY  
+   * @returns {Promise} a promise you can use "then" to know when it is complete.
+   */
+  setyTo(pixelY)
+  {
+      const _left=this.htmldiv.style.left;
+      const _top=this.htmldiv.style.top;
+      return animate((progress)=>{this.htmldiv.style.top = ''+(_top+progress*pixelY)+'px';},200);
+  }
+
+  /**
+   * setxTo
+   * @param   {number} pixelX  
+   * @returns {Promise} a promise you can use "then" to know when it is complete.
+   */
+  setxTo(pixelX)
+  {
+      const _left=this.htmldiv.style.left;
+      const _top=this.htmldiv.style.top;
+      return animate((progress)=>{this.htmldiv.style.left = ''+(_left+progress*pixelX)+'px';},200);
+  }
+  
 }
 
 
