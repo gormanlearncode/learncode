@@ -178,11 +178,12 @@ class Controls{
   static repeat(func,count){
     let i=0
     let _func=func;
+    let _count=count;
     return new Promise((resolve, reject) => {
       const loopCode=function(){
-        _func(i,count);
+        _func(i,_count);
         i=i+1;
-        if(i<count){
+        if(i<_count){
           setTimeout(loopCode,100);
         }
       }
