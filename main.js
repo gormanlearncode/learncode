@@ -12,8 +12,6 @@ function runloop(){
   var newPosition=20+count*20;
   console.log("DEBUG: I am moving the square to "+newPosition+"px");
   square.style.left=""+newPosition+"px";
-  const person = new Motion(square);
-  person.turnClockWise(30);
   count=count+1;
   if(count>40){
     count=0;
@@ -39,7 +37,6 @@ function bounceball()
       },1000).then(bounceball);
   });
 }
-
 
 startbutton.onclick=function(){
   //run 'runloop' every 250ms, this will count to 20 and start again by setting count equal to zero.
