@@ -18,6 +18,7 @@ jobs:
         with:
           source_dir: ./src
           output_dir: ./docs
+          front_page: DOC.md
       - name: Output folders with base path
         run: find ./docs | grep html
       - name: Output folders with base path
