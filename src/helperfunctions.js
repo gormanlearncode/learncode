@@ -157,7 +157,7 @@ class Controls{
    * @param   {number} milliseconds  
    * @returns {Promise} a promise you can use "then" to know when it is complete.
    */
-  static async wait(milliseconds){
+  static wait(milliseconds){
     return new Promise((resolve, reject) => {
       setTimeout(()=>{resolve()},milliseconds);
     });
