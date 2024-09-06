@@ -12,7 +12,7 @@
  *                     you want to make.
  * @param   {number} duration  How long should the animation last.
  * @param   {function} timing  an [optional] function that can manipulate the timing of the loop [default]=liniar.
- * @returns {Promise} a promise you can use "then" to know when it is complete.
+ * @returns {Promise} a promise you can use "then" to know when it is complete. 
  */
 function animate(draw, duration,timing) {
 
