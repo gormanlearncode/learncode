@@ -11,7 +11,8 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
 4) “Create a repository”, make it public and add a README file
 5) Click “Add file” —> Create new file
 6) At the top name your file “index.html”
-7) Add this to the main text area:
+7) Add this HTML code to the main text area. HTML is the display layer of our code. Importantly, the “div” tag is an object we are going to format, shape and move from JavaScript.
+ 
 ```html
 <html>
 <head>
