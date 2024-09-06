@@ -5,7 +5,7 @@
 Some simple functions that you can use in your code.
 
 Fore example:
-```
+```javascript
 //attached to div with id="personDiv" and move it to position 1000px from the top and 1000px from the left.
 const person=new Motion("#personDiv");
 person.moveTo(1000,1000);
