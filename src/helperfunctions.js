@@ -1,11 +1,8 @@
 /**
- * Animates an object over a named period of time.
+ * Animates an object over a named period of time. For example, the below will move the circle from 20->320px over 100ms.
  * 
- * bounceball(){ 
- *     animate(function(progress){
- *       circle.style.top = 20 + progress * 300 + 'px';  
- *     },1000).then(bounceball);
- * } 
+ * animate(function(progress){ circle.style.top = 20 + progress * 300 + 'px'; },1000).then(  function(){console.log("done")}  );
+ * 
  * 
  * @param   {function} draw  A function that is called to animate your object, it contains a float, between 0-1, 
  *                     used in your code to set how far your animation should move as a ration of the total move
