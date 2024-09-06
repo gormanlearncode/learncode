@@ -147,4 +147,3 @@ startbutton.onclick=function(){
 19) In the top right of your browser, click on the triple dots, select more tools, select developer tools.
 20) Select the **Console** [e.g.](https://gormanlearncode.github.io/learncode/images/example%20console.png) tab to see the debug [e.g.](https://gormanlearncode.github.io/learncode/images/debug%20menu.png) comments from you code. (or errors if you have errors)
 21) Learn all you need to know here https://www.w3schools.com/js/ and by asking google for examples.
-![image](https://github.com/user-attachments/assets/77f84aff-63c7-49b0-98aa-1f07fd87e735)
