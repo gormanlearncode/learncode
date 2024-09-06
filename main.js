@@ -24,7 +24,7 @@ function runloop(){
   }
 }
 
-Controls.repeat((i,c)=>{console.log(`${i} of ${cf}`)}):
+Controls.repeat((i,c)=>{console.log(`${i} of ${cf}`)});
 
 
 //this is a more complicated example function. It calls the animate function, passing a function that moves the circle 
