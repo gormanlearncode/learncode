@@ -197,4 +197,49 @@ class Controls{
     });
   }
 }
-
+/**
+ * Backdrop helps manipulate a given background DIV
+ * @example
+ * const mainarea = new Motion("#mainarea");
+ * mainarea.addBackdrop("https://image.com");
+ * mainarea.switchBackdropTo(0);
+ *
+ */
+class Backdrop{
+  /**
+   * Create a Motion object.
+   * @param {object} htmldiv - The htmldiv object to move.
+   */
+  constructor(htmldiv) {
+    if(typeof htmldiv === "string")
+    {
+      this.htmldiv=document.querySelector(htmldiv);
+    }
+    else
+    {
+      this.htmldiv=htmldiv;
+    }
+    this.backdrops=[];
+  }
+  /**
+   * Adds an image to the end of a list of backdrops.
+   * @example
+   * mainarea.addBackdrop("https://image.com");
+   * @param   {string} imageURI  
+   */
+  function addBackdrop(imageURI)
+  {
+    this.backdrops.push(imageURI);
+  }
+  /**
+   * Switch backdrop to a specific index of a list of backdrops, starting at zero.
+   * @example
+   * mainarea.switchBackdropToIndex(0);
+   * @param   {number} index  
+   */
+  function switchBackdropToIndex(index)
+  {
+    if(index>=this.backdrops.length) return;
+    this.backdrops[index];
+  }
+}
