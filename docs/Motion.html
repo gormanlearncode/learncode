@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Global - Documentation</title>
+    <title>Motion - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">Global</h1>
+    <h1 class="page-title">Motion</h1>
     
 
     
@@ -42,8 +42,12 @@
 <header>
     
         <h2>
-        
+        Motion
         </h2>
+        
+            <div class="class-description">Motion helps move a div object on the page.
+e.g. const person = new Motion("#personDiv");
+     person.turnClockWise(90);</div>
         
     
 </header>
@@ -52,81 +56,20 @@
     <div class="container-overview">
     
         
-
-        
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-    
-    </div>
-
-    
-
-    
-
-    
-
-     
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        
-            
 <div class="section-method">
 
     
+    <h2>Constructor</h2>
+    
 
-    <h4 class="name" id="animate"><span class="type-signature"></span>animate<span class="signature">(draw, duration, timing)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id="Motion"><span class="type-signature"></span>new Motion<span class="signature">(htmldiv)</span><span class="type-signature"></span></h4>
 
     
 
 
 
 <div class="description">
-    Animates an object over a named period of time. For example, the below will move the circle from 20->320px over 100ms.
-
-animate(function(progress){ circle.style.top = 20 + progress * 300 + 'px'; },1000).then(  function(){console.log("done")}  );
+    Create a Motion object.
 </div>
 
 
@@ -162,7 +105,7 @@ animate(function(progress){ circle.style.top = 20 + progress * 300 + 'px'; },100
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="helperfunctions.js.html">helperfunctions.js</a>, <a href="helperfunctions.js.html#line14">line 14</a>
+        <a href="helperfunctions.js.html">helperfunctions.js</a>, <a href="helperfunctions.js.html#line47">line 47</a>
     </li></ul></dd>
     
 
@@ -206,13 +149,13 @@ animate(function(progress){ circle.style.top = 20 + progress * 300 + 'px'; },100
 
         <tr>
             
-                <td class="name"><code>draw</code></td>
+                <td class="name"><code>htmldiv</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><code>function</code></span>
+<span class="param-type"><code>object</code></span>
 
 
             
@@ -223,18 +166,143 @@ animate(function(progress){ circle.style.top = 20 + progress * 300 + 'px'; },100
             
 
             <td class="description last">
-                A function that is called to animate your object, it contains a float, between 0-1, 
-                    used in your code to set how far your animation should move as a ration of the total move
-                    you want to make.
+                The htmldiv object to move.
                 
             </td>
         </tr>
 
     
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="turnAnticlockwise"><span class="type-signature"></span>turnAnticlockwise<span class="signature">(degrees)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    turnAnticlockwise
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="helperfunctions.js.html">helperfunctions.js</a>, <a href="helperfunctions.js.html#line75">line 75</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
 
         <tr>
             
-                <td class="name"><code>duration</code></td>
+                <td class="name"><code>degrees</code></td>
             
 
             <td class="type">
@@ -251,22 +319,156 @@ animate(function(progress){ circle.style.top = 20 + progress * 300 + 'px'; },100
             
 
             <td class="description last">
-                How long should the animation last.
+                
                 
             </td>
         </tr>
 
     
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>Promise</code></span>
+
+
+    </dd>
+</dl>
+
+
+<div class="param-desc">
+    a promise you can use "then" to know when it is complete.
+</div>
+
+    
+</div>
+
+
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="turnClockWise"><span class="type-signature"></span>turnClockWise<span class="signature">(degrees)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    turnClockWise degrees
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="helperfunctions.js.html">helperfunctions.js</a>, <a href="helperfunctions.js.html#line67">line 67</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
 
         <tr>
             
-                <td class="name"><code>timing</code></td>
+                <td class="name"><code>degrees</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><code>function</code></span>
+<span class="param-type"><code>number</code></span>
 
 
             
@@ -277,7 +479,7 @@ animate(function(progress){ circle.style.top = 20 + progress * 300 + 'px'; },100
             
 
             <td class="description last">
-                an [optional] function that can manipulate the timing of the loop [default]=liniar.
+                
                 
             </td>
         </tr>
