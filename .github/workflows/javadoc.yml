@@ -18,7 +18,6 @@ jobs:
         with:
           source_dir: ./src
           output_dir: ./docs
-          template: minami
       - name: Output folders with base path
         run: find ./docs | grep html
       - name: Output folders with base path
