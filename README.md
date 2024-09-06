@@ -41,7 +41,7 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
 
 ```
 8) Click “Commit changes” then click commit chnages on the popup.
-9) Do the same again to adding “styles.css”
+9) Do the same again to adding “styles.css”. CSS or style sheets are used to format HTML.
 ```css
 /* these format the color and shap of each of your html building blocks */
 #mainarea{
