@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
       - name: Build
         uses: andstor/jsdoc-action@v1
         with:
@@ -24,6 +26,5 @@ jobs:
       - name: Deploy
         uses: EndBug/add-and-commit@v9
         with:
-          github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           add: 'docs'
           message: Update JSDoc
