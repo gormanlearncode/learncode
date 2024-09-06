@@ -24,7 +24,7 @@
 <label for="nav-trigger" class="overlay"></label>
 
 <nav>
-    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Motion.html">Motion</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Motion.html#turnAnticlockwise">turnAnticlockwise</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Motion.html#turnClockWise">turnClockWise</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#animate">animate</a></span></li>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Motion.html">Motion</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Motion.html#glideTo">glideTo</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Motion.html#move">move</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Motion.html#moveTo">moveTo</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Motion.html#setxTo">setxTo</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Motion.html#setyTo">setyTo</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Motion.html#turnAnticlockwise">turnAnticlockwise</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Motion.html#turnClockWise">turnClockWise</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#animate">animate</a></span></li>
 </nav>
 
 <div id="main">
@@ -107,7 +107,7 @@ class Motion {
  */
   turnClockWise(degrees)
   {
-    return animate((progress)=>{this.htmldiv.style.transform = 'rotate('+(progress*degrees)+'deg)';},200)
+    return animate((progress)=>{this.htmldiv.style.transform = 'rotate('+(progress*degrees)+'deg)';},200);
   }
 /**
  * turnAnticlockwise
@@ -116,8 +116,71 @@ class Motion {
  */
   turnAnticlockwise(degrees)
   {
-    return animate((progress)=>{this.htmldiv.style.transform = 'rotate('+(-progress*degrees)+'deg)';},200)
+    return animate((progress)=>{this.htmldiv.style.transform = 'rotate('+(-progress*degrees)+'deg)';},200);
   }
+  /**
+   * move
+   * @param   {number} pixels  
+   * @returns {Promise} a promise you can use "then" to know when it is complete.
+   */
+  move(pixelX,pixelY)
+  {
+      const _left=this.htmldiv.style.left;
+      const _top=this.htmldiv.style.top;
+      return animate((progress)=>{this.htmldiv.style.left = ''+(_left+progress*pixelX)+'px';this.htmldiv.style.top = ''+(_top+progress*pixelY)+'px';},200);
+  }
+  
+  /**
+   * moveTo a specific position
+   * @param   {number} pixelX  
+   * @param   {number} pixelY  
+   * @returns {Promise} a promise you can use "then" to know when it is complete.
+   */
+  moveTo(pixelX,pixelY)
+  {
+      const _left=this.htmldiv.style.left;
+      const _top=this.htmldiv.style.top;
+      return animate((progress)=>{this.htmldiv.style.left = ''+(_left+progress*pixelX)+'px';this.htmldiv.style.top = ''+(_top+progress*pixelY)+'px';},200);
+  }
+  
+  /**
+   * glideTo a specific position over time.
+   * @param   {number} pixelX  
+   * @param   {number} pixelY  
+   * @param   {number} milliseconds  
+   * @returns {Promise} a promise you can use "then" to know when it is complete.
+   */
+  glideTo(pixelX,pixelY,milliseconds)
+  {
+      const _left=this.htmldiv.style.left;
+      const _top=this.htmldiv.style.top;
+      return animate((progress)=>{this.htmldiv.style.left = ''+(_left+progress*pixelX)+'px';this.htmldiv.style.top = ''+(_top+progress*pixelY)+'px';},milliseconds);
+  }
+  
+  /**
+   * setyTo
+   * @param   {number} pixelY  
+   * @returns {Promise} a promise you can use "then" to know when it is complete.
+   */
+  setyTo(pixelY)
+  {
+      const _left=this.htmldiv.style.left;
+      const _top=this.htmldiv.style.top;
+      return animate((progress)=>{this.htmldiv.style.top = ''+(_top+progress*pixelY)+'px';},200);
+  }
+
+  /**
+   * setxTo
+   * @param   {number} pixelX  
+   * @returns {Promise} a promise you can use "then" to know when it is complete.
+   */
+  setxTo(pixelX)
+  {
+      const _left=this.htmldiv.style.left;
+      const _top=this.htmldiv.style.top;
+      return animate((progress)=>{this.htmldiv.style.left = ''+(_left+progress*pixelX)+'px';},200);
+  }
+  
 }
 
 
@@ -133,7 +196,7 @@ class Motion {
 <br class="clear">
 
 <footer>
-    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on Fri Sep 06 2024 07:24:53 GMT+0000 (Coordinated Universal Time) using the Minami theme.
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on Fri Sep 06 2024 07:37:54 GMT+0000 (Coordinated Universal Time) using the Minami theme.
 </footer>
 
 <script>prettyPrint();</script>
