@@ -176,15 +176,22 @@ class Controls{
    * @returns {Promise} a promise you can use "then" to know when it is complete.
    */
   static repeat(func,count){
+    console.log("repeat1");
     let i=0
     let _func=func;
     let _count=count;
     return new Promise((resolve, reject) => {
+      console.log("repeat2");
       const loopCode=function(){
+        console.log("repeat3");
         _func(i,_count);
         i=i+1;
         if(i<_count){
           setTimeout(loopCode,100);
+        }
+        else
+        {
+          resolve();
         }
       }
     });
