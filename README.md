@@ -46,7 +46,7 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
 /* these format the color and shap of each of your html building blocks */
 #mainarea{
  /* this sets an image as the background of main area */
- background-image: url(https://tinyurl.com/255hccs5);
+ background-image: url("https://gormanlearncode.github.io/learncode/images/24716919.jpg");
  background-size: cover;
  background-color: white;
  width:1000px;
@@ -83,8 +83,14 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
   border: 5px solid black;
   background-color: white;
   font-size: 40px;
+  text-align: center;
   position: relative;
   display: none;
+}
+#startbutton{
+  margin-left:40%;
+  margin-top:20px;
+  font-size: 40px;
 }
 ```
 10) Do the same again to adding “main.js”
