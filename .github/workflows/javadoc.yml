@@ -26,4 +26,4 @@ jobs:
         with:
           add: 'docs'
           message: Update JSDoc
-          committer_name: gormanlearncode
+          default_author: github_actions
