@@ -1,5 +1,5 @@
 # learncode
-A simple html, css and javascript tutorial, that you can do 100% in the browser with no extra tools. Dont worry to much, initially about understanding the html and css. Once you have published your own copy of this app you can start making chnages that will help you lean what is happening here.
+A simple html, css and javascript tutorial, that you can do 100% in the browser with no extra tools. Dont worry to much, initially about understanding the html and css. Once you have published your own copy of this app you can start making chnages that will help you lean what is happening here. The helper functions used are documented [[here]](https://gormanlearncode.github.io/learncode/docs/index.html)
 
 You can see this example running here: https://gormanlearncode.github.io/learncode/
 
