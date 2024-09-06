@@ -37,6 +37,31 @@ function animate(draw, duration,timing) {
   
     });
   });
-
-
 }
+
+class Motion {
+  constructor(htmldiv) {
+    if(htmldiv typeof === "string")
+    {
+      this.htmldiv=document.querySelector(htmldiv)
+    }
+    else
+    {
+      this.htmldiv=htmldiv;
+    }
+  }
+/**
+ * turnClockWise
+ */
+  turnClockWise(degrees)
+  {
+  }
+/**
+ * turnAnticlockwise
+ */
+  turnAnticlockwise(degrees)
+  {
+  }
+}
+
+
