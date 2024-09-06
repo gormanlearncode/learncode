@@ -16,277 +16,278 @@
  */
 function animate(draw, duration,timing) {
 
-  return new Promise((resolve, reject) => {
-    let start = performance.now();
-    if(!timing) timing=function(timeFraction){return timeFraction;}
-  
-    requestAnimationFrame(function animate(time) {
-      // timeFraction goes from 0 to 1
-      let timeFraction = (time - start) / duration;
-      if (timeFraction > 1) timeFraction = 1;
-  
-      // calculate the current animation state
-      let progress = timing(timeFraction)
-  
-      draw(progress); // draw it
-  
-      if (timeFraction < 1) {
-        requestAnimationFrame(animate);
-      }
-      else
-      {
-        resolve();
-      }
-  
-    });
-  });
-}
-
-/**
- * Sprite helps move a div object on the page. For example:
- * @example
- * const person = new Sprite("#personDiv");
- * person.turnClockWise(90);
- *
- */
-class Sprite {
-  /**
-   * Create a Sprite object.
-   * @param {object} htmldiv - The htmldiv object to move.
-   */
-  constructor(htmldiv) {
-    if(typeof htmldiv === "string")
-    {
-      this.htmldiv=document.querySelector(htmldiv);
-    }
-    else
-    {
-      this.htmldiv=htmldiv;
-    }
-  }
-/**
- * turnClockWise degrees  
- * @param   {number}
- * @returns {Promise} a promise you can use "then" to know when it is complete.
- */
-  turnClockWise(degrees)
-  {
-    return animate((progress)=>{this.htmldiv.style.transform = 'rotate('+(progress*degrees)+'deg)';},200);
-  }
-/**
- * turnAnticlockwise
- * @param   {number} degrees  
- * @returns {Promise} a promise you can use "then" to know when it is complete.
- */
-  turnAnticlockwise(degrees)
-  {
-    return animate((progress)=>{this.htmldiv.style.transform = 'rotate('+(-progress*degrees)+'deg)';},200);
-  }
-  /**
-   * move
-   * @param   {number} pixels  
-   * @returns {Promise} a promise you can use "then" to know when it is complete.
-   */
-  move(pixelX,pixelY)
-  {
-      const _left=this.htmldiv.style.left;
-      const _top=this.htmldiv.style.top;
-      return animate((progress)=>{this.htmldiv.style.left = ''+(_left+progress*pixelX)+'px';this.htmldiv.style.top = ''+(_top+progress*pixelY)+'px';},200);
-  }
-  
-  /**
-   * moveTo a specific position
-   * @param   {number} pixelX  
-   * @param   {number} pixelY  
-   * @returns {Promise} a promise you can use "then" to know when it is complete.
-   */
-  moveTo(pixelX,pixelY)
-  {
-      const _left=this.htmldiv.style.left;
-      const _top=this.htmldiv.style.top;
-      return animate((progress)=>{this.htmldiv.style.left = ''+(_left+progress*pixelX)+'px';this.htmldiv.style.top = ''+(_top+progress*pixelY)+'px';},200);
-  }
-  
-  /**
-   * glideTo a specific position over time.
-   * @param   {number} pixelX  
-   * @param   {number} pixelY  
-   * @param   {number} milliseconds  
-   * @returns {Promise} a promise you can use "then" to know when it is complete.
-   */
-  glideTo(pixelX,pixelY,milliseconds)
-  {
-      const _left=this.htmldiv.style.left;
-      const _top=this.htmldiv.style.top;
-      return animate((progress)=>{this.htmldiv.style.left = ''+(_left+progress*pixelX)+'px';this.htmldiv.style.top = ''+(_top+progress*pixelY)+'px';},milliseconds);
-  }
-  
-  /**
-   * setyTo
-   * @param   {number} pixelY  
-   * @returns {Promise} a promise you can use "then" to know when it is complete.
-   */
-  setyTo(pixelY)
-  {
-      const _left=this.htmldiv.style.left;
-      const _top=this.htmldiv.style.top;
-      return animate((progress)=>{this.htmldiv.style.top = ''+(_top+progress*pixelY)+'px';},200);
-  }
-
-  /**
-   * setxTo
-   * @param   {number} pixelX  
-   * @returns {Promise} a promise you can use "then" to know when it is complete.
-   */
-  setxTo(pixelX)
-  {
-      const _left=this.htmldiv.style.left;
-      const _top=this.htmldiv.style.top;
-      return animate((progress)=>{this.htmldiv.style.left = ''+(_left+progress*pixelX)+'px';},200);
-  }
-  
-}
-/**
- * Controls helps move a div object on the page.
- */
-class Controls{
-  /**
-   * Waits for some milliseconds, and calls the code in the "then" block.
-   * @example
-   * Controls.wait(1000).then(()=>{console.log("done");});
-   * @param   {number} milliseconds  
-   * @returns {Promise} a promise you can use "then" to know when it is complete.
-   */
-  static wait(milliseconds){
     return new Promise((resolve, reject) => {
-      setTimeout(()=>{resolve()},milliseconds);
-    });
-  }
-  /**
-   * Calls a given function, in a loop a number of times.
-   * @example
-   * let func=function(i,c){
-   *    console.log(`loop ${i} of ${c}`);
-   * };
-   * Controls.repeate(func,4).then((i,c)=>{
-   *    console.log("done");
-   * });
-   * @param   {function} func
-   * @param   {number} count  
-   * @param   {number} delay - [optional] defaults to 10ms
-   * @returns {Promise} a promise you can use "then" to know when it is complete.
-   */
-  static repeat(func,count,delay){
-    let i=0
-    let _func=func;
-    let _count=count;
-    let _delay=delay || 10;
-    return new Promise((resolve, reject) => {
-      const loopCode=function(){
-        _func(i,_count);
-        i=i+1;
-        if(i<_count){
-          setTimeout(loopCode,_delay);
+      let start = performance.now();
+      if(!timing) timing=function(timeFraction){return timeFraction;}
+    
+      requestAnimationFrame(function animate(time) {
+        // timeFraction goes from 0 to 1
+        let timeFraction = (time - start) / duration;
+        if (timeFraction > 1) timeFraction = 1;
+    
+        // calculate the current animation state
+        let progress = timing(timeFraction)
+    
+        draw(progress); // draw it
+    
+        if (timeFraction < 1) {
+          requestAnimationFrame(animate);
         }
         else
         {
           resolve();
         }
-      };
-      loopCode();
+    
+      });
     });
   }
-}
-/**
- * Backdrop helps manipulate a given background DIV
- * @example
- * const mainarea = new Sprite("#mainarea");
- * mainarea.addBackdrop("https://image.com");
- * mainarea.switchBackdropTo(0);
- *
- */
-class Backdrop{
+  
   /**
-   * Create a Sprite object.
-   * @param {object} htmldiv - The htmldiv object to move.
-   */
-  constructor(htmldiv) {
-    if(typeof htmldiv === "string")
-    {
-      this.htmldiv=document.querySelector(htmldiv);
-    }
-    else
-    {
-      this.htmldiv=htmldiv;
-    }
-    this.backdrops=[];
-    if(this.htmldiv.style.backgroundImage)
-    {
-      this.backdrops.push(this.htmldiv.style.backgroundImage.replace(/url\(('|")(.*)('|")\).*/,"$1"));
-    }
-  }
-  /**
-   * Adds an image to the end of a list of backdrops.
+   * Sprite helps move a div object on the page. For example:
    * @example
-   * mainarea.addBackdrop("https://image.com");
-   * @param   {string} imageURI  
+   * const person = new Sprite("#personDiv");
+   * person.turnClockWise(90);
+   *
    */
-  function addBackdrop(imageURI)
-  {
-    this.backdrops.push(imageURI);
-  }
-  /**
-   * Switch backdrop to a specific index of a list of backdrops, starting at zero.
-   * @example
-   * mainarea.switchBackdropToIndex(0);
-   * @param   {number} index  
-   */
-  function switchBackdropToIndex(index)
-  {
-    if(index>=this.backdrops.length) return;
-    this.htmldiv.style.backgroundImage='url("'+this.backdrops[index]+'")';
-  }
-  /**
-   * Next backdrop to a specific index of a list of backdrops, starting at zero.
-   * @example
-   * mainarea.switchBackdropToIndex(0);
-   * @param   {number} index  
-   */
-  function nextBackdrop()
-  {
-    if(index>=this.backdrops.length) return;
-    this.backdrops[index];
-  }
-
-  /**
-   * Change the color  [TBC]
-   * @example
-   * mainarea.changeColor("red",0);
-   * @param   {string} colour  
-   * @param   {number} effectBy  
-   */
-  function changeColor(color,effectBy)
-  {
-
-  }
+  class Sprite {
     /**
-   * Set the color  [TBC]
-   * @example
-   * mainarea.setColor("red");
-   * @param   {string} color
+     * Create a Sprite object.
+     * @param {object} htmldiv - The htmldiv object to move.
+     */
+    constructor(htmldiv) {
+      if(typeof htmldiv === "string")
+      {
+        this.htmldiv=document.querySelector(htmldiv);
+      }
+      else
+      {
+        this.htmldiv=htmldiv;
+      }
+    }
+  /**
+   * turnClockWise degrees  
+   * @param   {number}
+   * @returns {Promise} a promise you can use "then" to know when it is complete.
    */
-  function setColor(color)
-  {
-
+    turnClockWise(degrees)
+    {
+      return animate((progress)=>{this.htmldiv.style.transform = 'rotate('+(progress*degrees)+'deg)';},200);
+    }
+  /**
+   * turnAnticlockwise
+   * @param   {number} degrees  
+   * @returns {Promise} a promise you can use "then" to know when it is complete.
+   */
+    turnAnticlockwise(degrees)
+    {
+      return animate((progress)=>{this.htmldiv.style.transform = 'rotate('+(-progress*degrees)+'deg)';},200);
+    }
+    /**
+     * move
+     * @param   {number} pixels  
+     * @returns {Promise} a promise you can use "then" to know when it is complete.
+     */
+    move(pixelX,pixelY)
+    {
+        const _left=this.htmldiv.style.left;
+        const _top=this.htmldiv.style.top;
+        return animate((progress)=>{this.htmldiv.style.left = ''+(_left+progress*pixelX)+'px';this.htmldiv.style.top = ''+(_top+progress*pixelY)+'px';},200);
+    }
+    
+    /**
+     * moveTo a specific position
+     * @param   {number} pixelX  
+     * @param   {number} pixelY  
+     * @returns {Promise} a promise you can use "then" to know when it is complete.
+     */
+    moveTo(pixelX,pixelY)
+    {
+        const _left=this.htmldiv.style.left;
+        const _top=this.htmldiv.style.top;
+        return animate((progress)=>{this.htmldiv.style.left = ''+(_left+progress*pixelX)+'px';this.htmldiv.style.top = ''+(_top+progress*pixelY)+'px';},200);
+    }
+    
+    /**
+     * glideTo a specific position over time.
+     * @param   {number} pixelX  
+     * @param   {number} pixelY  
+     * @param   {number} milliseconds  
+     * @returns {Promise} a promise you can use "then" to know when it is complete.
+     */
+    glideTo(pixelX,pixelY,milliseconds)
+    {
+        const _left=this.htmldiv.style.left;
+        const _top=this.htmldiv.style.top;
+        return animate((progress)=>{this.htmldiv.style.left = ''+(_left+progress*pixelX)+'px';this.htmldiv.style.top = ''+(_top+progress*pixelY)+'px';},milliseconds);
+    }
+    
+    /**
+     * setyTo
+     * @param   {number} pixelY  
+     * @returns {Promise} a promise you can use "then" to know when it is complete.
+     */
+    setyTo(pixelY)
+    {
+        const _left=this.htmldiv.style.left;
+        const _top=this.htmldiv.style.top;
+        return animate((progress)=>{this.htmldiv.style.top = ''+(_top+progress*pixelY)+'px';},200);
+    }
+  
+    /**
+     * setxTo
+     * @param   {number} pixelX  
+     * @returns {Promise} a promise you can use "then" to know when it is complete.
+     */
+    setxTo(pixelX)
+    {
+        const _left=this.htmldiv.style.left;
+        const _top=this.htmldiv.style.top;
+        return animate((progress)=>{this.htmldiv.style.left = ''+(_left+progress*pixelX)+'px';},200);
+    }
+    
   }
   /**
-   * Clear the graphics effect [TBC]
-   * @example
-   * mainarea.clearGraphicsEffect();
-   * @param   {string} color
+   * Controls helps move a div object on the page.
    */
-  function clearGraphicsEffect()
-  {
-
+  class Controls{
+    /**
+     * Waits for some milliseconds, and calls the code in the "then" block.
+     * @example
+     * Controls.wait(1000).then(()=>{console.log("done");});
+     * @param   {number} milliseconds  
+     * @returns {Promise} a promise you can use "then" to know when it is complete.
+     */
+    static wait(milliseconds){
+      return new Promise((resolve, reject) => {
+        setTimeout(()=>{resolve()},milliseconds);
+      });
+    }
+    /**
+     * Calls a given function, in a loop a number of times.
+     * @example
+     * let func=function(i,c){
+     *    console.log(`loop ${i} of ${c}`);
+     * };
+     * Controls.repeate(func,4).then((i,c)=>{
+     *    console.log("done");
+     * });
+     * @param   {function} func
+     * @param   {number} count  
+     * @param   {number} delay - [optional] defaults to 10ms
+     * @returns {Promise} a promise you can use "then" to know when it is complete.
+     */
+    static repeat(func,count,delay){
+      let i=0
+      let _func=func;
+      let _count=count;
+      let _delay=delay || 10;
+      return new Promise((resolve, reject) => {
+        const loopCode=function(){
+          _func(i,_count);
+          i=i+1;
+          if(i<_count){
+            setTimeout(loopCode,_delay);
+          }
+          else
+          {
+            resolve();
+          }
+        };
+        loopCode();
+      });
+    }
   }
-}
+  /**
+   * Backdrop helps manipulate a given background DIV
+   * @example
+   * const mainarea = new Sprite("#mainarea");
+   * mainarea.addBackdrop("https://image.com");
+   * mainarea.switchBackdropTo(0);
+   *
+   */
+  class Backdrop{
+    /**
+     * Create a Sprite object.
+     * @param {object} htmldiv - The htmldiv object to move.
+     */
+    constructor(htmldiv) {
+      if(typeof htmldiv === "string")
+      {
+        this.htmldiv=document.querySelector(htmldiv);
+      }
+      else
+      {
+        this.htmldiv=htmldiv;
+      }
+      this.backdrops=[];
+      if(this.htmldiv.style.backgroundImage)
+      {
+        this.backdrops.push(this.htmldiv.style.backgroundImage.replace(/url\(('|")(.*)('|")\).*/,"$1"));
+      }
+    }
+    /**
+     * Adds an image to the end of a list of backdrops.
+     * @example
+     * mainarea.addBackdrop("https://image.com");
+     * @param   {string} imageURI  
+     */
+    addBackdrop(imageURI)
+    {
+      this.backdrops.push(imageURI);
+    }
+    /**
+     * Switch backdrop to a specific index of a list of backdrops, starting at zero.
+     * @example
+     * mainarea.switchBackdropToIndex(0);
+     * @param   {number} index  
+     */
+    switchBackdropToIndex(index)
+    {
+      if(index>=this.backdrops.length) return;
+      this.htmldiv.style.backgroundImage='url("'+this.backdrops[index]+'")';
+    }
+    /**
+     * Next backdrop to a specific index of a list of backdrops, starting at zero.
+     * @example
+     * mainarea.switchBackdropToIndex(0);
+     * @param   {number} index  
+     */
+    nextBackdrop()
+    {
+      if(index>=this.backdrops.length) return;
+      this.backdrops[index];
+    }
+  
+    /**
+     * Change the color  [TBC]
+     * @example
+     * mainarea.changeColor("red",0);
+     * @param   {string} colour  
+     * @param   {number} effectBy  
+     */
+    changeColor(color,effectBy)
+    {
+  
+    }
+      /**
+     * Set the color  [TBC]
+     * @example
+     * mainarea.setColor("red");
+     * @param   {string} color
+     */
+    setColor(color)
+    {
+  
+    }
+    /**
+     * Clear the graphics effect [TBC]
+     * @example
+     * mainarea.clearGraphicsEffect();
+     * @param   {string} color
+     */
+    clearGraphicsEffect()
+    {
+  
+    }
+  }
+  
