@@ -27,4 +27,3 @@ jobs:
           github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           add: 'docs'
           message: Update JSDoc
-          default_author: github_actions
