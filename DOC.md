@@ -1,6 +1,6 @@
-##Gorman Learn Code
+## Gorman Learn Code
 
-###Helper Functions
+### Helper Functions
 
 Some simple functions that you can use in your code.
 
