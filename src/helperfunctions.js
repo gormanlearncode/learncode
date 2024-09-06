@@ -175,7 +175,7 @@ class Controls{
    * @param   {number} milliseconds  
    * @returns {Promise} a promise you can use "then" to know when it is complete.
    */
-  static repeate(func,count){
+  static repeat(func,count){
     let i=0
     let _func=func;
     return new Promise((resolve, reject) => {
