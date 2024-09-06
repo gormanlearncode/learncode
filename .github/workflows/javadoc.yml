@@ -12,7 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
       - name: Build
         uses: andstor/jsdoc-action@v1
         with:
