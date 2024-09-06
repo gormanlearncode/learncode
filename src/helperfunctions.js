@@ -172,19 +172,21 @@ class Controls{
    *    console.log("done");
    * });
    * @param   {function} func
-   * @param   {number} milliseconds  
+   * @param   {number} count  
+   * @param   {number} delay - [optional] defaults to 100ms
    * @returns {Promise} a promise you can use "then" to know when it is complete.
    */
-  static repeat(func,count){
+  static repeat(func,count,delay){
     let i=0
     let _func=func;
     let _count=count;
+    let _delay=delay || 100;
     return new Promise((resolve, reject) => {
       const loopCode=function(){
         _func(i,_count);
         i=i+1;
         if(i<_count){
-          setTimeout(loopCode,100);
+          setTimeout(loopCode,_delay);
         }
         else
         {
