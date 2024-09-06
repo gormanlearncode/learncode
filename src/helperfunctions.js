@@ -50,9 +50,9 @@ class Motion {
    * @param {object} htmldiv - The htmldiv object to move.
    */
   constructor(htmldiv) {
-    if(htmldiv typeof === "string")
+    if(typeof htmldiv === "string")
     {
-      this.htmldiv=document.querySelector(htmldiv)
+      this.htmldiv=document.querySelector(htmldiv);
     }
     else
     {
