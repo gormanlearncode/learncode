@@ -1,7 +1,5 @@
-/*
 /**
- * Does something nifty.
- * for example, the below will move circle from 20px to 300px over and over.
+ * Animates an object over a named period of time.
  * 
  * bounceball(){ 
  *     animate(function(progress){
