@@ -146,5 +146,44 @@ class Motion {
   }
   
 }
-
+class Controls{
+  /**
+   * Waits for some milliseconds, and calls the code in the "then" block.
+   * @example
+   * Controls.wait(1000).then(()=>{console.log("done");});
+   * @param   {number} milliseconds  
+   * @returns {Promise} a promise you can use "then" to know when it is complete.
+   */
+  static async wait(milliseconds){
+    return new Promise((resolve, reject) => {
+      setTimeout(()=>{resolve()},milliseconds);
+    });
+  }
+    /**
+   * Calls a given function, in a loop a number of times.
+   * @example
+   * let func=function(i,c){
+   *    console.log(`loop ${i} of ${c}`);
+   * };
+   * Controls.repeate(func,4).then((i,c)=>{
+   *    console.log("done");
+   * });
+   * @param   {function} func
+   * @param   {number} milliseconds  
+   * @returns {Promise} a promise you can use "then" to know when it is complete.
+   */
+  static repeate(func,count){
+    let i=0
+    let _func=func;
+    return new Promise((resolve, reject) => {
+      const loopCode=function(){
+        _func(i,count);
+        i=i+1;
+        if(i<count){
+          setTimeout(loopCode,100);
+        }
+      }
+    });
+  }
+}
 
