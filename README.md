@@ -1,5 +1,7 @@
 # learncode
-A simple html, css and javascript tutorial, that you can do 100% in the browser with no extra tools. Dont worry to much, initially about understanding the html and css. Once you have published your own copy of this app you can start making chnages that will help you lean what is happening here. The helper functions used here and others, are documented [here](https://gormanlearncode.github.io/learncode/docs/index.html).
+A simple html, css and javascript tutorial, that you can do 100% in the browser with no extra tools. Dont worry to much, initially about understanding the html and css. Once you have published your own copy of this app you can start making changes that will help you lean what is happening here. The helper functions used here and others, are documented [here](https://gormanlearncode.github.io/learncode/docs/index.html).
+
+# Tutorial 1 - Make a simple webpage containging a javascript app.
 
 You can see this example running here: https://gormanlearncode.github.io/learncode/
 
@@ -20,7 +22,7 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
   <!-- this imports all your formatting from the css file -->
   <link rel="stylesheet" type="text/css" href="styles.css">
   <!-- this imports some helper functions you can use in your code -->
-  <script type="text/javascript" src="https://tinyurl.com/462k3dx7"></script>
+  <script type="text/javascript" src=https://tinyurl.com/462k3dx7></script>
 </head>
   <body>
     <h1>Learncode Example App</h1>
@@ -43,7 +45,7 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
 /* these format the color and shap of each of your html building blocks */
 #mainarea{
  /* this sets an image as the background of main area */
- background-image: url("https://tinyurl.com/255hccs5");
+ background-image: url(https://tinyurl.com/255hccs5);
  background-size: cover;
  background-color: white;
  width:1000px;
@@ -134,14 +136,15 @@ startbutton.onclick=function(){
 }
 
 ```
-11) Click **Settings**, at the top of the page with the sproket icon.
+11) Click **Settings**, at the top of the page with the sprocket icon.
 12) Select **Pages** in the left side tabs
 13) Under build and deploy, under **Branch** where it says **None** select main, and press Save.
-14) refresh the site with your browers button several times, until you see at the top “**Your site is live at** https://your page.com”
+14) refresh the site with your browsers button several times, until you see at the top “**Your site is live at** https://your page.com”
 15) Click visit site.
 16) You have deployed a web page with code that moves a square!
 17) Go to setting Pages to open your web page.
-18) When you make changes, old copiues of your page will be cached in your browswer. "Open Link in new Incognito Widow" [e.g.](https://gormanlearncode.github.io/learncode/images/open%20incognito.png) will force it to refresh your page.
-19) In the top right of your browser, click on the tripple dots, select more tools, select developer tools.
+18) When you make changes, old copies of your page will be cached in your browser. "Open Link in new Incognito Widow" [e.g.](https://gormanlearncode.github.io/learncode/images/open%20incognito.png) will force it to refresh your page.
+19) In the top right of your browser, click on the triple dots, select more tools, select developer tools.
 20) Select the **Console** [e.g.](https://gormanlearncode.github.io/learncode/images/example%20console.png) tab to see the debug [e.g.](https://gormanlearncode.github.io/learncode/images/debug%20menu.png) comments from you code. (or errors if you have errors)
 21) Learn all you need to know here https://www.w3schools.com/js/ and by asking google for examples.
+![image](https://github.com/user-attachments/assets/77f84aff-63c7-49b0-98aa-1f07fd87e735)
