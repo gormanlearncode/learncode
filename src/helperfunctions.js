@@ -47,6 +47,7 @@ function animate(draw, duration,timing) {
  * @example
  * const person = new Motion("#personDiv");
  * person.turnClockWise(90);
+ *
  */
 class Motion {
   /**
