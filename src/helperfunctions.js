@@ -45,6 +45,10 @@ function animate(draw, duration,timing) {
  *      person.turnClockWise(90);
  */
 class Motion {
+  /**
+   * Create a Motion object.
+   * @param {object} htmldiv - The htmldiv object to move.
+   */
   constructor(htmldiv) {
     if(htmldiv typeof === "string")
     {
