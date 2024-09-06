@@ -88,7 +88,7 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
   display: none;
 }
 #startbutton{
-  margin-left:40%;
+  margin-left:20%;
   margin-top:20px;
   font-size: 40px;
 }
