@@ -39,6 +39,11 @@ function animate(draw, duration,timing) {
   });
 }
 
+/**
+ * Motion helps move a div object on the page.
+ * e.g. const person = Motion("#personDiv");
+ *      person.turnClockWise(90);
+ */
 class Motion {
   constructor(htmldiv) {
     if(htmldiv typeof === "string")
