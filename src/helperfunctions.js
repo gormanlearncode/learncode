@@ -43,9 +43,9 @@ function animate(draw, duration,timing) {
 }
 
 /**
- * Motion helps move a div object on the page. For example:
+ * Sprite helps move a div object on the page. For example:
  * @example
- * const person = new Motion("#personDiv");
+ * const person = new Sprite("#personDiv");
  * person.turnClockWise(90);
  *
  */
@@ -200,14 +200,14 @@ class Controls{
 /**
  * Backdrop helps manipulate a given background DIV
  * @example
- * const mainarea = new Motion("#mainarea");
+ * const mainarea = new Sprite("#mainarea");
  * mainarea.addBackdrop("https://image.com");
  * mainarea.switchBackdropTo(0);
  *
  */
 class Backdrop{
   /**
-   * Create a Motion object.
+   * Create a Sprite object.
    * @param {object} htmldiv - The htmldiv object to move.
    */
   constructor(htmldiv) {
