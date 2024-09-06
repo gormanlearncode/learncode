@@ -146,6 +146,9 @@ class Motion {
   }
   
 }
+/**
+ * Controls helps move a div object on the page.
+ */
 class Controls{
   /**
    * Waits for some milliseconds, and calls the code in the "then" block.
@@ -159,7 +162,7 @@ class Controls{
       setTimeout(()=>{resolve()},milliseconds);
     });
   }
-    /**
+  /**
    * Calls a given function, in a loop a number of times.
    * @example
    * let func=function(i,c){
