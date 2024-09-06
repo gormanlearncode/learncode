@@ -66,6 +66,7 @@ class Motion {
  */
   turnClockWise(degrees)
   {
+    return animate((progress)=>{this.htmldiv.style.transform = 'rotate('+(progress*degrees)+'deg)';},200)
   }
 /**
  * turnAnticlockwise
@@ -74,6 +75,7 @@ class Motion {
  */
   turnAnticlockwise(degrees)
   {
+    return animate((progress)=>{this.htmldiv.style.transform = 'rotate('+(-progress*degrees)+'deg)';},200)
   }
 }
 
