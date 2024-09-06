@@ -220,6 +220,10 @@ class Backdrop{
       this.htmldiv=htmldiv;
     }
     this.backdrops=[];
+    if(this.htmldiv.style.backgroundImage)
+    {
+      this.backdrops.push(this.htmldiv.style.backgroundImage.replace(/url\(('|")(.*)('|")\).*/,"$1"));
+    }
   }
   /**
    * Adds an image to the end of a list of backdrops.
@@ -240,6 +244,49 @@ class Backdrop{
   function switchBackdropToIndex(index)
   {
     if(index>=this.backdrops.length) return;
+    this.htmldiv.style.backgroundImage='url("'+this.backdrops[index]+'")';
+  }
+  /**
+   * Next backdrop to a specific index of a list of backdrops, starting at zero.
+   * @example
+   * mainarea.switchBackdropToIndex(0);
+   * @param   {number} index  
+   */
+  function nextBackdrop()
+  {
+    if(index>=this.backdrops.length) return;
     this.backdrops[index];
+  }
+
+  /**
+   * Change the color  [TBC]
+   * @example
+   * mainarea.changeColor("red",0);
+   * @param   {string} colour  
+   * @param   {number} effectBy  
+   */
+  function changeColor(color,effectBy)
+  {
+
+  }
+    /**
+   * Set the color  [TBC]
+   * @example
+   * mainarea.setColor("red");
+   * @param   {string} color
+   */
+  function setColor(color)
+  {
+
+  }
+  /**
+   * Clear the graphics effect [TBC]
+   * @example
+   * mainarea.clearGraphicsEffect();
+   * @param   {string} color
+   */
+  function clearGraphicsEffect()
+  {
+
   }
 }
