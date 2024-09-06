@@ -12,6 +12,8 @@ function runloop(){
   var newPosition=20+count*20;
   console.log("DEBUG: I am moving the square to "+newPosition+"px");
   square.style.left=""+newPosition+"px";
+  const person = new Motion(square);
+  person.turnClockWise(30);
   count=count+1;
   if(count>40){
     count=0;
