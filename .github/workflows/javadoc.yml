@@ -13,15 +13,17 @@ jobs:
         uses: andstor/jsdoc-action@v1
         with:
           source_dir: ./src
-          output_dir: ./out
+          output_dir: ./docs
           template: minami
       - name: Output folders with base path
-        run: find ./out | grep html
+        run: find ./docs | grep html
       - name: Output folders with base path
-        run: cat ./out/index.html
+        run: cat ./docs/index.html
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./out
-          destination_dir: docs
+        run: |
+          git config --local user.email "craig.gorman.au@gmail.com"
+          git config --local user.name "gormanlearncode"
+          git add ./docs
+          git commit -m "Add changes"
+          git pull --rebase
+          git push
