@@ -2,22 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Global</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Global - Documentation</title>
 
-    <script src="scripts/prettify/prettify.js"> </script>
-    <script src="scripts/prettify/lang-css.js"> </script>
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
     <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
 </head>
-
 <body>
 
-<div id="main">
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
 
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Controls.html">Controls</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Controls.html#.repeate">repeate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Controls.html#.wait">wait</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Motion.html">Motion</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Motion.html#glideTo">glideTo</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Motion.html#move">move</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Motion.html#moveTo">moveTo</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Motion.html#setxTo">setxTo</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Motion.html#setyTo">setyTo</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Motion.html#turnAnticlockwise">turnAnticlockwise</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Motion.html#turnClockWise">turnClockWise</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#animate">animate</a></span></li>
+</nav>
+
+<div id="main">
+    
     <h1 class="page-title">Global</h1>
+    
 
     
 
@@ -28,7 +41,9 @@
 
 <header>
     
-        <h2></h2>
+        <h2>
+        
+        </h2>
         
     
 </header>
@@ -87,9 +102,7 @@
 
     
 
-    
-
-    
+     
 
     
 
@@ -100,12 +113,11 @@
 
         
             
+<div class="section-method">
 
     
 
-    
     <h4 class="name" id="animate"><span class="type-signature"></span>animate<span class="signature">(draw, duration, timing)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-    
 
     
 
@@ -114,111 +126,6 @@
 <div class="description">
     Animates an object over a named period of time. For example, the below will move the circle from 20->320px over 100ms.
 </div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>draw</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">A function that is called to animate your object, it contains a float, between 0-1, 
-                    used in your code to set how far your animation should move as a ration of the total move
-                    you want to make.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>duration</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">How long should the animation last.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>timing</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">an [optional] function that can manipulate the timing of the loop [default]=liniar.</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
 
 
 
@@ -272,48 +179,163 @@
 
 
 
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>draw</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                A function that is called to animate your object, it contains a float, between 0-1, 
+                    used in your code to set how far your animation should move as a ration of the total move
+                    you want to make.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>duration</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>number</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                How long should the animation last.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>timing</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                an [optional] function that can manipulate the timing of the loop [default]=liniar.
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+<div class="section-returns">
 <h5>Returns:</h5>
 
         
-<div class="param-desc">
-    a promise you can use "then" to know when it is complete.
-</div>
 
-
-
-<dl>
+<dl class="param-type">
     <dt>
-        Type
+        Type:
     </dt>
     <dd>
         
-<span class="param-type">Promise</span>
+<span class="param-type"><code>Promise</code></span>
 
 
     </dd>
 </dl>
 
+
+<div class="param-desc">
+    a promise you can use "then" to know when it is complete.
+</div>
+
     
+</div>
 
 
 
+<div class="section-examples">
+<h5>Example</h5>
 
-    <h5>Example</h5>
-    
     <pre class="prettyprint"><code>animate(function(progress){ 
    circle.style.top = 20 + progress * 300 + 'px';
 },1000).then( function(){
    console.log("done");
 });</code></pre>
 
+</div>
 
-
+</div>
         
     
 
@@ -329,17 +351,13 @@
 
 </div>
 
-<nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Controls.html">Controls</a></li><li><a href="Motion.html">Motion</a></li></ul><h3>Global</h3><ul><li><a href="global.html#animate">animate</a></li></ul>
-</nav>
-
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Fri Sep 06 2024 11:51:12 GMT+0000 (Coordinated Universal Time)
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on Fri Sep 06 2024 11:51:53 GMT+0000 (Coordinated Universal Time) using the Minami theme.
 </footer>
 
-<script> prettyPrint(); </script>
-<script src="scripts/linenumber.js"> </script>
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
 </body>
 </html>
