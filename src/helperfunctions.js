@@ -173,14 +173,14 @@ class Controls{
    * });
    * @param   {function} func
    * @param   {number} count  
-   * @param   {number} delay - [optional] defaults to 100ms
+   * @param   {number} delay - [optional] defaults to 10ms
    * @returns {Promise} a promise you can use "then" to know when it is complete.
    */
   static repeat(func,count,delay){
     let i=0
     let _func=func;
     let _count=count;
-    let _delay=delay || 100;
+    let _delay=delay || 10;
     return new Promise((resolve, reject) => {
       const loopCode=function(){
         _func(i,_count);
