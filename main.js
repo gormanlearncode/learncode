@@ -24,6 +24,8 @@ function runloop(){
   }
 }
 
+Controls.repeat((i,c)=>{console.log(`${i} of ${cf}`)}):
+
 
 //this is a more complicated example function. It calls the animate function, passing a function that moves the circle 
 //down for 1000ms 'then' when that is done moves it up for 1000ms, then calls the function again and again and again.
