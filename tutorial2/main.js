@@ -6,7 +6,7 @@ async function* whenLoaded()
     backdrop.addSprite(sprite);
     sprite.moveTo(100,100);
     let count=0;
-    for(var i=0;i<10;i++)
+    for(var i=0;i<1000;i++)
     {
         await sprite.move(10);
         await sprite.turnClockWise(10);
