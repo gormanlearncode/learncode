@@ -17,5 +17,8 @@ function* whenLoaded()
 console.log("whenLoaded");
 
 window.onload = function() {
-    whenLoaded();
+    var g=whenLoaded();
+    animate(()=>{
+        g.next();
+    },3000);
 }
