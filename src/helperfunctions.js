@@ -122,6 +122,8 @@ class Sprite {
    * @returns {Promise} a promise you can use "then" to know when it is complete.
    */
   moveTo(pixelX, pixelY) {
+    console.log(this.htmldiv.style.left);
+    console.log(parseInt(this.htmldiv.style.left));
     const _left = parseInt(this.htmldiv.style.left);
     const _top = parseInt(this.htmldiv.style.top);
     console.log("this.htmldiv.style.left = " + (_left + pixelX) + "px");
