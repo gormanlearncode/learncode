@@ -265,6 +265,7 @@ class Backdrop {
     if(height) backdrop.htmldiv.style.height = `${height}px`;
     if(width) backdrop.htmldiv.style.width = `${width}px`;
     backdrop.htmldiv.style.overflow="hidden";
+    backdrop.htmldiv.style.backgroundSize = "contain";
     document.body.append(backdrop.htmldiv);
     return backdrop;
   }
