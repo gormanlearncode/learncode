@@ -1,7 +1,7 @@
 console.log("start");
 var sprite = Sprite.create({image:"../tutorial3/images/squirrel.png",width:100,height:100});
 var backdrop = new Backdrop("#backdrop");
-backdrop.htmldiv.style.backgroundImage="url('../images/24716919.jpg'");
+backdrop.htmldiv.style.backgroundImage="url('../images/24716919.jpg')";
 backdrop.htmldiv.style.backgroundColor="yellow";
 backdrop.htmldiv.style.width=1000;
 backdrop.htmldiv.style.height=900;
