@@ -118,11 +118,8 @@ class Sprite {
    * @param   {number} pixelY  
    */
   moveTo(pixelX, pixelY) {
-    console.log(this.htmldiv.style.left || "0px");
-    console.log(parseInt(this.htmldiv.style.left || "0px"));
     const _left = parseInt(this.htmldiv.style.left || "0px") || 0;
     const _top = parseInt(this.htmldiv.style.top || "0px") || 0;
-    console.log("this.htmldiv.style.left = " + (_left + pixelX) + "px");
     this.htmldiv.style.left = "" + pixelX + "px"; 
     this.htmldiv.style.top = "" + pixelY + "px";
   }
