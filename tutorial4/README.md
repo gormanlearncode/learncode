@@ -8,7 +8,7 @@ Notice in the code how you can reference images in parrent directories using **"
 
 Notice that the code is getting very long, beacuse it is creating all the **Div** and **Button** tags and setting all their styles, from code. We need to start using the html and css again, or our code will be 90% style formating and only 10% logic.
 
-**[demo here](https://gormanlearncode.github.io/learncode/tutorial4/)** remember to get used to right click, **Open link in Incognito Window** it will force a refresh if there are any chnages.
+**[demo here](https://gormanlearncode.github.io/learncode/tutorial4/)** remember to get used to right click, **Open link in Incognito Window** it will force a refresh if there are any changes.
 
 index.html
 ```html
