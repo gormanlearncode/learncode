@@ -4,11 +4,12 @@ var backdrop = Backdrop.create({backgroundColor:"yellow",width:800,height:400});
 backdrop.addSprite(sprite);
 sprite.moveTo(10,100);
 async function run(){
+     
+     sprite.turnClockwise(10);
      for(let i=0;i<20;i++)
      {
           let x=10+i*10;
           sprite.move(10);
-          sprite.turnClockwise(1);
           await Controls.wait(1000);
      }
      for(let i=0;i<20;i++) 
