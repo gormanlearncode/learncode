@@ -252,6 +252,9 @@ class Backdrop {
     if (this.htmldiv.style.backgroundImage) {
       this.backdrops.push(this.htmldiv.style.backgroundImage.replace(/url\(('|")(.*)('|")\).*/, "$1"));
     }
+    if (!this.htmldiv.style.textAlign) {
+      this.htmldiv.style.textAlign = "left";
+    }
   }
   /**
   * create 
