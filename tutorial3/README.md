@@ -36,10 +36,9 @@ async function run(){
      console.log("end");
 }
 let button1=document.createElement("button");
-document.innerText="RUN";
-document.body.append(button1);
+button1.innerText="RUN";
 button1.onclick=run;
-
+document.body.append(button1);ton1.onclick=run;
 ```
 Try creating this app yourself. In your github repository create new files as follow:
 1) name = **tutorial/index.html** with the html above.
@@ -56,13 +55,13 @@ This changes adds a name to the button like this \<button\>RUN\</button\>
 ```javascript
 document.innerText="RUN";
 ```
-This adds the generated html to the actual html document (at the end before \</body\> tag)
-```javascript
-document.body.append(button1);
-```
 This assign a function to call when the button is pressed.
 ```javascript
 button1.onclick=run;
+```
+This adds the generated html to the actual html document (at the end before \</body\> tag)
+```javascript
+document.body.append(button1);
 ```
 Notice that I moved the below, outside the run() function. Otherwise they would not be called until the button is pressed.
 ```javascript
