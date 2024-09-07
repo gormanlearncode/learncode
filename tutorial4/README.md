@@ -10,6 +10,7 @@ Notice that the code is getting very long, beacuse it is creating all the **Div*
 
 [demo here](https://gormanlearncode.github.io/learncode/tutorial4/)
 
+index.html
 ```html
 <!doctype html>
 <head>
@@ -36,7 +37,17 @@ Notice that the code is getting very long, beacuse it is creating all the **Div*
 </body>
 </html>
 ```
-
+styles.css
+```css
+table {
+  border: 1px solid;
+}
+th{
+    background-color: #505050;
+    color: #fff;
+}
+```
+main.js
 ```javascript
 console.log("start");
 var sprite = Sprite.create({image:"../tutorial3/images/squirrel.png",width:100,height:100});
