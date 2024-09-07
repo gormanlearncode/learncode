@@ -2,8 +2,7 @@
 
 In tutorial 1, we used html "div" tags to create objects in the browser that we could format, shape and move. You can also create then from code. The helper function **Sprite.create** and **Backdrop.create**, create div tags and add them to the html document. Below is the minimum tags required to create a simple app.
 
-
-[demo here](https://gormanlearncode.github.io/learncode/tutorial2/)
+**[demo here](https://gormanlearncode.github.io/learncode/tutorial2/)** remember to get used to right click, **Open link in Incognito Window** it will force a refresh if there are any changes.
 
 ```html
 
