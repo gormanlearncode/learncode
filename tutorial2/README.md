@@ -37,10 +37,16 @@ async function run(){
 run();
 ```
 Try creating this app yourself. In your github repository create new files as follow:
-1) name = **tutorial2/index.html** with the html above.
-2) name = **tutorial2/main.js** with the javascript above.
-3) name = **tutorial2/images/README.md** you can check this in empty. It is just to create the images directory.
-4) Upload into the images directory, a file named = **squirrel.png** you can download my image from [here](https://gormanlearncode.github.io/learncode/tutorial2/images/squirrel.png) and upload it to your github.
+1) name = **tutorial2/README.md** this can be empty, but I suggest you put the following. Remember to change "your-username" to your username.
+```
+### Tutorial 2
+[demo app](https://your-username.github.io/webapp/tutorial2
+```
+3) name = **tutorial2/index.html** with the html above.
+4) name = **tutorial2/main.js** with the javascript above.
+5) name = **tutorial2/images/README.md** you can check this in empty. It is just to create the images directory.
+6) Upload into the images directory, a file named = **squirrel.png** you can download my image from [here](https://gormanlearncode.github.io/learncode/tutorial2/images/squirrel.png) and upload it to your github.
+
 
 ### Please explain?
 
