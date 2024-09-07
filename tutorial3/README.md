@@ -64,4 +64,9 @@ This assign a function to call when the button is pressed.
 ```javascript
 button1.onclick=run;
 ```
-
+Notice that I moved the below, outside the run() function. Otherwise they would not be called until the button is pressed.
+```javascript
+var sprite = Sprite.create({image:"images/squirrel.png",width:100,height:100});
+var backdrop = Backdrop.create({backgroundColor:"yellow",width:800,height:400});
+backdrop.addSprite(sprite);
+```
