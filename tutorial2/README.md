@@ -1,3 +1,18 @@
 ### Tutorial 2
 
 [demo here](https://gormanlearncode.github.io/learncode/tutorial2/)
+
+```html
+
+<!-- You must have -->
+
+<!doctype html>
+<body>
+    <h1>Tutorial 2</h1>
+    <p>Minimal HTML and CSS. See how you can do almost everything from code. The two mandatory items in html are, the helper functions import and the reference to your code on man.js.</p>
+    <script type="text/javascript" src="https://tinyurl.com/462k3dx7"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
+
+```
