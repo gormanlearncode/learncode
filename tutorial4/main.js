@@ -11,7 +11,7 @@ async function run(){
           sprite.turnClockwise(10);
           await Controls.wait(1000);
      }
-     for(let i=0;i<20;i++)
+     for(let i=0;i<20;i++) 
      {
           let x=10+i*10;
           sprite.move(10);
