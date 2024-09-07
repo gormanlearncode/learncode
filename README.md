@@ -1,7 +1,7 @@
 # learncode
-A simple html, css and javascript tutorial, that you can do 100% in the browser with no extra tools. Dont worry to much about understanding the html and css just yet. Once you have published your own copy of this app you can start making changes that will help you lean what is happening here. The helper functions used here and others, are documented [here](https://gormanlearncode.github.io/learncode/docs/index.html).
+A simple html, css and javascript tutorial, that you can do 100% in the browser with no extra tools. Dont worry to much about understanding the html and css just yet. Once you have published your own copy of this app you can start making changes that will help you lean what is happening here. The helper functions used here are documented [here](https://gormanlearncode.github.io/learncode/docs/index.html).
 
-### Tutorial 1 - Make a simple webpage containging a javascript app.
+### Tutorial 1 - Sign up to GitHub and deploy a simple webpage.
 
 You can see this example running here: https://gormanlearncode.github.io/learncode/
 
