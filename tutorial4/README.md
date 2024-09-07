@@ -40,7 +40,15 @@ Notice that the code is getting very long, beacuse it is creating all the **Div*
 ```javascript
 console.log("start");
 var sprite = Sprite.create({image:"../tutorial3/images/squirrel.png",width:100,height:100});
-var backdrop = Backdrop.create({image:"../images/24716919.jpg",backgroundColor:"yellow",width:1000,height:900});
+var backdrop = new Backdrop("#backdrop");
+backdrop.htmldiv.style.backgroundImage="url('../images/24716919.jpg')";
+backdrop.htmldiv.style.backgroundColor="yellow";
+backdrop.htmldiv.style.width="1000px";
+backdrop.htmldiv.style.height="900px";
+backdrop.htmldiv.style.overflow="hidden";
+backdrop.htmldiv.style.backgroundSize = "contain";
+backdrop.htmldiv.style.backgroundRepeat = "no-repeat";
+backdrop.htmldiv.style.backgroundPosition = "center";
 backdrop.addSprite(sprite);
 sprite.moveTo(10,100);
 
@@ -133,7 +141,9 @@ button3.onclick=function(){
           lastVal=progress*360;
      },500);
 };
-document.body.append(button1);
-document.body.append(button2);
-document.body.append(button3);
+
+let buttonLocationDiv=document.querySelector("#put_buttons_here");
+buttonLocationDiv.append(button1);
+buttonLocationDiv.append(button2);
+buttonLocationDiv.append(button3);
 ```
