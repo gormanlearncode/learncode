@@ -70,3 +70,5 @@ var sprite = Sprite.create({image:"images/squirrel.png",width:100,height:100});
 var backdrop = Backdrop.create({backgroundColor:"yellow",width:800,height:400});
 backdrop.addSprite(sprite);
 ```
+
+[Continue to tutorial 4](https://github.com/gormanlearncode/learncode/tree/main/tutorial4)
