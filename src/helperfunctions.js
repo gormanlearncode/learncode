@@ -90,6 +90,15 @@ class Sprite {
     this.direction=this.direction+degrees;
     this.htmldiv.style.transform = 'rotate(' + ((this.direction-90)) + 'deg)';
   }
+
+  /**
+   * setDirection 90 degrees equals a vertical images moving to the right.
+   * @param   {number}
+   */
+  setDirection(degrees) {
+    this.direction=degrees;
+    this.htmldiv.style.transform = 'rotate(' + ((this.direction-90)) + 'deg)';
+  }
   /**
    * turnAnticlockwise
    * @param   {number} degrees  
