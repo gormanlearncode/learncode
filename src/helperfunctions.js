@@ -268,6 +268,8 @@ class Backdrop {
     if(width) backdrop.htmldiv.style.width = `${width}px`;
     backdrop.htmldiv.style.overflow="hidden";
     backdrop.htmldiv.style.backgroundSize = "contain";
+    backdrop.htmldiv.style.backgroundRepeat = "no-repeat";
+    backdrop.htmldiv.style.backgroundPosition = "center";
     document.body.append(backdrop.htmldiv);
     return backdrop;
   }
