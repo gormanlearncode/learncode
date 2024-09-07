@@ -56,7 +56,7 @@ This changes adds a name to the button like this \<button\>RUN\</button\>
 ```javascript
 document.innerText="RUN";
 ```
-This adds the generated html to the actual html document (at the end before </body> tag)
+This adds the generated html to the actual html document (at the end before \</body\> tag)
 ```javascript
 document.body.append(button1);
 ```
