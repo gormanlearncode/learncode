@@ -24,11 +24,11 @@ async function run(){
           sprite.move(10);
           await Controls.wait(100);
      }
-     for(let i=0;i<20;i++) 
+     for(let i=0;i<25;i++) 
      {
-          sprite.turnClockwise(10);
+          sprite.turnClockwise(15);
           sprite.move(10);
-          await Controls.wait(100);
+          await Controls.wait(10);
      }
      sprite.setDirection(90);
      await sprite.glideTo(800,500,2000);
