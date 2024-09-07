@@ -25,7 +25,8 @@ index.html
         <!-- I am not creating the backdrop from code, because I want control of where I put it in the html -->
         <h2>Header size 2</h2>
         <h3>Header size 3</h3>
-        html is greate for text, images tables and other static content.<i>Italic</i> formating abd <b>BOLD</b>
+        <p>Html is greate for text, images tables and other static content.</p>
+        <p>Html has <i>Italic</i> formating add <b>BOLD</b> and <span style="color: blue;">COLOUR</span></p>
         <table>
             <tr><th>Header Cell</th><th>Header Cell</th><th>Header Cell</th></tr>
             <tr><td>Row Cell</td><td>Row Cell</td><td>Row Cell</td></tr>
