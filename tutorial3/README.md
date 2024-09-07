@@ -3,8 +3,7 @@
 
 In tutorial 2, we made a simple app. Below takes that a step further, adding a button programmatically, without helper code.
 
-
-[demo here](https://gormanlearncode.github.io/learncode/tutorial3/)
+**[demo here](https://gormanlearncode.github.io/learncode/tutorial3/)** remember to get used to right click, **Open link in Incognito Window** it will force a refresh if there are any chnages.
 
 ```html
 
