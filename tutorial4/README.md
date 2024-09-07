@@ -55,7 +55,11 @@ async function run(){
      sprite.seyY(300);
      await Controls.wait(1000);
      sprite.seyX(300);
-
+/**
+  * createElement("div") this is similaer to adding a <div>DONE!</div> to the HTML.
+  * however we are setting the css values directy in code. It can get very messy if
+  * you set all your css values in code, that is why you might use HTML and css istead.
+  */
      let someText=document.createElement("div");
      someText.innerText="DONE!";
      someText.style.backgroundColor="white";
@@ -72,11 +76,9 @@ button1.onclick=run;
 
 
 /**
-  * button2() This is the main function that is called when pressing the RUN button. It is 
-  * an async function, meaning it wont wait for its content to finish, it will allow the
-  * following code to continue in parrallel to the code in the run() loop.
-  * you will see that some function start with 'await' this mean that the were also async
-  * but that we want the run loop to wait for them to finish.
+  * button2() This adds a second button, which checks the current backgrond color
+  * and chnages it from red to yellow and back. Noye how code can access the css style
+  * of the DIV, to read it and to write to it.
   */
 let button2=document.createElement("button");
 button2.innerText="ALERT";
@@ -91,6 +93,15 @@ button2.onclick=function(){
      }
 };
 
+/**
+  * button3() This adds a third button, which spins rgw Sprite 360 degrees.
+  * It uses the animate function. Which calles the provided function many times
+  * passing a progress value e.g. 0.5 when it is 50$ of the way through the time period.
+  * progress allows you to know how much chage your function shoud do each time.
+  * NOTE: here we track lastVal, as we just want to add slices of the 360 that finally
+  * total 360. If we did not it would rotate 1,2,3 then ... 350,355, then 360 degrees
+  * many many more tines than the one rotatio originally planned.
+  */
 let button3=document.createElement("button");
 button3.innerText="SPIN!";
 button3.onclick=function(){
@@ -103,5 +114,6 @@ button3.onclick=function(){
 document.body.append(button1);
 document.body.append(button2);
 document.body.append(button3);
+
 
 ```
