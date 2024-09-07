@@ -154,3 +154,10 @@ startbutton.onclick=function(){
 19) In the top right of your browser, click on the triple dots, select more tools, select developer tools.
 20) Select the **Console** [e.g.](https://gormanlearncode.github.io/learncode/images/example%20console.png) tab to see the debug [e.g.](https://gormanlearncode.github.io/learncode/images/debug%20menu.png) comments from you code. (or errors if you have errors)
 21) Learn all you need to know here https://www.w3schools.com/js/ and by asking google for examples.
+
+### Please explain?
+
+You have now learnt all the basics of GitHub. You have created a html file, which is the basis of all web pages. You have created a css file that formats objects such as "div" in a web page. You have created a JavaScript file that can manipulate the objects in the html from code. You have published a webpage, you have looked at the "Console" to see comments and possibly errors from your code. Now you can move onto tutorials that will explore more concepts with coding. You will inject html into the browser document without having to have added it in the html file.
+
+
+[Continue to tutorial 2](https://github.com/gormanlearncode/learncode/tree/main/tutorial2)
