@@ -37,7 +37,7 @@ async function run(){
 run();
 ```
 Try creating this app yourself. In your github repository create new files as follow:
-1) name = **tutorial2/README.md** this can be empty, but I suggest you put the following. Remember to change "your-username" to your username.
+1) name = **tutorial2/README.md** put the following. Remember to change "your-username" to your username.
 ```
 ### Tutorial 2
 [demo app](https://your-username.github.io/webapp/tutorial2/)
