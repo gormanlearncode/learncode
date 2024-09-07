@@ -21,10 +21,6 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
 ```html
 <html>
 <head>
-  <!-- this should reduce how long it takes your page to refresh after a change -->
-  <meta http-equiv='cache-control' content='no-cache'> 
-  <meta http-equiv='expires' content='0'> 
-  <meta http-equiv='pragma' content='no-cache'>
   <!-- this imports all your formatting from the css file -->
   <link rel="stylesheet" type="text/css" href="styles.css">
   <!-- this imports some helper functions you can use in your code -->
