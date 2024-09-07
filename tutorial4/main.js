@@ -1,1 +1,19 @@
-
+console.log("start");
+var sprite = Sprite.create({image:"../tutorial3/images/squirrel.png",width:100,height:100});
+var backdrop = Backdrop.create({backgroundColor:"yellow",width:800,height:400});
+backdrop.addSprite(sprite);
+sprite.moveTo(10,100);
+async function run(){
+     for(let i=0;i<30;i++)
+     {
+          let x=10+i*10;
+          sprite.move(100);
+          sprite.turnClockWise(10);
+          await Controls.wait(100);
+     }
+     console.log("end");
+}
+let button1=document.createElement("button");
+button1.innerText="RUN";
+button1.onclick=run;
+document.body.append(button1);ton1.onclick=run;
