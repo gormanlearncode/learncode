@@ -4,7 +4,6 @@ var backdrop = Backdrop.create({image:"../images/24716919.jpg",backgroundColor:"
 backdrop.addSprite(sprite);
 sprite.moveTo(10,100);
 async function run(){
-     
      sprite.turnClockwise(10);
      for(let i=0;i<20;i++)
      {
@@ -38,10 +37,7 @@ async function run(){
      someText.style.position="relative";
      someText.style.left="400px";
      someText.style.top="300px";
-     
      document.body.append(someText);
-     
-     
      console.log("end");
 }
 let button1=document.createElement("button");
