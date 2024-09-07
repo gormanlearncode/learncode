@@ -12,7 +12,7 @@ In tutorial 2, we made a simple app. Below takes that a step further, adding a b
      one for e helperfunctions and one for the main program-->
 <!doctype html>
 <body>
-    <h1>Tutorial 2</h1>
+    <h1>Tutorial 3</h1>
     <p>Minimal HTML and CSS. See how you can do almost everything from code.</p>
     <script type="text/javascript" src="https://tinyurl.com/462k3dx7"></script>
     <script type="text/javascript" src="main.js"></script>
