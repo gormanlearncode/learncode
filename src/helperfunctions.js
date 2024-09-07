@@ -86,7 +86,7 @@ class Sprite {
    * turnClockWise degrees  
    * @param   {number}
    */
-  turnClockWise(degrees) {
+  turnClockwise(degrees) {
     this.direction=this.direction+degrees;
     this.htmldiv.style.transform = 'rotate(' + ((this.direction-90)) + 'deg)';
   }
