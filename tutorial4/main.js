@@ -48,7 +48,13 @@ button2.onclick=function(){
      {
           backdrop.htmldiv.style.backgroundColor="red";
      }
-     
+};
+
+let button3=document.createElement("button");
+button3.innerText="SPIN!";
+button3.onclick=function(){
+     animate((progress)=>{sprite.turnClockwise(progress*360);},500);
 };
 document.body.append(button1);
 document.body.append(button2);
+document.body.append(button3);
