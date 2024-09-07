@@ -53,7 +53,8 @@ button2.onclick=function(){
 let button3=document.createElement("button");
 button3.innerText="SPIN!";
 button3.onclick=function(){
-     animate((progress)=>{sprite.turnClockwise(progress*360);},500);
+     let lastVal=0;
+     animate((progress)=>{sprite.turnClockwise(progress*360-lastVal);lastVal=progress*360-lastVal;},500);
 };
 document.body.append(button1);
 document.body.append(button2);
