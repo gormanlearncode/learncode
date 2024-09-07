@@ -8,6 +8,7 @@ Fore example:
 
 ### Animating a change over time.
 ```javascript
+const circle = document.querySelector("#circle");
 function bounceball()
 {
   animate(function(progress){
@@ -18,6 +19,7 @@ function bounceball()
       },1000).then(bounceball);
   });
 }
+bounceball();
 ```
 
 ### Connecting to a Div
