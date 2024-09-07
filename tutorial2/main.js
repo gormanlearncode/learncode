@@ -7,8 +7,8 @@ async function whenLoaded()
     sprite.moveTo(100,100);
     for(let i=0;i<1000;i++)
     {
-        sprite.move(100); 
-        sprite.turnClockWise(2);
+        sprite.move(10); 
+        //sprite.turnClockWise(2);
         console.log("x");
         await Controls.wait(200);
     }
