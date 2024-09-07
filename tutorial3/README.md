@@ -36,7 +36,7 @@ async function run(){
      console.log("end");
 }
 let button1=document.createElement("button");
-document.setInnerText="RUN";
+document.innerText="RUN";
 document.body.append(button1);
 button1.onclick=run;
 
@@ -54,7 +54,7 @@ document.createElement("button")
 ```
 This changes adds a name to the button like this <button>RUN</button>
 ```javascript
-document.setInnerText="RUN";
+document.innerText="RUN";
 ```
 This adds the generated html to the actual html document (at the end before </body> tag)
 ```javascript
