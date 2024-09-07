@@ -88,7 +88,8 @@ class Sprite {
    * @returns {Promise} a promise you can use "then" to know when it is complete.
    */
   turnClockWise(degrees) {
-    return animate((progress) => { this.htmldiv.style.transform = 'rotate(' + (progress * degrees) + 'deg)'; }, 200);
+    this.direction=this.direction+degrees;
+    return animate((progress) => { this.htmldiv.style.transform = 'rotate(' + (progress * (this.direction-90)) + 'deg)'; }, 200);
   }
   /**
    * turnAnticlockwise
@@ -96,7 +97,8 @@ class Sprite {
    * @returns {Promise} a promise you can use "then" to know when it is complete.
    */
   turnAnticlockwise(degrees) {
-    return animate((progress) => { this.htmldiv.style.transform = 'rotate(' + (-progress * degrees) + 'deg)'; }, 200);
+    this.direction=this.direction-degrees;
+    return animate((progress) => { this.htmldiv.style.transform = 'rotate(' + (progress * (this.direction-90)) + 'deg)'; }, 200);
   }
   /**
    * move
