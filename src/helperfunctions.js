@@ -264,6 +264,7 @@ class Backdrop {
     if(backgroundColor) backdrop.htmldiv.style.backgroundColor = `${backgroundColor}`;
     if(height) backdrop.htmldiv.style.height = `${height}px`;
     if(width) backdrop.htmldiv.style.width = `${width}px`;
+    backdrop.htmldiv.style.overflow="hidden";
     document.body.append(backdrop.htmldiv);
     return backdrop;
   }
