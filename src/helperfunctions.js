@@ -85,7 +85,6 @@ class Sprite {
   /**
    * turnClockWise degrees  
    * @param   {number}
-   * @returns {Promise} a promise you can use "then" to know when it is complete.
    */
   turnClockWise(degrees) {
     this.direction=this.direction+degrees;
@@ -94,7 +93,6 @@ class Sprite {
   /**
    * turnAnticlockwise
    * @param   {number} degrees  
-   * @returns {Promise} a promise you can use "then" to know when it is complete.
    */
   turnAnticlockwise(degrees) {
     this.direction=this.direction-degrees;
@@ -103,7 +101,6 @@ class Sprite {
   /**
    * move
    * @param   {number} steps  
-   * @returns {Promise} a promise you can use "then" to know when it is complete.
    */
   move(steps) {
     const _left = parseInt(this.htmldiv.style.left || "0px");
@@ -119,7 +116,6 @@ class Sprite {
    * moveTo a specific position
    * @param   {number} pixelX  
    * @param   {number} pixelY  
-   * @returns {Promise} a promise you can use "then" to know when it is complete.
    */
   moveTo(pixelX, pixelY) {
     console.log(this.htmldiv.style.left || "0px");
@@ -127,8 +123,8 @@ class Sprite {
     const _left = parseInt(this.htmldiv.style.left || "0px") || 0;
     const _top = parseInt(this.htmldiv.style.top || "0px") || 0;
     console.log("this.htmldiv.style.left = " + (_left + pixelX) + "px");
-    this.htmldiv.style.left = "" + (_left + pixelX) + "px"; 
-    this.htmldiv.style.top = "" + (_top +  pixelY) + "px";
+    this.htmldiv.style.left = "" + pixelX + "px"; 
+    this.htmldiv.style.top = "" + pixelY + "px";
   }
 
   /**
@@ -145,25 +141,19 @@ class Sprite {
   }
 
   /**
-   * setyTo
+   * setY
    * @param   {number} pixelY  
-   * @returns {Promise} a promise you can use "then" to know when it is complete.
    */
-  setyTo(pixelY) {
-    const _left = parseInt(this.htmldiv.style.left || "0px") || 0;
-    const _top = parseInt(this.htmldiv.style.top || "0px") || 0;
-    return animate((progress) => { this.htmldiv.style.top = '' + (_top + progress * pixelY) + 'px'; }, 200);
+  setY(pixelY) {
+    this.htmldiv.style.top = '' + pixelY + 'px';
   }
 
   /**
-   * setxTo
+   * setX
    * @param   {number} pixelX  
-   * @returns {Promise} a promise you can use "then" to know when it is complete.
    */
-  setxTo(pixelX) {
-    const _left = parseInt(this.htmldiv.style.left || "0px") || 0;
-    const _top = parseInt(this.htmldiv.style.top || "0px") || 0;
-    return animate((progress) => { this.htmldiv.style.left = '' + (_left + progress * pixelX) + 'px'; }, 200);
+  setX(pixelX) {
+    this.htmldiv.style.left = '' + pixelX + 'px';
   }
   /**
    * getDiv
