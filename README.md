@@ -6,11 +6,11 @@ A simple html, css and javascript tutorial, that you can do 100% in the browser 
 You can see this example running here: https://gormanlearncode.github.io/learncode/
 
 1) ”Sign up for GitHub” —> here https://github.com/
-2) Create a user name, this will be in your website URL, so make it nice.
-3) Select “Continue for free”
-4) “Create a repository”, call it **webapp** make it public and tick the box to add a README file
-5) Click “Add file” —> Create new file
-6) At the top name your file “index.html”
+2) Create a user name. This will be in your website URL, so make it nice.
+3) Select “Continue for free”. You dont need to pay for public GitHub websites.
+4) Once you are logged in **Create a repository**. Call it **webapp** make it public and tick the box to add a README file
+5) At the top-right, next to the green Code button, click **Add file** —-> **Create new file**
+6) At the top-left, name your file **index.html**
 7) Add this HTML code to the main text area. HTML is the display layer of our code. Importantly, the “div” tag is an object we are going to format, shape and move from JavaScript.
  
 ```html
