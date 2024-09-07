@@ -3,6 +3,11 @@ A simple html, css and javascript tutorial, that you can do 100% in the browser 
 
 ### Tutorial 1 - Sign up to GitHub and deploy a simple webpage.
 
+Key terms
+ - **HTML** is the display layer of our code. Importantly, the “div” tag's are objects we are going to format, shape and move from JavaScript.
+ - **CSS** is a style sheet, that allows you to set the color, positon and format of tags in the html code.
+ - **JavaScript** is the code that can manipulate the tag's in the html of the webpage. 
+
 You can see this example running here: https://gormanlearncode.github.io/learncode/
 
 1) ”Sign up for GitHub” —> here https://github.com/
@@ -11,7 +16,7 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
 4) Once you are logged in **Create a repository**. Call it **webapp** make it public and tick the box to add a README file
 5) At the top-right, next to the green Code button, click **Add file** —-> **Create new file**
 6) At the top-left, name your file **index.html**
-7) Add this HTML code to the main text area. HTML is the display layer of our code. Importantly, the “div” tag is an object we are going to format, shape and move from JavaScript.
+7) Add this HTML code to the main text area.
  
 ```html
 <html>
