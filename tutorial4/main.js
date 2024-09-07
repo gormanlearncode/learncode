@@ -9,19 +9,19 @@ async function run(){
      for(let i=0;i<20;i++)
      {
           sprite.move(10);
-          await Controls.wait(200);
+          await Controls.wait(100);
      }
      sprite.turnAnticlockwise(10);
      for(let i=0;i<20;i++) 
      {
           sprite.move(10);
-          await Controls.wait(200);
+          await Controls.wait(100);
      }
      for(let i=0;i<20;i++) 
      {
           sprite.turnClockwise(10);
           sprite.move(10);
-          await Controls.wait(200);
+          await Controls.wait(100);
      }
      sprite.setDirection(90);
      await sprite.glideTo(800,500,2000);
