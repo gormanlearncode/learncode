@@ -106,8 +106,8 @@ class Sprite {
    * @returns {Promise} a promise you can use "then" to know when it is complete.
    */
   move(steps) {
-    const _left = this.htmldiv.style.left;
-    const _top = this.htmldiv.style.top;
+    const _left = Number(this.htmldiv.style.left);
+    const _top = Number(this.htmldiv.style.top);
     let pixelX=Math.floor(steps*Math.sin(this.direction));
     let pixelY=Math.floor(-steps*Math.cos(this.direction));
     console.log("pixelX:"+pixelX+"   pixelY:"+pixelY);
@@ -122,8 +122,8 @@ class Sprite {
    * @returns {Promise} a promise you can use "then" to know when it is complete.
    */
   moveTo(pixelX, pixelY) {
-    const _left = this.htmldiv.style.left;
-    const _top = this.htmldiv.style.top;
+    const _left = Number(this.htmldiv.style.left);
+    const _top = Number(this.htmldiv.style.top);
     console.log("this.htmldiv.style.left = " + (_left + pixelX) + "px");
     this.htmldiv.style.left = "" + (_left + pixelX) + "px"; 
     this.htmldiv.style.top = "" + (_top +  pixelY) + "px";
@@ -137,8 +137,8 @@ class Sprite {
    * @returns {Promise} a promise you can use "then" to know when it is complete.
    */
   glideTo(pixelX, pixelY, milliseconds) {
-    const _left = this.htmldiv.style.left;
-    const _top = this.htmldiv.style.top;
+    const _left = Number(this.htmldiv.style.left);
+    const _top = Number(this.htmldiv.style.top);
     return animate((progress) => { this.htmldiv.style.left = '' + (_left + progress * pixelX) + 'px'; this.htmldiv.style.top = '' + (_top + progress * pixelY) + 'px'; }, milliseconds);
   }
 
@@ -148,8 +148,8 @@ class Sprite {
    * @returns {Promise} a promise you can use "then" to know when it is complete.
    */
   setyTo(pixelY) {
-    const _left = this.htmldiv.style.left;
-    const _top = this.htmldiv.style.top;
+    const _left = Number(this.htmldiv.style.left);
+    const _top = Number(this.htmldiv.style.top);
     return animate((progress) => { this.htmldiv.style.top = '' + (_top + progress * pixelY) + 'px'; }, 200);
   }
 
@@ -159,8 +159,8 @@ class Sprite {
    * @returns {Promise} a promise you can use "then" to know when it is complete.
    */
   setxTo(pixelX) {
-    const _left = this.htmldiv.style.left;
-    const _top = this.htmldiv.style.top;
+    const _left = Number(this.htmldiv.style.left);
+    const _top = Number(this.htmldiv.style.top);
     return animate((progress) => { this.htmldiv.style.left = '' + (_left + progress * pixelX) + 'px'; }, 200);
   }
   /**
