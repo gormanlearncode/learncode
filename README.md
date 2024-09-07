@@ -8,7 +8,7 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
 1) ”Sign up for GitHub” —> here https://github.com/
 2) Create a user name, this will be in your website URL, so make it nice.
 3) Select “Continue for free”
-4) “Create a repository”, make it public and add a README file
+4) “Create a repository”, call it **webapp** make it public and tick the box to add a README file
 5) Click “Add file” —> Create new file
 6) At the top name your file “index.html”
 7) Add this HTML code to the main text area. HTML is the display layer of our code. Importantly, the “div” tag is an object we are going to format, shape and move from JavaScript.
@@ -149,7 +149,7 @@ startbutton.onclick=function(){
 14) refresh the site with your browsers button several times, until you see at the top “**Your site is live at** https://your page.com”
 15) Click visit site.
 16) You have deployed a web page with code that moves a square!
-17) Go to setting Pages to open your web page.
+17) Go to setting Pages to open your web page, it will be something like https://your-username.github.io/webapp/
 18) When you make changes, old copies of your page will be cached in your browser. "Open Link in new Incognito Widow" [e.g.](https://gormanlearncode.github.io/learncode/images/open%20incognito.png) will force it to refresh your page.
 19) In the top right of your browser, click on the triple dots, select more tools, select developer tools.
 20) Select the **Console** [e.g.](https://gormanlearncode.github.io/learncode/images/example%20console.png) tab to see the debug [e.g.](https://gormanlearncode.github.io/learncode/images/debug%20menu.png) comments from you code. (or errors if you have errors)
