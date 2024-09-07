@@ -124,8 +124,9 @@ class Sprite {
   moveTo(pixelX, pixelY) {
     const _left = this.htmldiv.style.left;
     const _top = this.htmldiv.style.top;
-    this.htmldiv.style.left = '' + (_left + pixelX) + 'px'; 
-    this.htmldiv.style.top = '' + (_top +  pixelY) + 'px';
+    console.log("this.htmldiv.style.left = " + (_left + pixelX) + "px");
+    this.htmldiv.style.left = "" + (_left + pixelX) + "px"; 
+    this.htmldiv.style.top = "" + (_top +  pixelY) + "px";
   }
 
   /**
