@@ -6,20 +6,16 @@ function* whenLoaded()
     backdrop.addSprite(sprite);
     sprite.moveTo(100,100);
     let count=0;
-    while(true)
+    for(var i=0;i<10;i++)
     {
-        sprite.move(100);
+        sprite.move(10);
+        sprite.turnClockWise(10);
         yield count;
         count++;
     }
 }
 console.log("whenLoaded");
-whenLoaded();
 
-const gen = whenLoaded();
-
-console.log(gen.next().value);
-// Expected output: 10
-
-console.log(gen.next().value);
-// Expected output: 20
+window.onload = function() {
+    whenLoaded();
+}

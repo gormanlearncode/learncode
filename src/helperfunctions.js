@@ -64,6 +64,7 @@ class Sprite {
     else {
       this.htmldiv = htmldiv;
     }
+    this.direction=90;
 
   }
   /**
@@ -99,12 +100,14 @@ class Sprite {
   }
   /**
    * move
-   * @param   {number} pixels  
+   * @param   {number} steps  
    * @returns {Promise} a promise you can use "then" to know when it is complete.
    */
-  move(pixelX, pixelY) {
+  move(steps) {
     const _left = this.htmldiv.style.left;
     const _top = this.htmldiv.style.top;
+    let pixelX=steps*Math.sin(direction);
+    let pixelY=-steps*Math.cos(direction);
     return animate((progress) => { this.htmldiv.style.left = '' + (_left + progress * pixelX) + 'px'; this.htmldiv.style.top = '' + (_top + progress * pixelY) + 'px'; }, 200);
   }
 
