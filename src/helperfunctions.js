@@ -108,11 +108,11 @@ class Sprite {
   move(steps) {
     const _left = this.htmldiv.style.left;
     const _top = this.htmldiv.style.top;
-    let pixelX=steps*Math.sin(this.direction);
-    let pixelY=-steps*Math.cos(this.direction);
+    let pixelX=Math.floor(steps*Math.sin(this.direction));
+    let pixelY=Math.floor(-steps*Math.cos(this.direction));
     console.log("pixelX:"+pixelX+"   pixelY:"+pixelY);
-    this.htmldiv.style.left = '' + Math.floor(_left + pixelX) + 'px'; 
-    this.htmldiv.style.top = '' + Math.floor(_top + pixelY) + 'px';
+    this.htmldiv.style.left = '' + (_left + pixelX) + 'px'; 
+    this.htmldiv.style.top = '' + (_top + pixelY) + 'px';
   }
 
   /**
