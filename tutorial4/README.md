@@ -6,6 +6,8 @@ You might need to download this image add add it to your images directory. [bask
 
 Notice in the code how you can reference images in parrent directories using **"../"**
 
+Notice that the code is getting very long, beacuse it is creating all the DIV tags and setting all their styles, from code. We need to start using the html and css again, or our code will be 90% style formating and only 10% logic.
+
 [demo app](https://gormanlearncode.github.io/learncode/tutorial4/)
 
 ```html
