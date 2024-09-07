@@ -14,7 +14,7 @@ Notice that the code is getting very long, beacuse it is creating all the **Div*
 <!doctype html>
 <body>
     <h1>Tutorial 4</h1>
-    <p>Minimal HTML and CSS. See how you can do almost everything from code.</p>
+    <p>Minimal HTML and CSS. But the code is getting very long, just to create and style html objects..</p>
     <script type="text/javascript" src="https://tinyurl.com/462k3dx7"></script>
     <script type="text/javascript" src="main.js"></script>
 </body>
