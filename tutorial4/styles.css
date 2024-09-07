@@ -1,1 +1,7 @@
-
+table {
+  border: 1px solid;
+}
+th{
+    background-color: #505050;
+    color: #fff;
+}
