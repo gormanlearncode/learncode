@@ -149,7 +149,7 @@ startbutton.onclick=function(){
 14) refresh the site with your browsers button several times, until you see at the top “**Your site is live at** https://your page.com”
 15) Click visit site.
 16) You have deployed a web page with code that moves a square!
-17) Go to **Settings** --> **Pages** to open your web page, it will be something like https://your-username.github.io/webapp/
+17) Go to **Settings** --> **Pages** to open your web page, it will be https://your-username.github.io/webapp/
 18) Try adding a like to your page in your README.md, by editing it. This will make your page easier to find.
 19) When you make changes, old copies of your page will be cached in your browser. "Open Link in new Incognito Widow" [e.g.](https://gormanlearncode.github.io/learncode/images/open%20incognito.png) will force it to refresh your page.
 20) In the top right of your browser, click on the triple dots, select more tools, select developer tools.
