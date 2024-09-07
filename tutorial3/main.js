@@ -14,6 +14,4 @@ async function run(){
 let button1=document.createElement("button");
 document.setInnerText="RUN";
 document.body.append(button1);
-button1.onclick(()=>{
-    run();
-})
+button1.onclick=run;
