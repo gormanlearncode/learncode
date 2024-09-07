@@ -8,8 +8,9 @@ async function* whenLoaded()
     let count=0;
     for(var i=0;i<1000;i++)
     {
-        await sprite.move(10);
-        await sprite.turnClockWise(10);
+        sprite.move(100);
+        sprite.turnClockWise(10);
+        yield Controls.wait(100);
         yield count;
         count++;
     }

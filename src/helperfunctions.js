@@ -89,7 +89,7 @@ class Sprite {
    */
   turnClockWise(degrees) {
     this.direction=this.direction+degrees;
-    return animate((progress) => { this.htmldiv.style.transform = 'rotate(' + (progress * (this.direction-90)) + 'deg)'; }, 200);
+    this.htmldiv.style.transform = 'rotate(' + ((this.direction-90)) + 'deg)';
   }
   /**
    * turnAnticlockwise
@@ -98,7 +98,7 @@ class Sprite {
    */
   turnAnticlockwise(degrees) {
     this.direction=this.direction-degrees;
-    return animate((progress) => { this.htmldiv.style.transform = 'rotate(' + (progress * (this.direction-90)) + 'deg)'; }, 200);
+    this.htmldiv.style.transform = 'rotate(' + ((this.direction-90)) + 'deg)';
   }
   /**
    * move
@@ -108,9 +108,10 @@ class Sprite {
   move(steps) {
     const _left = this.htmldiv.style.left;
     const _top = this.htmldiv.style.top;
-    let pixelX=steps*10*Math.sin(this.direction);
-    let pixelY=-steps*10*Math.cos(this.direction);
-    return animate((progress) => { this.htmldiv.style.left = '' + (_left + progress * pixelX) + 'px'; this.htmldiv.style.top = '' + (_top + progress * pixelY) + 'px'; }, 200);
+    let pixelX=steps*Math.sin(this.direction);
+    let pixelY=-steps*Math.cos(this.direction);
+    this.htmldiv.style.left = '' + (_left + pixelX) + 'px'; 
+    this.htmldiv.style.top = '' + (_top + pixelY) + 'px';
   }
 
   /**
@@ -122,7 +123,8 @@ class Sprite {
   moveTo(pixelX, pixelY) {
     const _left = this.htmldiv.style.left;
     const _top = this.htmldiv.style.top;
-    return animate((progress) => { this.htmldiv.style.left = '' + (_left + progress * pixelX) + 'px'; this.htmldiv.style.top = '' + (_top + progress * pixelY) + 'px'; }, 200);
+    this.htmldiv.style.left = '' + (_left + pixelX) + 'px'; 
+    this.htmldiv.style.top = '' + (_top +  pixelY) + 'px';
   }
 
   /**
