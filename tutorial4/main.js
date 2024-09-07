@@ -9,6 +9,7 @@ backdrop.htmldiv.style.overflow="hidden";
 backdrop.htmldiv.style.backgroundSize = "contain";
 backdrop.htmldiv.style.backgroundRepeat = "no-repeat";
 backdrop.htmldiv.style.backgroundPosition = "center";
+backdrop.htmldiv.style.textAlign = "left";
 backdrop.addSprite(sprite);
 sprite.moveTo(10,100);
 
