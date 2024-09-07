@@ -19,15 +19,17 @@ In tutorial 1, we used html "div" tags to create objects in the browser that we 
 </html>
 
 ```
-This is a minimal program, that creates a sprite (div) and created a backdrop (div). Then adds the sprite to the backdrop and moves it to the position 100x100. By using the "create functions, we don’t have to have the div's defined in our HTML or CSS. This is just a way of adding them to the html document programmatically. 
-
+This is a minimal program, that creates a sprite (div) and created a backdrop (div). Then adds the sprite to the backdrop and moves it to the position 100x100. By using the "create functions, we don’t have to have the div's defined in our HTML or CSS. This is just a way of adding them to the html document programmatically. The code is wrapped in an **async** function call run. This allows the "await" statement to be called on the asynchronous **Controls.wait** function.
 ```javascript
 console.log("start");
-var sprite = Sprite.create({image:"images/squirrel.png",width:100,height:100});
-var backdrop = Backdrop.create({backgroundColor:"yellow",width:800,height:400});
-backdrop.addSprite(sprite);
-sprite.moveTo(100,100);
-await Controld.wait(1000);
-sprite.moveTo(200,100);
-console.log("end");
+async function run(){
+  var sprite = Sprite.create({image:"images/squirrel.png",width:100,height:100});
+  var backdrop = Backdrop.create({backgroundColor:"yellow",width:800,height:400});
+  backdrop.addSprite(sprite);
+  sprite.moveTo(100,100);
+  await Controls.wait(1000);
+  sprite.moveTo(200,100);
+  console.log("end");
+}
+run();
 ```
