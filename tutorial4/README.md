@@ -12,9 +12,25 @@ Notice that the code is getting very long, beacuse it is creating all the **Div*
 
 ```html
 <!doctype html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
 <body>
-    <h1>Tutorial 4</h1>
-    <p>Minimal HTML and CSS. But the code is getting very long, just to create and style html objects..</p>
+    <center>
+        <h1>Tutorial 4</h1>
+        <p>Minimal HTML and CSS. But the code is getting very long, just to create and style html objects..</p>
+        <div id="backdrop"></div>
+        <div id="put_buttons_here"></div>
+        <!-- I am not creating the backdrop from code, because I want control of where I put it in the html -->
+        <h2>Header size 2</h2>
+        <h3>Header size 3</h3>
+        html is greate for text, images tables and other static content.<i>Italic</i> formating abd <b>BOLD</b>
+        <table>
+            <tr><th>Header Cell</th><th>Header Cell</th><th>Header Cell</th></tr>
+            <tr><td>Row Cell</td><td>Row Cell</td><td>Row Cell</td></tr>
+            <tr><td>Row Cell</td><td>Row Cell</td><td>Row Cell</td></tr>
+        </table>
+    </center>
     <script type="text/javascript" src="https://tinyurl.com/462k3dx7"></script>
     <script type="text/javascript" src="main.js"></script>
 </body>
