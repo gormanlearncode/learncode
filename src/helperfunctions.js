@@ -76,6 +76,7 @@ class Sprite {
   static create({ image, height, width }) {
     let sprite = new Sprite();
     sprite.htmldiv.style.backgroundImage = `url('${image}')`;
+    sprite.htmldiv.style.backgroundSize = "contain";
     sprite.htmldiv.style.height = `${height}px`;
     sprite.htmldiv.style.width = `${width}px`;
     return sprite;
