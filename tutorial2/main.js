@@ -7,42 +7,55 @@ async function whenLoaded()
     sprite.moveTo(100,100);
     sprite.move(100); 
     console.log("x");
+    await Controls.wait(200)
     sprite.turnClockWise(10);
     sprite.move(100);
     console.log("x");
+    await Controls.wait(200)
     sprite.turnClockWise(10);
     sprite.move(100);
-    console.log("x");    
-    sprite.turnClockWise(10);
-    sprite.move(100);
-    console.log("x");
-    sprite.turnClockWise(10);
-    sprite.move(100);
-    console.log("x");
+    console.log("x");  
+    await Controls.wait(200)  
     sprite.turnClockWise(10);
     sprite.move(100);
     console.log("x");
+    await Controls.wait(200)
     sprite.turnClockWise(10);
     sprite.move(100);
     console.log("x");
+    await Controls.wait(200)
     sprite.turnClockWise(10);
     sprite.move(100);
     console.log("x");
+    await Controls.wait(200)
     sprite.turnClockWise(10);
     sprite.move(100);
     console.log("x");
+    await Controls.wait(200)
     sprite.turnClockWise(10);
     sprite.move(100);
     console.log("x");
+    await Controls.wait(200)
     sprite.turnClockWise(10);
     sprite.move(100);
     console.log("x");
+    await Controls.wait(200)
     sprite.turnClockWise(10);
     sprite.move(100);
     console.log("x");
+    await Controls.wait(200)
     sprite.turnClockWise(10);
     sprite.move(100);
     console.log("x");
+    await Controls.wait(200)
+    sprite.turnClockWise(10);
+    sprite.move(100);
+    console.log("x");
+    await Controls.wait(200)
+    sprite.turnClockWise(10);
+    sprite.move(100);
+    console.log("x");
+    await Controls.wait(200)
     sprite.turnClockWise(10);
     sprite.move(100);
     console.log("x");
