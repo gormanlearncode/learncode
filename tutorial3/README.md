@@ -48,11 +48,11 @@ Try creating this app yourself. In your github repository create new files as fo
 4) Upload into the images directory, a file named = **squirrel.png** you can download my image from [here](https://gormanlearncode.github.io/learncode/tutorial2/images/squirrel.png) and upload it to your github.
 
 ### Please explain?
-This is the same as adding this to the html. <button></button>
+This is the same as adding this to the html. \<button\>\</button\>
 ```javascript
 document.createElement("button")
 ```
-This changes adds a name to the button like this <button>RUN</button>
+This changes adds a name to the button like this \<button\>RUN\</button\>
 ```javascript
 document.innerText="RUN";
 ```
