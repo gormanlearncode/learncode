@@ -5,6 +5,8 @@ on:
       - main
     paths-ignore:
       - 'docs/**'
+      - 'tutorial**'
+      - 'images**'
 jobs:
   deploy:
     runs-on: ubuntu-latest
