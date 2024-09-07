@@ -18,6 +18,12 @@ async function run(){
           sprite.turnAnticlockwise(10);
           await Controls.wait(100);
      }
+     await sprite.glideTo(20,20,2000);
+     await Controls.wait(1000);
+     sprite.seyY(300);
+     await Controls.wait(1000);
+     sprite.seyX(300);
+     
      console.log("end");
 }
 let button1=document.createElement("button");
