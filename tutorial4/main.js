@@ -30,6 +30,17 @@ async function run(){
      sprite.seyY(300);
      await Controls.wait(1000);
      sprite.seyX(300);
+
+     let someText=document.createElement("div");
+     someText.innerText="DONE!";
+     someText.style.backgroundColor="white";
+     someText.style.fontSize="40px";
+     someText.style.position="relative";
+     someText.style.left="400px";
+     someText.style.top="300px";
+     
+     document.body.append(someText);
+     
      
      console.log("end");
 }
