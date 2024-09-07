@@ -48,9 +48,20 @@ Try creating this app yourself. In your github repository create new files as fo
 4) Upload into the images directory, a file named = **squirrel.png** you can download my image from [here](https://gormanlearncode.github.io/learncode/tutorial2/images/squirrel.png) and upload it to your github.
 
 ### Please explain?
-
-document.createElement("button") ==> is the same as adding this to the html. <button></button>
-document.setInnerText="RUN";     ==> changes it to this <button>RUN</button>
-document.body.append(button1);   ==> added the generated html to the actual html document (at the end before </body> tag)
-button1.onclick=run;             ==> assign a function to call when the button is pressed.
+This is the same as adding this to the html. <button></button>
+```javascript
+document.createElement("button")
+```
+This changes adds a name to the button like this <button>RUN</button>
+```javascript
+document.setInnerText="RUN";
+```
+This adds the generated html to the actual html document (at the end before </body> tag)
+```javascript
+document.body.append(button1);
+```
+This assign a function to call when the button is pressed.
+```javascript
+button1.onclick=run;
+```
 
