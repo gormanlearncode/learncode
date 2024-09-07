@@ -8,16 +8,21 @@ async function run(){
      sprite.turnClockwise(10);
      for(let i=0;i<20;i++)
      {
-          let x=10+i*10;
           sprite.move(10);
-          await Controls.wait(1000);
+          await Controls.wait(200);
+     }
+     sprite.turnAnticlockwise(10);
+     for(let i=0;i<20;i++) 
+     {
+          sprite.move(10);
+          await Controls.wait(200);
      }
      for(let i=0;i<20;i++) 
      {
-          let x=10+i*10;
+          sprite.turnClockwise(10);
           sprite.move(10);
-          sprite.turnAnticlockwise(1);
-          await Controls.wait(1000);
+          
+          await Controls.wait(200);
      }
      await sprite.glideTo(400,300,2000);
      await Controls.wait(1000);
