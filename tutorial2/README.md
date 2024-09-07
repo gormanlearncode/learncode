@@ -40,7 +40,7 @@ Try creating this app yourself. In your github repository create new files as fo
 1) name = **tutorial2/README.md** this can be empty, but I suggest you put the following. Remember to change "your-username" to your username.
 ```
 ### Tutorial 2
-[demo app](https://your-username.github.io/webapp/tutorial2
+[demo app](https://your-username.github.io/webapp/tutorial2/)
 ```
 3) name = **tutorial2/index.html** with the html above.
 4) name = **tutorial2/main.js** with the javascript above.
