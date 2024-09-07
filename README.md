@@ -152,11 +152,11 @@ startbutton.onclick=function(){
 12) Select **Pages** in the left side tabs
 13) Under build and deploy, under **Branch** where it says **None** select main, and press Save.
 14) refresh the site with your browsers button several times, until you see at the top “**Your site is live at** https://your page.com”
-15) Click visit site.
+15) Click visit site. Copy the URL for later, when you edit your README. It should be https://your-username.github.io/webapp/
 16) You have deployed a web page with code that moves a square!
-17) Go to **Settings** --> **Pages** to open your web page, it will be https://your-username.github.io/webapp/
-18) Try adding a like to your page in your README.md, by editing it. This will make your page easier to find.
-19) When you make changes, old copies of your page will be cached in your browser. "Open Link in new Incognito Widow" [e.g.](https://gormanlearncode.github.io/learncode/images/open%20incognito.png) will force it to refresh your page.
+17) If you get lost, go back to **Settings** --> **Pages** to find your web page.
+18) Try adding your link in your README.md, by editing it. This will make your page easier to find.
+19) When you make changes, old copies of your page will be cached in your browser. **"Open Link in new Incognito Window"** [e.g.](https://gormanlearncode.github.io/learncode/images/open%20incognito.png) will force it to refresh your page.
 20) In the top right of your browser, click on the triple dots, select more tools, select developer tools.
 21) Select the **Console** [e.g.](https://gormanlearncode.github.io/learncode/images/example%20console.png) tab to see the debug [e.g.](https://gormanlearncode.github.io/learncode/images/debug%20menu.png) comments from you code. (or errors if you have errors)
 22) Learn all you need to know here https://www.w3schools.com/js/ and by asking google for examples.
