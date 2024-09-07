@@ -2,6 +2,8 @@
 
 Lets experiment will al sorts of things. Create a new directory for tutorial 4 (e.g. create **tutorial4/README.md**) and add the following files.
 
+You might need to download this image add add it to your images directory. [basketball image](https://gormanlearncode.github.io/learncode/images/24716919.jpg)
+
 [demo app](https://gormanlearncode.github.io/learncode/tutorial4/)
 
 ```html
