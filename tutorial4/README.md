@@ -4,6 +4,8 @@ Lets experiment will al sorts of things. Create a new directory for tutorial 4 (
 
 You might need to download this image add add it to your images directory. [basketball image](https://gormanlearncode.github.io/learncode/images/24716919.jpg)
 
+Notice in the code how you can reference images in parrent directories using **"../"**
+
 [demo app](https://gormanlearncode.github.io/learncode/tutorial4/)
 
 ```html
