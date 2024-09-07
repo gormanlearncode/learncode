@@ -101,6 +101,8 @@ button3.onclick=function(){
           lastVal=progress*360;
      },500);
 };
-document.body.append(button1);
-document.body.append(button2);
-document.body.append(button3);
+
+let buttonLocationDiv=document.querySelector("#put_buttons_here");
+buttonLocationDiv.append(button1);
+buttonLocationDiv.append(button2);
+buttonLocationDiv.append(button3);
