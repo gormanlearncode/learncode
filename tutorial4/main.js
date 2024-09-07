@@ -8,14 +8,14 @@ async function run(){
      {
           let x=10+i*10;
           sprite.move(10);
-          sprite.turnClockwise(10);
+          sprite.turnClockwise(1);
           await Controls.wait(1000);
      }
      for(let i=0;i<20;i++) 
      {
           let x=10+i*10;
           sprite.move(10);
-          sprite.turnAnticlockwise(10);
+          sprite.turnAnticlockwise(1);
           await Controls.wait(1000);
      }
      await sprite.glideTo(400,300,2000);
