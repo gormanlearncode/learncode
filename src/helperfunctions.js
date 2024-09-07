@@ -108,8 +108,8 @@ class Sprite {
   move(steps) {
     const _left = this.htmldiv.style.left;
     const _top = this.htmldiv.style.top;
-    let pixelX=steps*Math.sin(direction);
-    let pixelY=-steps*Math.cos(direction);
+    let pixelX=steps*Math.sin(this.direction);
+    let pixelY=-steps*Math.cos(this.direction);
     return animate((progress) => { this.htmldiv.style.left = '' + (_left + progress * pixelX) + 'px'; this.htmldiv.style.top = '' + (_top + progress * pixelY) + 'px'; }, 200);
   }
 
