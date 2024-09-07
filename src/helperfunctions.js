@@ -144,7 +144,9 @@ class Sprite {
   glideTo(pixelX, pixelY, milliseconds) {
     const _left = parseInt(this.htmldiv.style.left || "0px") || 0;
     const _top = parseInt(this.htmldiv.style.top || "0px") || 0;
-    return animate((progress) => { this.htmldiv.style.left = '' + (_left + progress * pixelX) + 'px'; this.htmldiv.style.top = '' + (_top + progress * pixelY) + 'px'; }, milliseconds);
+    return animate((progress) => { 
+      this.htmldiv.style.left = '' + (_left + progress * (pixelX-_left)) + 'px'; 
+      this.htmldiv.style.top = '' + (_top + progress * (pixelY-_top)) + 'px'; }, milliseconds);
   }
 
   /**
