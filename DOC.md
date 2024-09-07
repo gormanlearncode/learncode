@@ -41,7 +41,15 @@ Controls.wait(1000).then(()=>{
 //or us await, inside an async loop/
 await Controls.wait(1000);
 ```
-
+### Repete a function 10 times
+```
+Controls.repeat(
+  function(i,c){ console.log(`${i} of ${c}`); },
+  10).then(
+  function(){
+    console.log("done");
+});
+```
 ### Backdrops and Sprite
 ```javascript
 var sprite = Sprite.create({image:"../tutorial3/images/squirrel.png",width:100,height:100});
