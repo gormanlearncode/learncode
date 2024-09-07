@@ -1,4 +1,4 @@
-async function* whenLoaded()
+function* whenLoaded()
 {
     console.log("start");
     var sprite = Sprite.create({image:"images/squirrel.png",width:100,height:100});
