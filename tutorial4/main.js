@@ -21,10 +21,11 @@ async function run(){
      {
           sprite.turnClockwise(10);
           sprite.move(10);
-          
           await Controls.wait(200);
      }
-     await sprite.glideTo(400,300,2000);
+     sprite.setDirection(90);
+     await sprite.glideTo(800,500,2000);
+     await sprite.glideTo(10,500,2000);
      await Controls.wait(1000);
      sprite.seyY(300);
      await Controls.wait(1000);
