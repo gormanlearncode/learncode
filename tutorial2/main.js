@@ -1,4 +1,4 @@
-function* whenLoaded()
+async function* whenLoaded()
 {
     console.log("start");
     var sprite = Sprite.create({image:"images/squirrel.png",width:100,height:100});
@@ -8,8 +8,8 @@ function* whenLoaded()
     let count=0;
     for(var i=0;i<10;i++)
     {
-        sprite.move(10);
-        sprite.turnClockWise(10);
+        await sprite.move(10);
+        await sprite.turnClockWise(10);
         yield count;
         count++;
     }
