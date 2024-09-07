@@ -1,8 +1,16 @@
 console.log("start");
 var sprite = Sprite.create({image:"../tutorial3/images/squirrel.png",width:100,height:100});
-var backdrop = Backdrop.create({image:"../images/24716919.jpg",backgroundColor:"yellow",width:1000,height:852});
+var backdrop = Backdrop.create({image:"../images/24716919.jpg",backgroundColor:"yellow",width:1000,height:900});
 backdrop.addSprite(sprite);
 sprite.moveTo(10,100);
+
+/**
+  * run() This is the main function that is called when pressing the RUN button. It is 
+  * an async function, meaning it wont wait for its content to finish, it will allow the
+  * following code to continue in parrallel to the code in the run() loop.
+  * you will see that some function start with 'await' this mean that the were also async
+  * but that we want the run loop to wait for them to finish.
+  */
 async function run(){
      sprite.turnClockwise(10);
      for(let i=0;i<20;i++)
@@ -44,6 +52,14 @@ let button1=document.createElement("button");
 button1.innerText="RUN";
 button1.onclick=run;
 
+
+/**
+  * button2() This is the main function that is called when pressing the RUN button. It is 
+  * an async function, meaning it wont wait for its content to finish, it will allow the
+  * following code to continue in parrallel to the code in the run() loop.
+  * you will see that some function start with 'await' this mean that the were also async
+  * but that we want the run loop to wait for them to finish.
+  */
 let button2=document.createElement("button");
 button2.innerText="ALERT";
 button2.onclick=function(){
