@@ -1,6 +1,6 @@
 console.log("start");
 var sprite = Sprite.create({image:"../tutorial3/images/squirrel.png",width:100,height:100});
-var backdrop = Backdrop.create({backgroundColor:"yellow",width:800,height:400});
+var backdrop = Backdrop.create({image:"../images/24716919.jpg",backgroundColor:"yellow",width:800,height:400});
 backdrop.addSprite(sprite);
 sprite.moveTo(10,100);
 async function run(){
