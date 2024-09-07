@@ -110,6 +110,7 @@ class Sprite {
     const _top = this.htmldiv.style.top;
     let pixelX=steps*Math.sin(this.direction);
     let pixelY=-steps*Math.cos(this.direction);
+    console.log("pixelX:"+pixelX+"   pixelY:"+pixelY);
     this.htmldiv.style.left = '' + (_left + pixelX) + 'px'; 
     this.htmldiv.style.top = '' + (_top + pixelY) + 'px';
   }
