@@ -41,3 +41,9 @@ Try creating this app yourself. In your github repository create new files as fo
 2) name = **tutorial/main.html** with the javascript above.
 3) name = **images/README.md** you can check this in empty. It is just to create the images directory.
 4) Upload into the images directory, a file named = **squirrel.png** you can download my image from [here](https://gormanlearncode.github.io/learncode/tutorial2/images/squirrel.png) and upload it to your github.
+
+### Please explain?
+
+You have created an app that has minimal html and no css. You have seen that **div** objects can be injected into the html document from code.
+
+[Continue to tutorial 3](https://github.com/gormanlearncode/learncode/tree/main/tutorial3)
