@@ -18,7 +18,7 @@ async function run(){
           sprite.turnAnticlockwise(10);
           await Controls.wait(1000);
      }
-     await sprite.glideTo(20,20,2000);
+     await sprite.glideTo(400,300,2000);
      await Controls.wait(1000);
      sprite.seyY(300);
      await Controls.wait(1000);
