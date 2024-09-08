@@ -14,7 +14,7 @@ field.addSprite(puck3);
       puck1.ifOnEdgeBounce();
       await Controls.wait(200);
     }
-})()
+})();
 
 (async ()=>{
     puck2.setDirection(104);
@@ -24,7 +24,7 @@ field.addSprite(puck3);
       puck2.ifOnEdgeBounce();
       await Controls.wait(200);
     }
-})()
+})();
 
 (async ()=>{
     puck3.setDirection(107);
@@ -34,4 +34,4 @@ field.addSprite(puck3);
       puck3.ifOnEdgeBounce();
       await Controls.wait(200);
     }
-})()
+})();
