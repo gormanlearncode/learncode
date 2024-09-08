@@ -195,24 +195,31 @@ class Sprite {
   {
     if(this.htmldiv.style.left<=0 && this.direction>180)
     {
+      console.log("bounce1");
       this.direction=90+(270-this.direction);
     }
     else if(this.htmldiv.style.left>=(this.htmldiv.parentNode.style.width-this.htmldiv.style.width)  && this.direction<180)
     {
+      console.log("bounce2");
       this.direction=270+(90-this.direction);
     }
     else if(this.htmldiv.style.top<=0 && this.direction<90 )
     {
+      console.log("bounce3");
       this.direction=180+(this.direction);
     } 
     else if(this.htmldiv.style.top<=0 && this.direction>270 )
     {
+      console.log("bounce4");
       this.direction=180+(360-this.direction);
     }
     else if(this.htmldiv.style.top>=(this.htmldiv.parentNode.style.height-this.htmldiv.style.height)  && this.direction>90 && this.direction<270)
     {
+      console.log("bounce5");
       this.direction=this.direction-180;
     }
+
+    console.log(this.htmldiv.style.left+":"+his.htmldiv.style.top+" inside:"+(this.htmldiv.parentNode.style.width-this.htmldiv.style.width)+":"+(this.htmldiv.parentNode.style.height-this.htmldiv.style.height));
       
     
     
