@@ -22,6 +22,38 @@
   border-radius:15px;
   position:absolute;
 }
+#puck4
+{
+  width:30px;
+  height:30px;
+  background-color:#750050;
+  border-radius:15px;
+  position:absolute;
+}
+#puck5
+{
+  width:30px;
+  height:30px;
+  background-color:#002222;
+  border-radius:15px;
+  position:absolute;
+}
+#puck6
+{
+  width:50px;
+  height:50px;
+  background-color:#aa44aa;
+  border-radius:25px;
+  position:absolute;
+}
+#puck7
+{
+  width:40px;
+  height:40px;
+  background-color:#af00ff;
+  border-radius:20px;
+  position:absolute;
+}
 #field
 {
   width:1000px;
