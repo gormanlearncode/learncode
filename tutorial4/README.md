@@ -47,6 +47,13 @@ table {
 th{
     background-color: #505050;
     color: #fff;
+    padding: 3px;
+    font-weight: bold;
+}
+td{
+    background-color: #eeffee;
+    color: blue;
+    padding: 3px;
 }
 ```
 main.js
