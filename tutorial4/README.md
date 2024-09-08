@@ -62,6 +62,8 @@ backdrop.htmldiv.style.overflow="hidden";
 backdrop.htmldiv.style.backgroundSize = "contain";
 backdrop.htmldiv.style.backgroundRepeat = "no-repeat";
 backdrop.htmldiv.style.backgroundPosition = "center";
+backdrop.htmldiv.style.position = "relative";
+backdrop.htmldiv.style.textAlign = "left";
 backdrop.addSprite(sprite);
 sprite.moveTo(10,100);
 
@@ -107,7 +109,7 @@ async function run(){
      someText.innerText="DONE!";
      someText.style.backgroundColor="white";
      someText.style.fontSize="40px";
-     someText.style.position="relative";
+     someText.style.position="absolute";
      someText.style.left="400px";
      someText.style.top="300px";
      document.body.append(someText);
