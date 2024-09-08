@@ -38,7 +38,7 @@ async function run(){
 let button1=document.createElement("button");
 button1.innerText="RUN";
 button1.onclick=run;
-document.body.append(button1);ton1.onclick=run;
+document.body.append(button1);
 ```
 Try creating this app yourself. In your github repository create new files as follow:
 1) name = **tutorial/index.html** with the html above.
