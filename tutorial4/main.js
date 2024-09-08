@@ -55,7 +55,7 @@ async function run(){
      someText.innerText="DONE!";
      someText.style.backgroundColor="white";
      someText.style.fontSize="40px";
-     someText.style.position="relative";
+     someText.style.position="absolute";
      someText.style.left="400px";
      someText.style.top="300px";
      document.body.append(someText);
