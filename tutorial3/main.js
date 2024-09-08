@@ -4,7 +4,7 @@ var backdrop = Backdrop.create({backgroundColor:"yellow",width:800,height:400});
 backdrop.addSprite(sprite);
 sprite.moveTo(10,100);
 async function run(){
-     for(let i=0;i<50;i++)
+     for(let i=0;i<60;i++)
      {
           let x=10+i*10;
           sprite.moveTo(x,100);
