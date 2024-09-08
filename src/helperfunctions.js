@@ -194,35 +194,26 @@ class Sprite {
   ifOnEdgeBounce()
   {
     if(!this.backdrop)return;
-    if(this.x<=0 )
-    {
-      console.log("direction:"+this.direction);
-      console.log("x:"+this.x);
-      console.log("y:"+this.y);
-    }
+
     if(this.x<=0 && this.direction>180)
     {
-      this.direction=90+(270-this.direction);
+      this.setDirection(90+(270-this.direction));
     }
     else if((this.x+this.width)>=(this.backdrop.width)  && this.direction<180)
     {
-      console.log("bounce2");
-      this.direction=270+(90-this.direction);
+      this.setDirection(270+(90-this.direction));
     }
     else if(this.y<=0 && this.direction<90 )
     {
-      console.log("bounce3");
-      this.direction=180+(this.direction);
+      this.setDirection(180+(this.direction));
     } 
     else if(this.y<=0 && this.direction>270 )
     {
-      console.log("bounce4");
-      this.direction=180+(360-this.direction);
+      this.setDirection(180+(360-this.direction));
     }
     else if((this.y+this.height)>=(this.backdrop.height)  && this.direction>90 && this.direction<270)
     {
-      console.log("bounce5");
-      this.direction=180-this.direction;
+      this.setDirection(180-this.direction);
     }
       
     
