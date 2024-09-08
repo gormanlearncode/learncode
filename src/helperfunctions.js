@@ -190,6 +190,19 @@ class Sprite {
    * The if on edge, bounce block is a Motion Block and a stack block. The block checks to see 
    * if a sprite is touching the edge of the screen, and if it is, the sprite will point in a 
    * direction that mirrors the direction from which it was coming.
+   * @example
+   * let field=new Backdrop("#field");
+   * let puck=new Sprite("#puck1");
+   * field.addSprite(puck1);
+   * (async ()=>{
+   *     puck1.setDirection(100);
+   *     while(true)
+   *     {
+   *       puck.move(10);
+   *       puck.ifOnEdgeBounce();
+   *       await Controls.wait(2);
+   *     }
+   * })();
    */
   ifOnEdgeBounce()
   {
