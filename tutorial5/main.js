@@ -12,10 +12,10 @@ field.addSprite(puck3);
     {
       puck1.move(10);
       puck1.ifOnEdgeBounce();
-      await Controls.wait(200);
+      await Controls.wait(2);
     }
 })();
-/*
+
 (async ()=>{
     puck2.setDirection(105);
     while(true)
@@ -35,4 +35,4 @@ field.addSprite(puck3);
       await Controls.wait(2);
     }
 })();
-*/
+
