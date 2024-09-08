@@ -12,7 +12,7 @@ field.addSprite(puck3);
     {
       puck1.move(10);
       puck1.ifOnEdgeBounce();
-      await Controls.wait(2);
+      await Controls.wait(200);
     }
 })();
 /*
