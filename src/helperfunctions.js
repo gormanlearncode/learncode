@@ -88,6 +88,7 @@ class Sprite {
    */
   turnClockwise(degrees) {
     this.direction=this.direction+degrees;
+    if(this.direction>=360)this.direction=this.direction-360;
     this.htmldiv.style.transform = 'rotate(' + ((this.direction-90)) + 'deg)';
   }
 
@@ -97,6 +98,8 @@ class Sprite {
    */
   setDirection(degrees) {
     this.direction=degrees;
+    if(this.direction<0)this.direction=this.direction+360;
+    else if(this.direction>=360)this.direction=this.direction-360;
     this.htmldiv.style.transform = 'rotate(' + ((this.direction-90)) + 'deg)';
   }
   /**
@@ -105,6 +108,7 @@ class Sprite {
    */
   turnAnticlockwise(degrees) {
     this.direction=this.direction-degrees;
+    if(this.direction<0)this.direction=this.direction+360;
     this.htmldiv.style.transform = 'rotate(' + ((this.direction-90)) + 'deg)';
   }
   /**
@@ -164,6 +168,58 @@ class Sprite {
   setX(pixelX) {
     this.htmldiv.style.left = '' + pixelX + 'px';
   }
+
+  /**
+   * change Y position by 'pixelY' pixels
+   * @param   {number} pixelY  
+   */
+  changeYBy(pixelY) {
+    const _left = parseInt(this.htmldiv.style.left || "0px") || 0;
+    const _top = parseInt(this.htmldiv.style.top || "0px") || 0;
+    this.htmldiv.style.top = '' + (_top+pixelY) + 'px';
+  }
+
+  /**
+   * change X position by 'pixelY' pixels
+   * @param   {number} pixelX  
+   */
+  changeXBy(pixelX) {
+    const _left = parseInt(this.htmldiv.style.left || "0px") || 0;
+    const _top = parseInt(this.htmldiv.style.top || "0px") || 0;
+    this.htmldiv.style.left = '' + (_left+pixelX) + 'px';
+  }
+  /**
+   * The if on edge, bounce block is a Motion Block and a stack block. The block checks to see 
+   * if a sprite is touching the edge of the screen, and if it is, the sprite will point in a 
+   * direction that mirrors the direction from which it was coming.
+   */
+  ifOnEdgeBounce()
+  {
+    if(this.htmldiv.style.left<=0 && this.direction>180)
+    {
+      this.direction=90+(270-this.direction);
+    }
+    else if(this.htmldiv.style.left>=(this.htmldiv.parent.style.width-this.htmldiv.style.width)  && this.direction>180)
+    {
+      this.direction=270+(90-this.direction);
+    }
+    else if(this.htmldiv.style.top<=0 && this.direction<90 )
+    {
+      this.direction=180+(this.direction);
+    } 
+    else if(this.htmldiv.style.top<=0 && this.direction>270 )
+    {
+      this.direction=180+(360-this.direction);
+    }
+    else if(this.htmldiv.style.top>=(this.htmldiv.parent.style.height-this.htmldiv.style.height)  && this.direction>90 && this.direction<270)
+    {
+      this.direction=this.direction-180;
+    }
+      
+    
+    
+  }
+  
   /**
    * getDiv
    * @returns {object} a reference to a <div> tag in the DOM.
