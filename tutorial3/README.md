@@ -27,11 +27,11 @@ var backdrop = Backdrop.create({backgroundColor:"yellow",width:800,height:400});
 backdrop.addSprite(sprite);
 sprite.moveTo(10,100);
 async function run(){
-     for(let i=0;i<30;i++)
+     for(let i=0;i<50;i++)
      {
           let x=10+i*10;
           sprite.moveTo(x,100);
-          await Controls.wait(100);
+          await Controls.wait(50);
      }
      console.log("end");
 }
