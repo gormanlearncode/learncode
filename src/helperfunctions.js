@@ -194,33 +194,33 @@ class Sprite {
   ifOnEdgeBounce()
   {
     if(!this.backdrop)return;
-    if(this.htmldiv.style.left<=0 && this.direction>180)
+    if(this.x<=0 && this.direction>180)
     {
       console.log("bounce1");
       this.direction=90+(270-this.direction);
     }
-    else if((this.htmldiv.style.left+this.htmldiv.style.width)>=(this.backdrop.htmldiv.style.width)  && this.direction<180)
+    else if((this.x+this.width)>=(this.backdrop.width)  && this.direction<180)
     {
       console.log("bounce2");
       this.direction=270+(90-this.direction);
     }
-    else if(this.htmldiv.style.top<=0 && this.direction<90 )
+    else if(this.y<=0 && this.direction<90 )
     {
       console.log("bounce3");
       this.direction=180+(this.direction);
     } 
-    else if(this.htmldiv.style.top<=0 && this.direction>270 )
+    else if(this.y<=0 && this.direction>270 )
     {
       console.log("bounce4");
       this.direction=180+(360-this.direction);
     }
-    else if((this.htmldiv.style.top+this.htmldiv.style.height)>=(this.backdrop.htmldiv.style.height)  && this.direction>90 && this.direction<270)
+    else if((this.y+this.height)>=(this.backdrop.height)  && this.direction>90 && this.direction<270)
     {
       console.log("bounce5");
       this.direction=this.direction-180;
     }
 
-    console.log((this.htmldiv.style.left+this.htmldiv.style.width)+":"+(this.htmldiv.style.top+this.htmldiv.style.height)+" inside:"+(this.backdrop.htmldiv.style.width)+":"+(this.backdrop.htmldiv.style.height));
+    console.log((this.x+this.width)+":"+(this.y+this.height)+" inside:"+(this.backdrop.width)+":"+(this.backdrop.height));
       
     
     
@@ -232,6 +232,34 @@ class Sprite {
    */
   getDiv() {
     return this.htmldiv;
+  }
+  /**
+   * get width as an integer
+   * @returns {number} width
+   */
+  get width() {
+    return parseInt(getComputedStyle(this.htmldiv).getPropertyValue("width")) | 0;
+  }
+  /**
+   * get height as an integer
+   * @returns {number} height
+   */
+  get height() {
+    return parseInt(getComputedStyle(this.htmldiv).getPropertyValue("height")) | 0;
+  }
+  /**
+   * get x as an integer
+   * @returns {number} x - X position
+   */
+  get x() {
+    return parseInt(getComputedStyle(this.htmldiv).getPropertyValue("left")) | 0;
+  }
+  /**
+   * get x as an integer
+   * @returns {number} y - Y position
+   */
+  get y() {
+    return parseInt(getComputedStyle(this.htmldiv).getPropertyValue("top")) | 0;
   }
   /**
    * Set the back drop that will act as the parent of this sprite.
@@ -414,6 +442,34 @@ class Backdrop {
    */
   clearGraphicsEffect() {
 
+  }
+    /**
+   * get width as an integer
+   * @returns {number} width
+   */
+  get width() {
+    return parseInt(getComputedStyle(this.htmldiv).getPropertyValue("width")) | 0;
+  }
+  /**
+   * get height as an integer
+   * @returns {number} height
+   */
+  get height() {
+    return parseInt(getComputedStyle(this.htmldiv).getPropertyValue("height")) | 0;
+  }
+  /**
+   * get x as an integer
+   * @returns {number} x - X position
+   */
+  get x() {
+    return parseInt(getComputedStyle(this.htmldiv).getPropertyValue("left")) | 0;
+  }
+  /**
+   * get x as an integer
+   * @returns {number} y - Y position
+   */
+  get y() {
+    return parseInt(getComputedStyle(this.htmldiv).getPropertyValue("top")) | 0;
   }
 }
 
