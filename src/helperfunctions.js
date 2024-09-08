@@ -68,11 +68,25 @@ class Sprite {
 
   }
   /**
-  * create 
-  * @param   {image}
-  * @param   {height}
-  * @param   {width}
+  * Creates a new Sprite, accepting an image and a width and height.
+  * @param   {string} image
+  * @param   {number} height
+  * @param   {number} width
   * @returns {Sprite} a new Sprite.
+  * @example
+  * var sprite = Sprite.create({image:"images/squirrel.png",width:100,height:100});
+  * var backdrop = Backdrop.create({backgroundColor:"yellow",width:800,height:400});
+  * backdrop.addSprite(sprite);
+  * sprite.moveTo(10,100);
+  * async function run(){
+  *      for(let i=0;i<60;i++)
+  *      {
+  *           let x=10+i*10;
+  *           sprite.moveTo(x,100);
+  *           await Controls.wait(20);
+  *      }
+  *      console.log("end");
+  * }
   */
   static create({ image, height, width }) {
     let sprite = new Sprite();
@@ -362,11 +376,26 @@ class Backdrop {
     }
   }
   /**
-  * create 
-  * @param   {image}
-  * @param   {height}
-  * @param   {width}
-  * @returns {Sprite} a new Sprite.
+  * Creates a new Backdrop, accepting an image and a width and height.
+  * @param   {string} image
+  * @param   {string} backgroundColor
+  * @param   {number} height
+  * @param   {number} width
+  * @returns {Backdrop} a new Backdrop.
+  * @example
+  * var sprite = Sprite.create({image:"images/squirrel.png",width:100,height:100});
+  * var backdrop = Backdrop.create({backgroundColor:"yellow",width:800,height:400});
+  * backdrop.addSprite(sprite);
+  * sprite.moveTo(10,100);
+  * async function run(){
+  *      for(let i=0;i<60;i++)
+  *      {
+  *           let x=10+i*10;
+  *           sprite.moveTo(x,100);
+  *           await Controls.wait(20);
+  *      }
+  *      console.log("end");
+  * }
   */
   static create({ image, backgroundColor, height, width }) {
     let backdrop = new Backdrop();
