@@ -197,8 +197,8 @@ class Sprite {
     if(this.x<=0 )
     {
       console.log("direction:"+this.direction);
-      console.log("x:"+this.x;
-      console.log("y:"+this.x;
+      console.log("x:"+this.x);
+      console.log("y:"+this.y);
     }
     if(this.x<=0 && this.direction>180)
     {
