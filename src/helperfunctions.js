@@ -219,8 +219,6 @@ class Sprite {
       console.log("bounce5");
       this.direction=180-this.direction;
     }
-
-    console.log((this.x+this.width)+":"+(this.y+this.height)+" inside:"+(this.backdrop.width)+":"+(this.backdrop.height));
       
     
     
