@@ -196,8 +196,9 @@ class Sprite {
     if(!this.backdrop)return;
     if(this.x<=0 && this.direction>180)
     {
-      console.log("bounce1");
+      console.log("bounce1:"+this.direction);
       this.direction=90+(270-this.direction);
+      console.log("bounce1:"+this.direction);
     }
     else if((this.x+this.width)>=(this.backdrop.width)  && this.direction<180)
     {
