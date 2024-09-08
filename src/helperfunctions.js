@@ -193,12 +193,13 @@ class Sprite {
    */
   ifOnEdgeBounce()
   {
+    if(!this.backdrop)return;
     if(this.htmldiv.style.left<=0 && this.direction>180)
     {
       console.log("bounce1");
       this.direction=90+(270-this.direction);
     }
-    else if(this.htmldiv.style.left>=(this.htmldiv.parentNode.style.width-this.htmldiv.style.width)  && this.direction<180)
+    else if((this.htmldiv.style.left+this.htmldiv.style.width)>=(this.backdrop.htmldiv.style.width)  && this.direction<180)
     {
       console.log("bounce2");
       this.direction=270+(90-this.direction);
@@ -213,13 +214,13 @@ class Sprite {
       console.log("bounce4");
       this.direction=180+(360-this.direction);
     }
-    else if(this.htmldiv.style.top>=(this.htmldiv.parentNode.style.height-this.htmldiv.style.height)  && this.direction>90 && this.direction<270)
+    else if((this.htmldiv.style.top+this.htmldiv.style.height)>=(this.backdrop.htmldiv.style.height)  && this.direction>90 && this.direction<270)
     {
       console.log("bounce5");
       this.direction=this.direction-180;
     }
 
-    console.log(this.htmldiv.style.left+":"+this.htmldiv.style.top+" inside:"+(this.htmldiv.parentNode.style.width-this.htmldiv.style.width)+":"+(this.htmldiv.parentNode.style.height-this.htmldiv.style.height));
+    console.log((this.htmldiv.style.left+this.htmldiv.style.width)+":"+(this.htmldiv.style.top+this.htmldiv.style.height)+" inside:"+(this.backdrop.htmldiv.style.width)+":"+(this.backdrop.htmldiv.style.height));
       
     
     
@@ -231,6 +232,14 @@ class Sprite {
    */
   getDiv() {
     return this.htmldiv;
+  }
+  /**
+   * Set the back drop that will act as the parent of this sprite.
+   * @param {Backdrop} backdrop- a reference to a <div> tag in the DOM.
+   */
+  setBackdrop(backdrop)
+  {
+    this.backdrop=backdrop;
   }
 
 }
@@ -354,6 +363,7 @@ class Backdrop {
    */
   addSprite(sprite) {
     this.htmldiv.append(sprite.getDiv());
+    sprite.setBackdrop(this);
   }
   /**
    * Switch backdrop to a specific index of a list of backdrops, starting at zero.
