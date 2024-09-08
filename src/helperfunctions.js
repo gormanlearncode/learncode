@@ -217,7 +217,7 @@ class Sprite {
     else if((this.y+this.height)>=(this.backdrop.height)  && this.direction>90 && this.direction<270)
     {
       console.log("bounce5");
-      this.direction=this.direction-180;
+      this.direction=180-this.direction;
     }
 
     console.log((this.x+this.width)+":"+(this.y+this.height)+" inside:"+(this.backdrop.width)+":"+(this.backdrop.height));
