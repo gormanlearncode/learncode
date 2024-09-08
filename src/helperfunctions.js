@@ -199,7 +199,7 @@ class Sprite {
     {
       this.direction=90+(270-this.direction);
     }
-    else if(this.htmldiv.style.left>=(this.htmldiv.parent.style.width-this.htmldiv.style.width)  && this.direction>180)
+    else if(this.htmldiv.style.left>=(this.htmldiv.parentNode.style.width-this.htmldiv.style.width)  && this.direction>180)
     {
       this.direction=270+(90-this.direction);
     }
@@ -211,7 +211,7 @@ class Sprite {
     {
       this.direction=180+(360-this.direction);
     }
-    else if(this.htmldiv.style.top>=(this.htmldiv.parent.style.height-this.htmldiv.style.height)  && this.direction>90 && this.direction<270)
+    else if(this.htmldiv.style.top>=(this.htmldiv.parentNode.style.height-this.htmldiv.style.height)  && this.direction>90 && this.direction<270)
     {
       this.direction=this.direction-180;
     }
