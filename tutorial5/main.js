@@ -44,6 +44,15 @@ field.addSprite(puck7);
     }
 })();
 (async ()=>{
+    puck4.setDirection(110);
+    while(true)
+    {
+      puck4.move(10);
+      puck4.ifOnEdgeBounce();
+      await Controls.wait(2);
+    }
+})();
+(async ()=>{
     puck5.setDirection(115);
     while(true)
     {
