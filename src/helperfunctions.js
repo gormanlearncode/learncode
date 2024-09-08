@@ -219,7 +219,7 @@ class Sprite {
       this.direction=this.direction-180;
     }
 
-    console.log(this.htmldiv.style.left+":"+his.htmldiv.style.top+" inside:"+(this.htmldiv.parentNode.style.width-this.htmldiv.style.width)+":"+(this.htmldiv.parentNode.style.height-this.htmldiv.style.height));
+    console.log(this.htmldiv.style.left+":"+this.htmldiv.style.top+" inside:"+(this.htmldiv.parentNode.style.width-this.htmldiv.style.width)+":"+(this.htmldiv.parentNode.style.height-this.htmldiv.style.height));
       
     
     
