@@ -1,5 +1,6 @@
 <h1>Hockey Puck</h1>
 [demo here](https://gormanlearncode.github.io/learncode/tutorial5/)
+
 ```javascript
 let field=new Backdrop("#field");
 let puck1=new Sprite("#puck1");
