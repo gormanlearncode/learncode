@@ -31,7 +31,7 @@ async function run(){
      {
           let x=10+i*10;
           sprite.moveTo(x,100);
-          await Controls.wait(50);
+          await Controls.wait(20);
      }
      console.log("end");
 }
