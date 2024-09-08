@@ -1,7 +1,7 @@
 let field=new Backdrop("#field");
 let puck1=new Sprite("#puck1");
-let puck1=new Sprite("#puck2");
-let puck1=new Sprite("#puck3");
+let puck2=new Sprite("#puck2");
+let puck3=new Sprite("#puck3");
 field.addSprite(puck1);
 field.addSprite(puck2);
 field.addSprite(puck3);
