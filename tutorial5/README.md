@@ -2,7 +2,7 @@
 
 [demo here](https://gormanlearncode.github.io/learncode/tutorial5/)
 
-(async ()=>{ some-code(); })()** is a way of wrapping code in an asynchronous call. This means it wont wait for the code inside to finish befor moving onto the following code. This can be handy if you want to call async function with the prefix **await**. You cannot call an async function with await, unless you are calling it from inside an async function. In this case I want to call **await Controls.wait(1);** and wait for it to return before continuing the loop.
+**(async ()=>{ some-code(); })()** is a way of wrapping code in an asynchronous call. This means it wont wait for the code inside to finish befor moving onto the following code. This can be handy if you want to call async function with the prefix **await**. You cannot call an async function with await, unless you are calling it from inside an async function. In this case I want to call **await Controls.wait(1);** and wait for it to return before continuing the loop.
 
 
 ```javascript
