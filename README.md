@@ -13,10 +13,11 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
 1) ”Sign up for GitHub” —> here https://github.com/
 2) Create a user name. This will be in your website URL, so make it nice.
 3) Select “Continue for free”. You dont need to pay for public GitHub websites.
-4) Once you are logged in **Create a repository**. Call it **webapp** make it public and tick the box to add a README file
-5) At the top-right, next to the green Code button, click **Add file** —-> **Create new file**
-6) At the top-left, name your file **index.html**
-7) Add this HTML code to the main text area.
+4) Once you are logged in **Create a repository**.
+5) Call it **webapp** make it public and tick the box to add a README file
+6) At the top-right, next to the green Code button, click **Add file** —-> **Create new file**
+7) At the top-left, name your file **index.html**
+8) Add this HTML code to the main text area.
  
 ```html
 <html>
