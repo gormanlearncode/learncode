@@ -12,6 +12,10 @@ async function run(){
      }
      console.log("end");
 }
+/** 
+ * Adding the button code here.
+ * Create it, then set the text, then set the function to run, then add it to the html body.
+ */
 let button1=document.createElement("button");
 button1.innerText="RUN";
 button1.onclick=run;
