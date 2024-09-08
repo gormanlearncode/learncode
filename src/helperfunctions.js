@@ -56,7 +56,7 @@ class Sprite {
   constructor(htmldiv) {
     if (htmldiv == null) {
       this.htmldiv = document.createElement("div");
-      this.htmldiv.style.position = "relative";
+      this.htmldiv.style.position = "absolute";
     }
     else if (typeof htmldiv === "string") {
       this.htmldiv = document.querySelector(htmldiv);
