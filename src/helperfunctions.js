@@ -120,8 +120,6 @@ class Sprite {
     const _top = parseInt(this.htmldiv.style.top || "0px");
     let pixelX=Math.round(steps*Math.sin(this.direction*Math.PI/180),3);
     let pixelY=Math.round(-steps*Math.cos(this.direction*Math.PI/180),3);
-    console.log("this.direction:"+this.direction);
-    console.log("pixelX:"+pixelX+"   pixelY:"+pixelY);
     this.htmldiv.style.left = '' + (_left + pixelX) + 'px'; 
     this.htmldiv.style.top = '' + (_top + pixelY) + 'px';
   }
@@ -199,7 +197,7 @@ class Sprite {
     {
       this.direction=90+(270-this.direction);
     }
-    else if(this.htmldiv.style.left>=(this.htmldiv.parentNode.style.width-this.htmldiv.style.width)  && this.direction>180)
+    else if(this.htmldiv.style.left>=(this.htmldiv.parentNode.style.width-this.htmldiv.style.width)  && this.direction<180)
     {
       this.direction=270+(90-this.direction);
     }
