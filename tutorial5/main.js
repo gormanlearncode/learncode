@@ -1,5 +1,6 @@
 let field=new Backdrop("#field");
 let puck=new Sprite("#puck");
+field.addSprite(puck);
 
 (async ()=>{
     puck.setDirection(101);
