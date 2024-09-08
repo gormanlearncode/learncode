@@ -7,6 +7,6 @@ let puck=new Sprite("#puck");
     {
       puck.move(10);
       puck.ifOnEdgeBounce();
-      await Controls.wait(100);
+      await Controls.wait(20);
     }
 })()
