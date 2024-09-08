@@ -1,6 +1,12 @@
 #puck
 {
+  width:30px;
+  height:30px;
+  background-color:black;
 }
 #field
 {
+  width:1000px;
+  height:800px;
+  background-color:#90EE90;
 }
