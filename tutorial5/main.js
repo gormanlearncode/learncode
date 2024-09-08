@@ -7,7 +7,7 @@ field.addSprite(puck2);
 field.addSprite(puck3);
 
 (async ()=>{
-    puck1.setDirection(101);
+    puck1.setDirection(100);
     while(true)
     {
       puck1.move(10);
@@ -17,7 +17,7 @@ field.addSprite(puck3);
 })();
 
 (async ()=>{
-    puck2.setDirection(104);
+    puck2.setDirection(105);
     while(true)
     {
       puck2.move(10);
@@ -27,7 +27,7 @@ field.addSprite(puck3);
 })();
 
 (async ()=>{
-    puck3.setDirection(107);
+    puck3.setDirection(110);
     while(true)
     {
       puck3.move(10);
