@@ -35,7 +35,7 @@ styles.css
   height:30px;
   background-color:black;
   border-radius:15px;
-  position:relative;
+  position:absolute;
 }
 #puck2
 {
@@ -43,7 +43,7 @@ styles.css
   height:30px;
   background-color:red;
   border-radius:15px;
-  position:relative;
+  position:absolute;
 }
 #puck3
 {
@@ -51,13 +51,14 @@ styles.css
   height:30px;
   background-color:blue;
   border-radius:15px;
-  position:relative;
+  position:absolute;
 }
 #field
 {
   width:1000px;
   height:800px;
   background-color:#90EE90;
+  position:relative;
 }
 ```
   
