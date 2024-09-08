@@ -1,4 +1,5 @@
-<h1>Hockey Puck</h1>
+# Hockey Puck
+
 [demo here](https://gormanlearncode.github.io/learncode/tutorial5/)
 
 ```javascript
