@@ -1,3 +1,22 @@
+html {
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  background-color:black;
+  color:white;
+  font-weight:bold;
+  font-size:16px;
+  overscroll-behavior: none;
+}
+
 #puck{
   position:relative;
   top:60px;
