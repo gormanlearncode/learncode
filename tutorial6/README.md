@@ -15,4 +15,33 @@ You can check that it is correctly configured here.
 https://www.seoreviewtools.com/pwa-testing-tool/
 
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>tutorial6</title>
+  <base href="/" />
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <meta name="description" content="This is a tutorial6 app" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#181818" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="tutorial6" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <link rel="icon" href="/learncode/tutorial6/assets/icons/icon_24.png" type="image/png" />
+  <link rel="manifest" href="/learncode/tutorial6/manifest.json" />
+</head>
+<body style="background-color:black;color:white;font-weight:bold;font-size:16px;">
+  <p style="margin-top:40%">
+      <center>Simple PWA APP</center> 
+  </p>
+  <script>
+    //register service worker
+    if ('serviceWorker' in navigator) {window.onload = () => {navigator.serviceWorker.register('/learncode/tutorial6/sw.js');}}
+  </script>
+  <script src="/learncode/tutorial6/main.js"></script>
+</body>
+</html>
+```
+
 
