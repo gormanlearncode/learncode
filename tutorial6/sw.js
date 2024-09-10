@@ -1,60 +1,47 @@
-importScripts(
-    'https://storage.googleapis.com/workbox-cdn/releases/6.5.4/workbox-sw.js'
-);
+// This is the "Offline page" service worker
 
-// This is your Service Worker, you can put any of your custom Service Worker
-// code in this file, above the `precacheAndRoute` line.
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
-// When widget is installed/pinned, push initial state.
-self.addEventListener('widgetinstall', (event) => {
-    event.waitUntil(updateWidget(event));
+const CACHE = "pwabuilder-page";
+
+// TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
+const offlineFallbackPage = "ToDo-replace-this-name.html";
+
+self.addEventListener("message", (event) => {
+  if (event.data && event.data.type === "SKIP_WAITING") {
+    self.skipWaiting();
+  }
 });
 
-// When widget is shown, update content to ensure it is up-to-date.
-self.addEventListener('widgetresume', (event) => {
-    event.waitUntil(updateWidget(event));
+self.addEventListener('install', async (event) => {
+  event.waitUntil(
+    caches.open(CACHE)
+      .then((cache) => cache.add(offlineFallbackPage))
+  );
 });
 
-// When the user clicks an element with an associated Action.Execute,
-// handle according to the 'verb' in event.action.
-self.addEventListener('widgetclick', (event) => {
-if (event.action == "updateName") {
-    event.waitUntil(updateName(event));
+if (workbox.navigationPreload.isSupported()) {
+  workbox.navigationPreload.enable();
 }
+
+self.addEventListener('fetch', (event) => {
+  if (event.request.mode === 'navigate') {
+    event.respondWith((async () => {
+      try {
+        const preloadResp = await event.preloadResponse;
+
+        if (preloadResp) {
+          return preloadResp;
+        }
+
+        const networkResp = await fetch(event.request);
+        return networkResp;
+      } catch (error) {
+
+        const cache = await caches.open(CACHE);
+        const cachedResp = await cache.match(offlineFallbackPage);
+        return cachedResp;
+      }
+    })());
+  }
 });
-
-// When the widget is uninstalled/unpinned, clean up any unnecessary
-// periodic sync or widget-related state.
-self.addEventListener('widgetuninstall', (event) => {});
-
-const updateWidget = async (event) => {
-// The widget definition represents the fields specified in the manifest.
-    const widgetDefinition = event.widget.definition;
-
-    // Fetch the template and data defined in the manifest to generate the payload.
-    const payload = {
-        template: JSON.stringify(await (await fetch(widgetDefinition.msAcTemplate)).json()),
-        data: JSON.stringify(await (await fetch(widgetDefinition.data)).json()),
-    };
-
-    // Push payload to widget.
-    await self.widgets.updateByInstanceId(event.instanceId, payload);
-}
-
-const updateName = async (event) => {
-    const name = event.data.json().name;
-
-    // The widget definition represents the fields specified in the manifest.
-    const widgetDefinition = event.widget.definition;
-
-    // Fetch the template and data defined in the manifest to generate the payload.
-    const payload = {
-        template: JSON.stringify(await (await fetch(widgetDefinition.msAcTemplate)).json()),
-        data: JSON.stringify({name}),
-    };
-
-    // Push payload to widget.
-    await self.widgets.updateByInstanceId(event.instanceId, payload);
-}
-
-workbox.precaching.precacheAndRoute(self.__WB_MANIFEST || []);
