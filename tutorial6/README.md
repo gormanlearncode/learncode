@@ -47,7 +47,7 @@ index.html
 </head>
 <body style="background-color:black;color:white;font-weight:bold;font-size:16px;overscroll-behavior: none;">
   <div id="backdrop" style="position:absolute;top:0px;bottom:0px;left:0px;right:0px;overflow:hidden;">
-      <div id="puck" style="position:relative;top:60px;left:50px;width=30px;height:30px;border-radius:15px;backgrund-color:#181818"></div>
+      <div id="puck" style="position:relative;top:60px;left:50px;width:30px;height:30px;border-radius:15px;backgrund-color:#181818"></div>
       <div id="sometext" style="position:relative;top:60px;left:50px;">Simple PWA APP</div> 
   </p>
   <script>
