@@ -34,28 +34,28 @@ index.html
 <head>
   <meta charset="utf-8" />
   <title>tutorial6</title>
-  <base href="/" />
-  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <base href="/learncode/tutorial6/" />
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="description" content="This is a tutorial6 app" />
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#181818" />
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="tutorial6" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  <link rel="icon" href="/learncode/tutorial6/assets/icons/icon_24.png" type="image/png" />
-  <link rel="manifest" href="/learncode/tutorial6/manifest.json" />
+  <link rel="icon" href="assets/icons/icon_24.png" type="image/png" />
+  <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body style="background-color:black;color:white;font-weight:bold;font-size:16px;overscroll-behavior: none;">
-  <div id="backdrop" style="position:absolute;top:0px;bottom:0px;left:0px;right:0px;overflow:hidden;">
+<body>
+  <div id="backdrop">
       <div id="puck"></div>
-      <div id="sometext" style="position:relative;top:60px;left:50px;">Simple PWA APP</div> 
+      <div id="sometext">Simple PWA APP</div> 
   </p>
   <script>
     //register service worker
     if ('serviceWorker' in navigator) {window.onload = () => {navigator.serviceWorker.register('/learncode/tutorial6/sw.js');}}
   </script>
   <script type="text/javascript" src="https://tinyurl.com/462k3dx7"></script>
-  <script src="/learncode/tutorial6/main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
 ```
