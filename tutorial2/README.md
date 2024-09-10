@@ -11,7 +11,8 @@ Note that: [https://tinyurl.com/462k3dx7](https://tinyurl.com/462k3dx7) id just 
 
 <!-- You must have html tag, body tag and a script tag. This has 2 script tags,
      one for e helperfunctions and one for the main program-->
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 <body>
     <h1>Tutorial 2</h1>
     <p>Minimal HTML and CSS. See how you can do almost everything from code.</p>
