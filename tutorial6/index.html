@@ -10,15 +10,15 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="tutorial6" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  <link rel="icon" href="https://gormanlearncode.github.io/learncode/tutorial6/assets/icons/icon_24.png" type="image/png" />
-  <link rel="manifest" href="https://gormanlearncode.github.io/learncode/tutorial6/manifest.json" />
+  <link rel="icon" href="/learncode/tutorial6/assets/icons/icon_24.png" type="image/png" />
+  <link rel="manifest" href="/learncode/tutorial6/manifest.json" />
 </head>
 <body style="background-color:black;color:white;font-weight:bold;">
   <center>Simple PWA APP</center>
   <script>
     //register service worker
-    if ('serviceWorker' in navigator) {window.onload = () => {navigator.serviceWorker.register('https://gormanlearncode.github.io/learncode/tutorial6/sw.js');}}
+    if ('serviceWorker' in navigator) {window.onload = () => {navigator.serviceWorker.register('/learncode/tutorial6/sw.js');}}
   </script>
-  <script src="https://gormanlearncode.github.io/learncode/tutorial6/main.js"></script>
+  <script src="/learncode/tutorial6/main.js"></script>
 </body>
 </html>
