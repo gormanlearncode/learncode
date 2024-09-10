@@ -26,7 +26,6 @@ You can use everything else you learnt about web apps. Below are the additional 
 
 That the main requirements pf a PWA APP. I would suggest that you will want to lock down your page size so it does not scroll. This will give an experiance more like an App than a webpage. You can do this by setting your root div, or Backdrop css style, to take up all the page with, style="position:absolute;top:0px;bottom:0px;left:0px;right:0px;overflow:hidden;".
 
-Note: That here I have cheated a little, including some of the css directly in the html file. I could have also put it in the style.css file.
 
 index.html
 ```html
