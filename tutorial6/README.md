@@ -48,7 +48,7 @@ index.html
 </head>
 <body style="background-color:black;color:white;font-weight:bold;font-size:16px;overscroll-behavior: none;">
   <div id="backdrop" style="position:absolute;top:0px;bottom:0px;left:0px;right:0px;overflow:hidden;">
-      <div id="puck" style="position:relative;top:60px;left:50px;width: 0; height: 0; border-top: 15px solid transparent;border-bottom: 15px solid transparent;border-left: 15px solid #181818;"></div>
+      <div id="puck"></div>
       <div id="sometext" style="position:relative;top:60px;left:50px;">Simple PWA APP</div> 
   </p>
   <script>
@@ -59,7 +59,6 @@ index.html
   <script src="/learncode/tutorial6/main.js"></script>
 </body>
 </html>
-
 ```
 
 main.js
