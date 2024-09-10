@@ -15,6 +15,17 @@ You can check that it is correctly configured here.
 https://www.seoreviewtools.com/pwa-testing-tool/
 
 
+You can use everything else you learnt about web apps. Below are the additional requirements to make it a PWA, that can be installed on a phone with its own icon.
+
+ - viewport: sets the app width to match the width of the phone
+ - theme-color: sets the background highlights of the app, e.g. the top toolbar color.
+ - meta "mobile/apple/etc": some basic frame setting for when this is not wrapped in a browser.
+ - link icon: the icon that will be used when you add the app to your home screen.
+ - link manifest: the manifest file contains al sorts of info, for the app stores and for the device the app will run on.
+ - register service worker: a service worker is come code that will run in the background, this example chches files, so the app will work offline.
+
+That the main requirements pf a PWA APP. I would suggest that you will want to lock down your page size so it does not scroll. This will give an experiance more like an App than a webpage. You can do this by setting your root div, or Backdrop css style, to be position:absolute;top:0px;bottom:0px;left:0px;right;0px.
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -32,8 +43,8 @@ https://www.seoreviewtools.com/pwa-testing-tool/
   <link rel="manifest" href="/learncode/tutorial6/manifest.json" />
 </head>
 <body style="background-color:black;color:white;font-weight:bold;font-size:16px;">
-  <p style="margin-top:40%">
-      <center>Simple PWA APP</center> 
+  <div id="backdrop" style="position:absolute;top:0px;bottom:0px;left:0px;right;0px">
+      <div id="sometext" style="position:relative;top:60px;left:50px;">Simple PWA APP</div> 
   </p>
   <script>
     //register service worker
