@@ -3,7 +3,7 @@
   "scope": "/",
   "name": "tutorial6",
   "display": "standalone",
-  "start_url": "https://gormanlearncode.github.io/learncode/tutorial6/",
+  "start_url": "/learncode/tutorial6/index.html",
   "short_name": "starter",
   "theme_color": "#E1477E",
   "description": "This is a tutorial6 app",
