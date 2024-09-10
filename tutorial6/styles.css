@@ -17,6 +17,15 @@ body {
   overscroll-behavior: none;
 }
 
+#backdrop{
+  position:absolute;
+  top:0px;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  overflow:hidden;
+}
+
 #puck{
   position:relative;
   top:60px;
@@ -27,4 +36,10 @@ body {
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
   border-left: 20px solid #E1477E; 
+}
+
+#sometext{
+  position:relative;
+  top:60px;
+  left:20px;
 }
