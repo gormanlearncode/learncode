@@ -1,4 +1,4 @@
-let field=new Backdrop("#field");
+let field=new Backdrop("#backdrop");
 let puck1=new Sprite("#puck");
 field.addSprite(puck);
 
