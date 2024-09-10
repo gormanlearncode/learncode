@@ -11,7 +11,8 @@ This is a way of wrapping code in an asynchronous call. The brackets signfy call
   
 index.html
 ```html
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
