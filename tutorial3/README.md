@@ -9,7 +9,8 @@ In tutorial 2, we made a simple app. Below takes that a step further, adding a b
 
 <!-- You must have html tag, body tag and a script tag. This has 2 script tags,
      one for e helperfunctions and one for the main program-->
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 <body>
     <h1>Tutorial 3</h1>
     <p>Minimal HTML and CSS. See how you can do almost everything from code.</p>
