@@ -70,9 +70,11 @@ backdrop.addSprite(puck);
     puck.setDirection(100);
     while(true)
     {
+      puck.turnClockwise(5);
       puck.move(10);
       puck.ifOnEdgeBounce();
-      await Controls.wait(20);
+      await Controls.wait(1);
+      //force the loop to free up the CPU fir at least 1 tick.
     }
 })();
 
