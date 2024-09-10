@@ -1,5 +1,7 @@
 /**
- * Animates an object over a named period of time. For example, the below will move the circle from 20->320px over 100ms.
+ * This helps animates an object over a named period of time. The window.requestAnimationFrame() method tells the 
+ * browser you wish to perform an animation. It requests the browser to call a user-supplied callback function 
+ * before the next repaintFor example, the below will move the circle from 20->320px over 100ms.
  * @example
  * animate(function(progress){ 
  *    circle.style.top = 20 + progress * 300 + 'px';
@@ -68,7 +70,7 @@ class Sprite {
 
   }
   /**
-  * Creates a new Sprite, accepting an image and a width and height.
+  * Creates a new Sprite, accepting an image, width and height.
   * @param   {string} image
   * @param   {number} height
   * @param   {number} width
@@ -97,8 +99,16 @@ class Sprite {
     return sprite;
   }
   /**
-   * turnClockWise degrees  
-   * @param   {number}
+   * Turn this sprite clockwise by a number of degrees  
+   * @param   {number} degrees - degrees to rotate
+   * @example
+   * let field=new Backdrop("#field");
+   * let puck1=new Sprite("#puck1");
+   * field.addSprite(puck1);
+   * puck1.turnClockwise(15);
+   * puck1.move(100);
+   * puck1.turnClockwise(15);
+   * puck1.move(100);
    */
   turnClockwise(degrees) {
     this.direction=this.direction+degrees;
@@ -107,8 +117,17 @@ class Sprite {
   }
 
   /**
-   * setDirection 90 degrees equals a vertical images moving to the right.
-   * @param   {number}
+   * Set the direction of the sprites movement. The defaulr is to the left, or 90 degrees.
+   * At 90 degrees the DIV rotation in it orgiginal state "up and down".
+   * @param   {number} - angle in degrees the sprite will face, default is 90, to the left.
+   * @example
+   * let field=new Backdrop("#field");
+   * let puck1=new Sprite("#puck1");
+   * field.addSprite(puck1);
+   * puck1.setDirection(100);
+   * puck1.move(100);
+   * puck1.setDirection(10);
+   * puck1.move(100);
    */
   setDirection(degrees) {
     this.direction=degrees;
@@ -117,8 +136,16 @@ class Sprite {
     this.htmldiv.style.transform = 'rotate(' + ((this.direction-90)) + 'deg)';
   }
   /**
-   * turnAnticlockwise
-   * @param   {number} degrees  
+   * Turn this sprite anticlockwise by a number of degrees  
+   * @param   {number} degrees - degrees to rotate
+   * @example
+   * let field=new Backdrop("#field");
+   * let puck1=new Sprite("#puck1");
+   * field.addSprite(puck1);
+   * puck1.turnAnticlockwise(15);
+   * puck1.move(100);
+   * puck1.turnAnticlockwise(15);
+   * puck1.move(100);
    */
   turnAnticlockwise(degrees) {
     this.direction=this.direction-degrees;
@@ -126,8 +153,18 @@ class Sprite {
     this.htmldiv.style.transform = 'rotate(' + ((this.direction-90)) + 'deg)';
   }
   /**
-   * move
-   * @param   {number} steps  
+   * move the sprit a number of steps (or pixels) in the direction it is set.
+   * the default direction is 90 degrees, "or to the left"
+   * @param   {number} steps - how far to move in the current direction
+   * @example
+   * let field=new Backdrop("#field");
+   * let puck1=new Sprite("#puck1");
+   * field.addSprite(puck1);
+   * puck1.setDirection(100);
+   * puck1.move(100);
+   * puck1.setDirection(10);
+   * puck1.move(100);
+
    */
   move(steps) {
     const _left = parseInt(this.htmldiv.style.left || "0px");
@@ -139,9 +176,14 @@ class Sprite {
   }
 
   /**
-   * moveTo a specific position
-   * @param   {number} pixelX  
-   * @param   {number} pixelY  
+   * move To a specific position, realtive to the parrent DIV or Backdrop.
+   * @param   {number} pixelX - x position
+   * @param   {number} pixelY - y position
+   * @example
+   * let field=new Backdrop("#field");
+   * let puck1=new Sprite("#puck1");
+   * field.addSprite(puck1);
+   * puck1.moveTo(100,100);
    */
   moveTo(pixelX, pixelY) {
     const _left = parseInt(this.htmldiv.style.left || "0px") || 0;
@@ -151,11 +193,20 @@ class Sprite {
   }
 
   /**
-   * glideTo a specific position over time.
+   * glideTo a specific position over time. The example wraps the code in an (async()=>{})()
+   * beacuse this function is asynchronous and here, it wants to call await, which can only
+   * be called inside an async function, or and inline async as below.
    * @param   {number} pixelX  
    * @param   {number} pixelY  
    * @param   {number} milliseconds  
    * @returns {Promise} a promise you can use "then" to know when it is complete.
+   * @example
+   * (async()=>{
+   *   let field=new Backdrop("#field");
+   *   let puck1=new Sprite("#puck1");
+   *   field.addSprite(puck1);
+   *   await puck1.glideTo(100,100);
+   * })();
    */
   glideTo(pixelX, pixelY, milliseconds) {
     const _left = parseInt(this.htmldiv.style.left || "0px") || 0;
