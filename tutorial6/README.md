@@ -45,13 +45,15 @@ Note: That here I have cheated a little, including the css directly in the html 
   <link rel="manifest" href="/learncode/tutorial6/manifest.json" />
 </head>
 <body style="background-color:black;color:white;font-weight:bold;font-size:16px;overscroll-behavior: none;">
-  <div id="backdrop" style="position:absolute;top:0px;bottom:0px;left:0px;right;0px">
+  <div id="backdrop" style="position:absolute;top:0px;bottom:0px;left:0px;right:0px;overflow:hidden;">
+      <div id="puck" style="position:relative;top:60px;left:50px;width=30px;height:30px;border-radius:15px;backgrund-color:#181818"></div>
       <div id="sometext" style="position:relative;top:60px;left:50px;">Simple PWA APP</div> 
   </p>
   <script>
     //register service worker
     if ('serviceWorker' in navigator) {window.onload = () => {navigator.serviceWorker.register('/learncode/tutorial6/sw.js');}}
   </script>
+  <script type="text/javascript" src="https://tinyurl.com/462k3dx7"></script>
   <script src="/learncode/tutorial6/main.js"></script>
 </body>
 </html>
