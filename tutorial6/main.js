@@ -8,6 +8,5 @@ backdrop.addSprite(puck);
     {
       puck.move(10);
       puck.ifOnEdgeBounce();
-      await Controls.wait(20);
     }
 })();
