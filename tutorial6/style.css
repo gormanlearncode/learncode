@@ -1,0 +1,11 @@
+#puck{
+  position:relative;
+  top:60px;
+  left:50px;
+  width: 0; 
+  height: 0; 
+  /* this makes a triangle out of a div */
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #181818; 
+}
