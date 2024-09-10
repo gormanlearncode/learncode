@@ -20,7 +20,8 @@ You can see this example running here: https://gormanlearncode.github.io/learnco
 8) Add this HTML code to the main text area.
  
 ```html
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <!-- this imports all your formatting from the css file -->
   <link rel="stylesheet" type="text/css" href="styles.css">
