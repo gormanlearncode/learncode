@@ -4,6 +4,9 @@ In tutorial 1, we used html "div" tags to create objects in the browser that we 
 
 **[demo here](https://gormanlearncode.github.io/learncode/tutorial2/)** remember to get used to right click, **Open link in Incognito Window** it will force a refresh if there are any changes.
 
+
+Note that: [https://tinyurl.com/462k3dx7](https://tinyurl.com/462k3dx7) id just a short URL for [helperfunctions.js](https://gormanlearncode.github.io/learncode/src/helperfunctions.js).
+
 ```html
 
 <!-- You must have html tag, body tag and a script tag. This has 2 script tags,
