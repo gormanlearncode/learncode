@@ -54,4 +54,9 @@
       "icons": [{ "src": "/learncode/tutorial6/assets/icons/192x192.png", "sizes": "192x192" }]
     }
   ]
+  ,
+  "edge_side_panel": {
+    "preferred_width": 600
+  }
 }
+
