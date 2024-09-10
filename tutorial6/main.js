@@ -6,6 +6,7 @@ backdrop.addSprite(puck);
     puck.setDirection(100);
     while(true)
     {
+      puck.rotateClockwise(5);
       puck.move(10);
       puck.ifOnEdgeBounce();
       await Controls.wait(1);
