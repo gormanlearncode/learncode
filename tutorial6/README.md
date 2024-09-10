@@ -28,6 +28,7 @@ That the main requirements pf a PWA APP. I would suggest that you will want to l
 
 Note: That here I have cheated a little, including the css directly in the html file. I could have also put it in its own style.css file.
 
+index.html
 ```html
 <!DOCTYPE html>
 <html lang="en">
