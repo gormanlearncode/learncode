@@ -458,7 +458,7 @@ class Backdrop {
     backdrop.htmldiv.style.backgroundSize = "contain";
     backdrop.htmldiv.style.backgroundRepeat = "no-repeat";
     backdrop.htmldiv.style.backgroundPosition = "center";
-    backdrop.htmldiv.style.position = "relative";
+    backdrop.htmldiv.style.position = "absolute";
     document.body.append(backdrop.htmldiv);
     return backdrop;
   }
