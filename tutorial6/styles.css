@@ -35,7 +35,7 @@ body {
   /* this makes a triangle out of a div */
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-left: 20px solid #E1477E; 
+  border-left: 30px solid #E1477E; 
 }
 
 #sometext{
