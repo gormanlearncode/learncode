@@ -12,7 +12,8 @@ Notice that the code is getting very long, beacuse it is creating all the **Div*
 
 index.html
 ```html
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
