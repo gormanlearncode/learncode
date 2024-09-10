@@ -536,14 +536,15 @@ class Backdrop {
    * @returns {number} width
    */
   get width() {
-    return parseInt(getComputedStyle(this.htmldiv).getPropertyValue("width")) | 0;
+    
+    return this.htmldiv.getBoundingClientRect().width;
   }
   /**
    * get height as an integer
    * @returns {number} height
    */
   get height() {
-    return parseInt(getComputedStyle(this.htmldiv).getPropertyValue("height")) | 0;
+    return this.htmldiv.getBoundingClientRect().height;
   }
   /**
    * get x as an integer
