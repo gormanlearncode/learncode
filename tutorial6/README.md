@@ -26,7 +26,7 @@ You can use everything else you learnt about web apps. Below are the additional 
 
 That the main requirements pf a PWA APP. I would suggest that you will want to lock down your page size so it does not scroll. This will give an experiance more like an App than a webpage. You can do this by setting your root div, or Backdrop css style, to take up all the page with, style="position:absolute;top:0px;bottom:0px;left:0px;right:0px;overflow:hidden;".
 
-Note: That here I have cheated a little, including the css directly in the html file. I could have also put it in its own style.css file.
+Note: That here I have cheated a little, including some of the css directly in the html file. I could have also put it in the style.css file.
 
 index.html
 ```html
@@ -44,10 +44,11 @@ index.html
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <link rel="icon" href="/learncode/tutorial6/assets/icons/icon_24.png" type="image/png" />
   <link rel="manifest" href="/learncode/tutorial6/manifest.json" />
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body style="background-color:black;color:white;font-weight:bold;font-size:16px;overscroll-behavior: none;">
   <div id="backdrop" style="position:absolute;top:0px;bottom:0px;left:0px;right:0px;overflow:hidden;">
-      <div id="puck" style="position:relative;top:60px;left:50px;width:30px;height:30px;border-radius:15px;backgrund-color:#181818"></div>
+      <div id="puck" style="position:relative;top:60px;left:50px;width: 0; height: 0; border-top: 15px solid transparent;border-bottom: 15px solid transparent;border-left: 15px solid #181818;"></div>
       <div id="sometext" style="position:relative;top:60px;left:50px;">Simple PWA APP</div> 
   </p>
   <script>
@@ -58,6 +59,7 @@ index.html
   <script src="/learncode/tutorial6/main.js"></script>
 </body>
 </html>
+
 ```
 
 main.js
