@@ -35,7 +35,7 @@ index.html
             <tr><td>Row Cell</td><td>Row Cell</td><td>Row Cell</td></tr>
         </table>
     </center>
-    <script type="text/javascript" src="https://tinyurl.com/462k3dx7"></script>
+    <script type="text/javascript" src="https://gormanlearncode.github.io/learncode/src/helperfunctions.js"></script>
     <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
