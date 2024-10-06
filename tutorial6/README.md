@@ -129,4 +129,52 @@ self.addEventListener('fetch', (event) => {
 });
 ```
 
+styles.css
+```css
+html {
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  background-color:black;
+  color:white;
+  font-weight:bold;
+  font-size:16px;
+  overscroll-behavior: none;
+}
+
+#backdrop{
+  position:absolute;
+  top:0px;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  overflow:hidden;
+}
+
+#puck{
+  position:absolute;
+  top:160px;
+  left:150px;
+  width: 0; 
+  height: 0; 
+  /* this makes a triangle out of a div */
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 30px solid #E1477E; 
+}
+
+#sometext{
+  position:relative;
+  top:60px;
+  left:20px;
+}
+```
 
