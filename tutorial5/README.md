@@ -23,9 +23,6 @@ index.html
         <div id="puck2"></div>
         <div id="puck3"></div>
         <div id="puck4"></div>
-        <div id="puck5"></div>
-        <div id="puck6"></div>
-        <div id="puck7"></div>
     </div>
     <script type="text/javascript" src="https://gormanlearncode.github.io/learncode/src/helperfunctions.js"></script>
     <script type="text/javascript" src="main.js"></script>
