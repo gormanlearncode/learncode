@@ -52,9 +52,9 @@ index.html
   </p>
   <script>
     //register service worker
-    if ('serviceWorker' in navigator) {window.onload = () => {navigator.serviceWorker.register('/learncode/tutorial6/sw.js');}}
+    if ('serviceWorker' in navigator) {window.onload = () => {navigator.serviceWorker.register('https://gormanlearncode.github.io/learncode/tutorial6/sw.js');}}
   </script>
-  <script type="text/javascript" src="https://tinyurl.com/462k3dx7"></script>
+  <script type="text/javascript" src="https://gormanlearncode.github.io/learncode/src/helperfunctions.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
